@@ -6476,13 +6476,13 @@
   }
   @font-face {
     font-family: "Open Sans";
-    src: url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+    src: url("http://fonts.googleapis.com/css?family=Open+Sans:300,700");
     font-weight: normal;
     font-style: normal;
   }
   .fa {
     display: inline-block;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
     line-height: 1;
