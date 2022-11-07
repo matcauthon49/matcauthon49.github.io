@@ -1,0 +1,30 @@
+{
+  "name": "matcauthon49.github.io",
+  "version": "1.0.0",
+  "description": "My site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matcauthon49/matcauthon49.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matcauthon49/matcauthon49.github.io/issues"
+  },
+  "homepage": "https://github.com/matcauthon49/matcauthon49.github.io#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
+
+// previous code
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+  "deploy": "gh-pages -d dist" // NEW
+},
+// more code
