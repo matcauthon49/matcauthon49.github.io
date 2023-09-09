@@ -16,7 +16,10 @@ I've worked on a variety of different projects as an intern or as a contributor.
 
 #### 2022
 
-+ **Research Intern, Indian Institute of Science.** (May 2022 - July 2022).
++ **Research Intern, Tata Institute of Fundamental Research.** (May 2022 - December 2022).
+    Advised by Akshayaram Srinivasan. We worked on PIR.
+
++ **Research Intern, Indian Institute of Science.** (May 2022 - December 2022).
     Advised by Chaya Ganesh. We worked on generalizing SNARKs used in Byzantine Agreement.
 
 + **JSOC Contributor, first xKDR, then Julia Computing.** (April 2022 - September 2022).
