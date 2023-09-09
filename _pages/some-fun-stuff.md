@@ -18,6 +18,8 @@ I enjoy sailing. One of my favorite experiences ever was sailing off the coast o
 
 I watch a lot of sports, though the only sport I regularly practice is running (and hiking? if you can call it one). I support Manchester United for no good reason, and I also have a soft spot for Borussia Dortmund. I also watch Formula 1, where I support McLaren. I enjoy arguing about football and F1. If you ever want to pick a fight, let me know. I'd be happy to oblige.
 
+At some point I gave the mathematical olympiad. I did pretty okay.
+
 <h2 style="color: #cc0000;">other random stuff</h2>
 
 My area of interest is cryptography and theoretical computer science. Here's a list of some of my favorite papers.
