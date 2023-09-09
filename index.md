@@ -4,7 +4,7 @@ layout: default
 
 <style>
     img {
-      float: left;
+      float: right;
       margin: 5px;
     }
 </style>
@@ -17,5 +17,5 @@ Hi! I'm a first year PhD student in the Department of Electrical Engineering and
 
 My primary research interests lie in Cryptography and Theoretical Computer Science. Broadly speaking, I am interested in all aspects of theoretical and applied cryptography, though my work has largely been on [secure multi-party computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation). I am also interested in complexity theory and applied combinatorics.
 
-Prior to this, I completed my undergraduate degree in Math and Computer Science in 2023 at [Chennai Mathematical Institute](cmi.ac.in), where I worked with [Akshayaram Srinivasan](https://www.cs.toronto.edu/~akshayaram/) and [Chaya Ganesh](https://www.cs.toronto.edu/~akshayaram/).
+Prior to this, I completed my undergraduate degree in Math and Computer Science in 2023 at [Chennai Mathematical Institute](cmi.ac.in), where I worked with [Akshayaram Srinivasan](https://www.cs.toronto.edu/~akshayaram/) and [Chaya Ganesh](https://www.csa.iisc.ac.in/~chaya/).
 
