@@ -3,9 +3,9 @@ links:
     url: /research
   - title: experience
     url: /experience
-  - title: blog
-    url: /blog
-  - title: gallery
-    url: /gallery
+  - title: writings
+    url: /writings
   - title: contact
     url: /contact
+  - title: some fun stuff
+    url: /some-fun-stuff
