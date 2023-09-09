@@ -2,19 +2,19 @@
 layout: default
 ---
 
-<style type="text/css">
+<!-- <style type="text/css">
     .image-left {
       display: block;
       margin-left: auto;
       margin-right: auto;
       float: right;
     }
-</style>
+</style> -->
 
 
 <h1 style="color: #cc0000;">{% if site.jekyllacademic.homepage_title %}{{ site.jekyllacademic.homepage_title }}{% else %}Hello World!{% endif %}</h1> 
 
-<img src="./assets/pic2.jpg" alt="me" width="200" class="image-left"/>
+<img align="right" src="./assets/pic2.jpg" alt="me" width="200"/>
 
 Hi! I'm a first year PhD student in the Department of Electrical Engineering and Computer Science at [Oregon State University](https://engineering.oregonstate.edu/EECS), advised by [Mike Rosulek](https://web.engr.oregonstate.edu/~rosulekm/) and [Jiayu Xu](https://sites.google.com/view/jiayux). 
 
