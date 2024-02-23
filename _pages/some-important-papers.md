@@ -6,6 +6,10 @@ layout: default
 
 This is an (under-development) cryptography glossary that I am working on. In the past I've had a great deal of difficulty finding important or classical papers whenever I want them, so this is a series of links that lead to some important papers worth reading, sorted by category.
 
+<h3 style="color: #cc0000;">assumptions</h3>
+
++ [**The Decision Die-Hellman Problem**](https://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf) *In Proceedings of the Third Algorithmic Number Theory Symposium, Lecture Notes in Computer Science, Vol. 1423, Springer-Verlag, pp. 48--63, 1998.* A survey on DDH.
+
 <h3 style="color: #cc0000;">foundations</h3>
 
 + [**New Directions in Cryptography**](https://ieeexplore.ieee.org/document/1055638), *(1976), Diffie and Hellman*. Introduced  Public-Key Cryptography.
