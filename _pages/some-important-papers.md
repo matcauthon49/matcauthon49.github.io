@@ -8,7 +8,7 @@ This is an (under-development) cryptography glossary that I am working on. In th
 
 <h3 style="color: #cc0000;">assumptions</h3>
 
-+ [**The Decision Die-Hellman Problem**](https://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf) *In Proceedings of the Third Algorithmic Number Theory Symposium, Lecture Notes in Computer Science, Vol. 1423, Springer-Verlag, pp. 48--63, 1998.* A survey on DDH.
++ [**The Decision Diffie-Hellman Problem**](https://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf), *In Proceedings of the Third Algorithmic Number Theory Symposium, Lecture Notes in Computer Science, Vol. 1423, Springer-Verlag, pp. 48--63, 1998.* A survey on DDH.
 
 <h3 style="color: #cc0000;">foundations</h3>
 
