@@ -2,6 +2,11 @@
 layout: default
 ---
 
+<script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
+
 <h1 style="color: #cc0000;">some fun stuff</h1>
 
 I often find that these academic webpages serve as cookie-cutter enterprises devoted to being easy paper-finding resources. Which isn't really a bad thing, per se, but they do come off as devoid of personality; the subject usually ends up seeming stoic or unapproachable. It's why I usually like adding a some irrelevant information about myself. It's quite fun.
@@ -28,3 +33,8 @@ My area of interest is cryptography and theoretical computer science. Here's a l
 
 [This](https://lostmediawiki.com/Home) is the lost media wiki, one of my favorite websites. It's devoted to finding and archiving 'lost' media -- ie, media that was once available for public viewing but can no longer be found.
 
+<h2 style="color: #cc0000;">some open problems</h2>
+
++ **Zarankiewicz's Problem**. [Article](https://en.wikipedia.org/wiki/Zarankiewicz_problem). What is the maximum number of edges of a bipartite graph that does not contain $$K_{t,t}$$?
++ **Union-Closed Sets Conjecture**. [Article](https://gilkalai.wordpress.com/2022/11/17/amazing-justin-gilmer-gave-a-constant-lower-bound-for-the-union-closed-sets-conjecture/). Consider a family $$\mathcal{F}$$ of subsets of a set $$X$$ such that $$A,B\in\mathcal{F}$$ implies $$A\cup B\in\mathcal{F}$$. Then is there an element $$x\in X$$ such that $$d(x)\geq |\mathcal{F}|/2$$?
++ **Frankl's Antichain Conjecture**. Consider a convex family of subsets of $$[n]$$, where a family $$\mathcal{F}$$ is convex if $$A\subset B\subset C$$ and $$A$$ and $$C$$ in $$\mathcal{F}$$ implies that $$B\in\mathcal{F}$$. Then prove that there is an antichain $$\mathcal{G}$$ such that $$|\mathcal{G}|/|mathcal{F}|\geq \binom{n}{\lfloor n/2\rfloor}/2^n$$.
