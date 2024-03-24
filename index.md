@@ -22,4 +22,4 @@ My primary research interests lie in Theoretical Computer Science. Broadly speak
 
 <!-- My primary research interests lie in Cryptography and Theoretical Computer Science. Broadly speaking, I am interested in all aspects of theoretical and applied cryptography, though my work has largely been on [secure multi-party computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation). I am also interested in complexity theory, coding theory and more generally, algebra. -->
 
-Prior to this, I completed my undergraduate degree in Mathematics and Computer Science in 2023 at [Chennai Mathematical Institute](cmi.ac.in).
+Prior to this, I completed my undergraduate degree in Mathematics and Computer Science in 2023 at [Chennai Mathematical Institute](https://www.cmi.ac.in/).
