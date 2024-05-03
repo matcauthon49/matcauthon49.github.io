@@ -9,9 +9,9 @@ Authors are ordered alphabetically unless indicated otherwise.
 #### 2024
 
 + **10-Party Sublinear Secure Computation from Standard Assumptions.**
-    Geoffroy Couteau, *Naman Kumar*. <em>CRYPTO 2024.</em>
-    
-    [paper] [eprint]
+    Geoffroy Couteau, *Naman Kumar*.
+
+  **CRYPTO 2024.** [paper] [eprint]
 
 #### Manuscripts and other Unpublished Writings
 
