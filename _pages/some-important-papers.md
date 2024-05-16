@@ -8,6 +8,7 @@ This is an (under-development) cryptography glossary that I am working on. In th
 
 <h3 style="color: #cc0000;">my notes</h3>
 
++ [**A Note on Black-Box Separations and Key Agreement from OWFs**](https://matcauthon49.github.io/assets/black-box-note.pdf), an exposition on Impaliazzo and Rudich's 1989 result separating key agreement from one-way permutations.
 + [**Notes on O-Notation**](https://matcauthon49.github.io/assets/big-o-note.pdf), a short note I wrote on O-notation in undergrad.
 
 <h3 style="color: #cc0000;">assumptions</h3>
