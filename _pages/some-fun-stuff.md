@@ -19,17 +19,25 @@ I watch a lot of sports, though the only sport I regularly practice is running (
 
 At some point I gave the mathematical olympiad. I did pretty okay.
 
-<h2 style="color: #cc0000;">other random stuff</h2>
+<h2 style="color: #cc0000;">eight predictions for cryptography</h2>
+
+1. There is a polynomial-time classical algorithm for factoring.
+2. There is a polynomial-time quantum algorithm for LWE.
+3. There is a non-black-box construction of key exchange from OWFs.
+4. There will never be a quantum computer that will be able to factor a 2048-bit RSA modulus.
+5. There is a construction of FHE from non-lattice-based assumptions.
+6. There will never be a structural practical attack on SHA that uses the fact that it is not a random oracle.
+7. iO will never be practical.
+8. $$\mathsf{P}\neq\mathsf{NP}$$, but SETH is false.
+
+<h2 style="color: #cc0000;">some papers</h2>
 
 My area of interest is cryptography and theoretical computer science. Here's a list of some of my favorite papers.
 
 + **The Random Oracle Methodology, Revisited**. [Article](https://eprint.iacr.org/1998/011).
-+ **Separating Succinct Non-Interactive Arguments From All Falsifiable Assumptions**. [Article](https://eprint.iacr.org/2010/610).
-+ **An information-theoretic protocol compiler**. [Article](https://ieeexplore.ieee.org/document/6404657).
-+ **Interactive Oracle Proofs**. [Article](https://eprint.iacr.org/2016/116).
-+ **The Hunting of the SNARK**. [Article](https://eprint.iacr.org/2014/580).
-+ **The PCP Theorem by Gap Amplification**. [Article](https://www.wisdom.weizmann.ac.il/~dinuri/mypapers/combpcp.pdf).
-+ **Undirected Connectivity in Log-Space**. [Article](https://omereingold.files.wordpress.com/2014/10/sl.pdf).
++ **A Proof of Security of Yao’s Protocol for Two-Party Computation**. [Article](https://eprint.iacr.org/2021/1453).
++ **The Rise of Paillier: Homomorphic Secret Sharing and Public-Key Silent OT**. [Article](https://eprint.iacr.org/2021/262).
++ **Extending Oblivious Transfers Efficiently**. [Article](https://www.iacr.org/archive/crypto2003/27290145/27290145.pdf).
 
 [This](https://lostmediawiki.com/Home) is the lost media wiki, one of my favorite websites. It's devoted to finding and archiving 'lost' media -- ie, media that was once available for public viewing but can no longer be found.
 
