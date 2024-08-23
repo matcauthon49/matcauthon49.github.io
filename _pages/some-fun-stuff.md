@@ -17,6 +17,8 @@ I like travelling quite a bit and I've lived in a bunch of different places in m
 
 I watch a lot of sports, though the only sport I regularly practice is running (and hiking? if you can call it one). I support Manchester United for no good reason, and I also have a soft spot for Borussia Dortmund. I also watch Formula 1, where I support McLaren. I enjoy arguing about football and F1. If you ever want to pick a fight, let me know. I'd be happy to oblige.
 
+[This](https://lostmediawiki.com/Home) is the lost media wiki, one of my favorite websites. It's devoted to finding and archiving 'lost' media -- ie, media that was once available for public viewing but can no longer be found.
+
 At some point I gave the mathematical olympiad. I did pretty okay.
 
 <h2 style="color: #cc0000;">eight predictions for cryptography</h2>
@@ -30,6 +32,8 @@ At some point I gave the mathematical olympiad. I did pretty okay.
 7. iO will never be practical.
 8. $$\mathsf{P}\neq\mathsf{NP}$$, but SETH is false.
 
+I believe human beings are very bad at constructing algorithms; we have only ever found the easy ones.
+
 <h2 style="color: #cc0000;">some papers</h2>
 
 My area of interest is cryptography and theoretical computer science. Here's a list of some of my favorite papers.
@@ -38,8 +42,6 @@ My area of interest is cryptography and theoretical computer science. Here's a l
 + **A Proof of Security of Yao’s Protocol for Two-Party Computation**. [Article](https://eprint.iacr.org/2021/1453).
 + **The Rise of Paillier: Homomorphic Secret Sharing and Public-Key Silent OT**. [Article](https://eprint.iacr.org/2021/262).
 + **Extending Oblivious Transfers Efficiently**. [Article](https://www.iacr.org/archive/crypto2003/27290145/27290145.pdf).
-
-[This](https://lostmediawiki.com/Home) is the lost media wiki, one of my favorite websites. It's devoted to finding and archiving 'lost' media -- ie, media that was once available for public viewing but can no longer be found.
 
 <h2 style="color: #cc0000;">some open problems</h2>
 
