@@ -27,7 +27,7 @@ At some point I gave the mathematical olympiad. I did pretty okay.
 2. There is a polynomial-time quantum algorithm for LWE.
 3. There is a non-black-box construction of key exchange from OWFs.
 4. There will never be a quantum computer that will be able to factor a 2048-bit RSA modulus.
-5. There is a construction of FHE from non-lattice-based assumptions.
+5. There is a (useful) construction of FHE from non-lattice-based assumptions.
 6. There will never be a structural practical attack on SHA that uses the fact that it is not a random oracle.
 7. iO will never be practical.
 8. $$\mathsf{P}\neq\mathsf{NP}$$, but SETH is false.
