@@ -16,7 +16,7 @@ layout: default
 
 <img align="left" src="./assets/pic3.jpg" alt="me" width="200"/>
 
-Hi! I'm a first year PhD student in the Department of Electrical Engineering and Computer Science at [Oregon State University](https://engineering.oregonstate.edu/EECS), advised by [Mike Rosulek](https://web.engr.oregonstate.edu/~rosulekm/) and [Jiayu Xu](https://sites.google.com/view/jiayux). 
+Hi! I'm a graduate student in the Department of Electrical Engineering and Computer Science at [Oregon State University](https://engineering.oregonstate.edu/EECS), advised by [Mike Rosulek](https://web.engr.oregonstate.edu/~rosulekm/) and [Jiayu Xu](https://sites.google.com/view/jiayux). 
 
 My primary research interests lie in Theoretical Computer Science. Broadly speaking, I am interested in complexity theory and the foundations of cryptography.
 
