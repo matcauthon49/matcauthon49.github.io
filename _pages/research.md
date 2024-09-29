@@ -11,9 +11,9 @@ Authors are ordered alphabetically unless indicated otherwise.
 + **10-Party Sublinear Secure Computation from Standard Assumptions.**
     Geoffroy Couteau, *Naman Kumar*.
 
-  **CRYPTO 2024.** [paper] [eprint]
+  **CRYPTO 2024.** [[paper](https://link.springer.com/chapter/10.1007/978-3-031-68400-5_2)] [eprint]
 
 #### Manuscripts and other Unpublished Writings
 
 + **Private Information Retrieval with Guaranteed Output Delivery.**
-    Divyanshu Bhardwaj, Nishanth Chandran, Divya Gupta, *Naman Kumar*, Sai Lakshmi Bhavana Obbattu, Akshayaram Srinivasan. <em>Preprint.</em>
+    Divyanshu Bhardwaj, Nishanth Chandran, Divya Gupta, *Naman Kumar*, Sai Lakshmi Bhavana Obbattu, Akshayaram Srinivasan. <em>Ask for access.</em>
