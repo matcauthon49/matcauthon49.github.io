@@ -9,8 +9,7 @@ Authors are ordered alphabetically unless indicated otherwise.
 #### Preprints
 
 + **Breaking the $1/\lambda$-Rate Arithmetic Garbling Barrier.**
-  <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, <a href="https://www.eng.biu.ac.il/hazay/" style="color: DarkSlateGray">Carmit Hazay</a>, <a href="https://adishegde.github.io/" style="color: DarkSlateGray">Aditya Shridhar Hegde
-</a>, Naman Kumar.
+  <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, <a href="https://www.eng.biu.ac.il/hazay/" style="color: DarkSlateGray">Carmit Hazay</a>, <a href="https://adishegde.github.io/" style="color: DarkSlateGray">Aditya Shridhar Hegde</a>, Naman Kumar.
 
   _Preprint._ [paper] [eprint]
 
