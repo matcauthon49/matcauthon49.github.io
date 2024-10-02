@@ -2,11 +2,16 @@
 layout: default
 ---
 
+<script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
+
 <h1 style="color: #cc0000;">Research</h1>
 
 Authors are ordered alphabetically unless indicated otherwise.
 
-<!--
+
 #### Preprints
 
 + **Breaking the $1/\lambda$-Rate Arithmetic Garbling Barrier.**
@@ -14,7 +19,6 @@ Authors are ordered alphabetically unless indicated otherwise.
 
   _Preprint._ [paper] [eprint]
 
--->
 
 #### 2024
 
