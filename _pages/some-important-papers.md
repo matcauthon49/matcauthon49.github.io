@@ -14,7 +14,9 @@ This is an (under-development) cryptography glossary that I am working on. In th
 
 <h3 style="color: #cc0000;">assumptions</h3>
 
-+ [**The Decision Diffie-Hellman Problem**](https://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf), *In Proceedings of the Third Algorithmic Number Theory Symposium, Lecture Notes in Computer Science, Vol. 1423, Springer-Verlag, pp. 48--63, 1998.* A survey on DDH.
++ [**The Decision Diffie-Hellman Problem**](https://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf), *(1998), Boneh.* A survey on DDH.
+
++ [**Public-Key Cryptosystems Based on Composite Degree Residuosity Classes**](https://link.springer.com/chapter/10.1007/3-540-48910-X_16), *(1999), Paillier.* Introduced DCR and variants.
 
 <h3 style="color: #cc0000;">foundations</h3>
 
@@ -28,3 +30,8 @@ This is an (under-development) cryptography glossary that I am working on. In th
 
 + [**On the (Im)possibility of Obfuscating Programs**](https://www.boazbarak.org/Papers/obfuscate.pdf), *(2001), Barak, Goldreich, Impagliazzo, Rudich, Sahai, Vadhan, Yang*. Shows the impossibility of software obfuscation.
 
+<h3 style="color: #cc0000;">encryption</h3>
+
++ [**Design and Analysis of Practical Public-Key Encryption Schemes Secure against Adaptive Chosen Ciphertext Attack**](https://eprint.iacr.org/2001/108), *(2001), Cramer, Shoup.* A CCA-Secure Encryption Scheme based on DDH.
+
++ [**Circular and Leakage Resilient Public-Key Encryption Under Subgroup Indistinguishability (or: Quadratic Residuosity Strikes Back)**](https://eprint.iacr.org/2010/226), *(2010), Brakerski, Goldwasser.* A provably KDM-secure encryption scheme from QR, DCR and related assumptions.
