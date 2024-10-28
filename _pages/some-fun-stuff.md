@@ -42,8 +42,11 @@ My area of interest is cryptography and theoretical computer science. Here's a l
 + **A Proof of Security of Yao’s Protocol for Two-Party Computation**. [Article](https://eprint.iacr.org/2021/1453).
 + **The Rise of Paillier: Homomorphic Secret Sharing and Public-Key Silent OT**. [Article](https://eprint.iacr.org/2021/262).
 + **Extending Oblivious Transfers Efficiently**. [Article](https://www.iacr.org/archive/crypto2003/27290145/27290145.pdf).
++ **Two Halves Make a Whole: Reducing Data Transfer in Garbled Circuits using Half Gates**. [Article](https://eprint.iacr.org/2014/756).
 
 <h2 style="color: #cc0000;">some open problems</h2>
+
+While I work in cryptography, I like pretty much all kinds of math, including but not limited to: complexity theory, algorithms, combinatorics (especially extremal), number theory and algebraic geometry. Here are some open problems you probably won't solve.
 
 + **Zarankiewicz's Problem**. [Article](https://en.wikipedia.org/wiki/Zarankiewicz_problem). What is the maximum number of edges of a bipartite graph that does not contain $$K_{t,t}$$?
 + **Union-Closed Sets Conjecture**. [Article](https://gilkalai.wordpress.com/2022/11/17/amazing-justin-gilmer-gave-a-constant-lower-bound-for-the-union-closed-sets-conjecture/). Consider a family $$\mathcal{F}$$ of subsets of a set $$X$$ such that $$A,B\in\mathcal{F}$$ implies $$A\cup B\in\mathcal{F}$$. Then is there an element $$x\in X$$ such that $$d(x)\geq \|\mathcal{F}\|/2$$?
