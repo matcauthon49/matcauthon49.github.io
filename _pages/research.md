@@ -14,6 +14,11 @@ Authors are ordered alphabetically unless indicated otherwise.
 
 #### 2024
 
++ **On the UC-(In)security of PAKE Protocols in the Plain Model.**
+  Naman Kumar, <a href="https://sites.google.com/view/jiayux" style="color: DarkSlateGray">Jiayu Xu</a>.
+
+  _Preprint._ [paper][eprint]
+
 + **Breaking the $$1/\lambda$$-Rate Arithmetic Garbling Barrier.**
   <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, <a href="https://www.eng.biu.ac.il/hazay/" style="color: DarkSlateGray">Carmit Hazay</a>, <a href="https://adishegde.github.io/" style="color: DarkSlateGray">Aditya Shridhar Hegde</a>, Naman Kumar.
 
