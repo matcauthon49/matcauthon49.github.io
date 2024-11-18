@@ -21,6 +21,9 @@ I watch a lot of sports, though the only sport I regularly practice is running (
 
 At some point I gave the mathematical olympiad. I did pretty okay.
 
+
+<!--
+
 <h2 style="color: #cc0000;">eight predictions for cryptography</h2>
 
 1. There is a polynomial-time classical algorithm for factoring.
@@ -33,6 +36,8 @@ At some point I gave the mathematical olympiad. I did pretty okay.
 8. $$\mathsf{P}\neq\mathsf{NP}$$, but SETH is false.
 
 I believe human beings are very bad at constructing algorithms; we have only ever found the easy ones.
+
+-->
 
 <h2 style="color: #cc0000;">some papers</h2>
 
