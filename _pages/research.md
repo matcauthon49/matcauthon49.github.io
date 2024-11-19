@@ -27,7 +27,7 @@ Authors are ordered alphabetically unless indicated otherwise.
 + **10-Party Sublinear Secure Computation from Standard Assumptions.**
     <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, Naman Kumar.
 
-  **CRYPTO 2024.** [[paper](https://link.springer.com/chapter/10.1007/978-3-031-68400-5_2)] [eprint]
+  **CRYPTO 2024.** [[paper](https://link.springer.com/chapter/10.1007/978-3-031-68400-5_2)] [eprint] [[slides from my talk](https://matcauthon49.github.io/assets/10-party-pres.pdf)]
 
 #### Manuscripts and other Unpublished Writings
 
