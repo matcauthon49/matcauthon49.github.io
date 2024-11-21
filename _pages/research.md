@@ -24,7 +24,7 @@ Authors are ordered alphabetically unless indicated otherwise.
 
   _Preprint._ [paper] [eprint]
   
-  A preliminary version of this paper will be presented at [TPMPC '25](https://www.multipartycomputation.com/tpmpc-2025).
+  **A preliminary version of this paper will be presented at** [TPMPC '25](https://www.multipartycomputation.com/tpmpc-2025).
 
 + **10-Party Sublinear Secure Computation from Standard Assumptions.**
     <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, Naman Kumar.
