@@ -23,6 +23,7 @@ Authors are ordered alphabetically unless indicated otherwise.
   <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, <a href="https://www.eng.biu.ac.il/hazay/" style="color: DarkSlateGray">Carmit Hazay</a>, <a href="https://adishegde.github.io/" style="color: DarkSlateGray">Aditya Shridhar Hegde</a>, Naman Kumar.
 
   _Preprint._ [paper] [eprint]
+  
   A preliminary version of this paper will be presented at [TPMPC '25](https://www.multipartycomputation.com/tpmpc-2025).
 
 + **10-Party Sublinear Secure Computation from Standard Assumptions.**
