@@ -5,7 +5,7 @@ author:
   name: Naman Kumar # Your name
   email: kumarnam@oregonstate.edu
 
-description: Jekyll academic is a lightweight theme for any academic usecase. Perfect for portfolio websites, blogs, and academia # description of your site
+description: Doing cryptography since... 23? # description of your site
 
 url: "https://matcauthon49.github.io" # The base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # The subpath of your site, e.g. /blog
