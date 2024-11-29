@@ -34,4 +34,4 @@ Authors are ordered alphabetically unless indicated otherwise.
 #### Manuscripts and other Unpublished Writings
 
 + **Private Information Retrieval with Guaranteed Output Delivery.**
-    Divyanshu Bhardwaj, Nishanth Chandran, Divya Gupta, *Naman Kumar*, Sai Lakshmi Bhavana Obbattu, Akshayaram Srinivasan. <em>Ask for access.</em>
+    Divyanshu Bhardwaj, Nishanth Chandran, Divya Gupta, *Naman Kumar*, Sai Lakshmi Bhavana Obbattu, Akshayaram Srinivasan. [Paper.](https://matcauthon49.github.io/assets/PIR_with_GOD.pdf)
