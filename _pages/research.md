@@ -14,7 +14,7 @@ Authors are ordered alphabetically unless indicated otherwise.
 
 #### 2024
 
-+ **On the UC-(In)security of PAKE Protocols in the Random Oracle Model.**
++ **On the UC-(In)security of PAKE Protocols without Random Oracles.**
   Naman Kumar, <a href="https://sites.google.com/view/jiayux" style="color: DarkSlateGray">Jiayu Xu</a>.
 
   _Preprint._ [paper] [eprint]
