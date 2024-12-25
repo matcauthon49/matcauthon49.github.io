@@ -13,7 +13,7 @@ baseurl: "" # The subpath of your site, e.g. /blog
 jekyllacademic:
   homepage_title: "Naman Kumar" # Your homepage title
   disqusname: # Your disqus sitename
-  footer: Naman Kumar, 2023 # Your name, Year
+  footer: Naman Kumar, 2025 # Your name, Year
   contentlicense: "MIT" # Choose either one of these to put: MIT, Commons Clause, CC BY 4.0, CC BY-NC 4.0, CC BY-ND 4.0, CC BY-NC-ND 4.0, CC BY-NC-SA 4.0, CC BY-NC-SA 4.0, CC BY-SA 4.0
   socials:
     instagram: matcauthon91 # Your twitter username
