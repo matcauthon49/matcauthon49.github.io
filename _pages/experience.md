@@ -8,7 +8,7 @@ I've worked on a variety of different projects as an intern or as a contributor.
 
 #### 2024
 
-+ **Research Intern, Institut de Recherche en Informatique Fondamentale.** (May 2023 - July 2023).
++ **Research Intern, Institut de Recherche en Informatique Fondamentale.** (June 2024 - September 2024).
 
     Advised by Geoffroy Couteau.
 
