@@ -11,6 +11,7 @@ This is an (under-development) cryptography glossary that I am working on. In th
 + [**A Note on Black-Box Separations and Key Agreement from OWFs**](https://matcauthon49.github.io/assets/black-box-note.pdf), an exposition on Impaliazzo and Rudich's 1989 result separating key agreement from one-way permutations.
 + [**Notes on Finite Fields**](https://matcauthon49.github.io/assets/ff.pdf), a brief primer on finite fields.
 + [**Notes on O-Notation**](https://matcauthon49.github.io/assets/big-o-note.pdf), a short note I wrote on O-notation in undergrad.
++ [**Packed Secret Sharing**](https://matcauthon49.github.io/assets/secret-sharing.pdf), a short note that explains the multi-secret sharing procedure of [FY92].
 
 <h3 style="color: #cc0000;">assumptions</h3>
 
