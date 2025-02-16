@@ -17,6 +17,8 @@ Authors are ordered alphabetically unless indicated otherwise.
 + **Multiparty Homomorphic Secret Sharing and more from LPN and MQ.**
   <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, Naman Kumar, <a href="https://www.linkedin.com/in/ye-xiaxi-a9a3771b8" style="color: DarkSlateGray">Xiaxi Ye<a/>.
 
+  _Under submission._ [paper] [eprint]
+
 + **Boolean Garbling Beyond $$\lambda$$-Bit per Gate from Group-Based Assumptions.**
   <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, <a href="https://www.eng.biu.ac.il/hazay/" style="color: DarkSlateGray">Carmit Hazay</a>, <a href="https://adishegde.github.io/" style="color: DarkSlateGray">Aditya Hegde</a>, Naman Kumar.
 
