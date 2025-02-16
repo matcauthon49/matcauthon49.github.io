@@ -14,13 +14,21 @@ Authors are ordered alphabetically unless indicated otherwise.
 
 #### 2025
 
++ **Multiparty Homomorphic Secret Sharing and more from LPN and MQ.**
+  <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, Naman Kumar, <a href="https://www.linkedin.com/in/ye-xiaxi-a9a3771b8" style="color: DarkSlateGray">Xiaxi Ye<a/>.
+
++ **Boolean Garbling Beyond $$\lambda$$-Bit per Gate from Group-Based Assumptions.**
+  <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, <a href="https://www.eng.biu.ac.il/hazay/" style="color: DarkSlateGray">Carmit Hazay</a>, <a href="https://adishegde.github.io/" style="color: DarkSlateGray">Aditya Hegde</a>, Naman Kumar.
+
+  _Under submission._ [paper] [eprint]
+
 + **On the UC-(In)security of PAKE Protocols without Random Oracles.**
   Naman Kumar, <a href="https://sites.google.com/view/jiayux" style="color: DarkSlateGray">Jiayu Xu</a>.
 
-  _Preprint._ [paper] [eprint]
+  _Under submission._ [paper] [eprint]
 
 + **Breaking the $$1/\lambda$$-Rate Arithmetic Garbling Barrier.**
-  <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, <a href="https://www.eng.biu.ac.il/hazay/" style="color: DarkSlateGray">Carmit Hazay</a>, <a href="https://adishegde.github.io/" style="color: DarkSlateGray">Aditya Shridhar Hegde</a>, Naman Kumar.
+  <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, <a href="https://www.eng.biu.ac.il/hazay/" style="color: DarkSlateGray">Carmit Hazay</a>, <a href="https://adishegde.github.io/" style="color: DarkSlateGray">Aditya Hegde</a>, Naman Kumar.
 
   **EUROCRYPT 2025.** [paper] [eprint]
 
