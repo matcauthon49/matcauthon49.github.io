@@ -19,10 +19,10 @@ Authors are ordered alphabetically unless indicated otherwise.
 
   _Under submission._ [paper] [eprint]
 
-+ **Boolean Garbling Beyond $$\lambda$$-Bit per Gate from Group-Based Assumptions.**
++ **$$\omega(1/\lambda)-Rate Boolean Garbling Scheme from Generic Groups.$$**
   <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, <a href="https://www.eng.biu.ac.il/hazay/" style="color: DarkSlateGray">Carmit Hazay</a>, <a href="https://adishegde.github.io/" style="color: DarkSlateGray">Aditya Hegde</a>, Naman Kumar.
 
-  _Under submission._ [paper] [eprint]
+  _Under submission._ [paper] [[eprint](https://eprint.iacr.org/2025/268.pdf)]
 
 + **On the UC-(In)security of PAKE Protocols without Random Oracles.**
   Naman Kumar, <a href="https://sites.google.com/view/jiayux" style="color: DarkSlateGray">Jiayu Xu</a>.
@@ -41,7 +41,7 @@ Authors are ordered alphabetically unless indicated otherwise.
 + **10-Party Sublinear Secure Computation from Standard Assumptions.**
     <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, Naman Kumar.
 
-  **CRYPTO 2024.** [[paper](https://link.springer.com/chapter/10.1007/978-3-031-68400-5_2)] [eprint] [[slides from my talk](https://matcauthon49.github.io/assets/10-party-pres.pdf)]
+  **CRYPTO 2024.** [[paper](https://link.springer.com/chapter/10.1007/978-3-031-68400-5_2)] [[eprint](https://eprint.iacr.org/2025/269)] [[slides from my talk](https://matcauthon49.github.io/assets/10-party-pres.pdf)]
 
 #### Manuscripts and other Unpublished Writings
 
