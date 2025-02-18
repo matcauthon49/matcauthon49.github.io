@@ -19,7 +19,7 @@ Authors are ordered alphabetically unless indicated otherwise.
 
   _Under submission._ [paper] [eprint]
 
-+ **$$\omega(1/\lambda)-Rate Boolean Garbling Scheme from Generic Groups.$$**
++ **$$\omega(1/\lambda)$$-Rate Boolean Garbling Scheme from Generic Groups.**
   <a href="https://geoffroycouteau.github.io/" style="color: DarkSlateGray">Geoffroy Couteau</a>, <a href="https://www.eng.biu.ac.il/hazay/" style="color: DarkSlateGray">Carmit Hazay</a>, <a href="https://adishegde.github.io/" style="color: DarkSlateGray">Aditya Hegde</a>, Naman Kumar.
 
   _Under submission._ [paper] [[eprint](https://eprint.iacr.org/2025/268.pdf)]
