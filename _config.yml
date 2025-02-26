@@ -1,5 +1,5 @@
-title: Naman Kumar
-navbar_title: Naman Kumar
+title: > naman kumar
+navbar_title: naman numar
 
 author:
   name: Naman Kumar # Your name
@@ -11,7 +11,7 @@ url: "https://matcauthon49.github.io" # The base hostname & protocol for your si
 baseurl: "" # The subpath of your site, e.g. /blog
 
 jekyllacademic:
-  homepage_title: "Naman Kumar" # Your homepage title
+  homepage_title: "naman kumar" # Your homepage title
   disqusname: # Your disqus sitename
   footer: Naman Kumar, 2025 # Your name, Year
   contentlicense: "MIT" # Choose either one of these to put: MIT, Commons Clause, CC BY 4.0, CC BY-NC 4.0, CC BY-ND 4.0, CC BY-NC-ND 4.0, CC BY-NC-SA 4.0, CC BY-NC-SA 4.0, CC BY-SA 4.0
