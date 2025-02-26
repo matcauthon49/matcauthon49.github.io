@@ -1,6 +1,6 @@
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
-$bodyFont: Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: "Open Sans Light 300",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 html {
   position: relative;
@@ -11,7 +11,7 @@ body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
-  font-size: 11px;
+  font-size: 12px;
   margin-bottom: 40px;
 }
 
