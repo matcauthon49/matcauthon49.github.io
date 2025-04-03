@@ -13,7 +13,7 @@ I often find that these academic webpages serve as cookie-cutter enterprises dev
 
 <h2 style="color: #cc0000;">about me</h2>
 
-I like travelling quite a bit and I've lived in a bunch of different places in my life. My favorite among these places is probably Bangalore, which happens to be my hometown, followed shortly by Paris. I also spent a fantastic year and a half in Chennai. Sometimes I write about these things. I also write short stories, satirical articles, and ocassionally poetry, although I've only recently started uploading some of my work. You can find it [here](https://unfortunateepigraphies.substack.com/). It's not a very good website, but I guess it suffices. Eventually I'd like to make something out of writing.
+I like travelling quite a bit and I've lived in a bunch of different places in my life. My favorite among these places is probably Bangalore, which happens to be my hometown, followed shortly by Paris. I also spent a fantastic year and a half in Chennai. Sometimes I write about these things. I also write short stories, satirical articles, and ocassionally poetry, although I've only recently started uploading some of my work. You can find it [here](). It's not a very good website, but I guess it suffices. Eventually I'd like to make something out of writing.
 
 I watch a lot of sports, though the only sport I regularly practice is running (and hiking? if you can call it one). I support Manchester United for no good reason, and I also have a soft spot for Borussia Dortmund. I also watch Formula 1, where I support McLaren. I enjoy arguing about football and F1. If you ever want to pick a fight, let me know. I'd be happy to oblige.
 
