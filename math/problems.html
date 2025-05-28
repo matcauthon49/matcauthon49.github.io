@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>> naman kumar</title>
+    <meta name="description" content="naman's homepage">
+    <meta name="keywords" content="naman kumar cryptography math">
+
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <script type="text/javascript" src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#addNav").load("https://matcauthon49.github.io/assets/nav.html"); 
+    });
+    </script> 
+
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+
+<body>
+    <div class="wrap">
+        <div class="nav">
+            <div id="addNav"></div>
+        </div>
+
+        <div class="main">
+        <div class="mainbox">
+            <h1>some-math-problems</h1>
+            <p>combinatorics problems you should (probably not) try.</p>
+            
+            <h3>> <u>zarankiewicz's problem</u></h3>
+            <p><b>the problem:</b> <i>what is the maximum number of edges of a bipartite graph that does not contain \(K_{t,t}\)?</i></p>
+            <p>notice that this is easy to rephrase as a problem on matrices (the context in which it was originally posed). represent any graph by its adjacency matrix - a matrix of size \(n^2\), where the \(ij\) entry is \(1\) iff \(i\) and \(j\) share an edge. if this graph is a complete bipartite graph then the adjacency matrix contains a rectangle  (or submatrix) entirely of \(1\)s.</p>
+            <p>in general, any graph that contains \(K_{t,t}\) has a \(t\)-sized rectangle formed of \(1\)s. a general closed form for the size of the maximum possible graph is not known. some bounds were shown by erdos. it is suspected that x is the case.</p>
+
+            <h3>> <u>union-closed sets conjecture</u></h3>
+            <p><b>the problem:</b> <i>consider a family \(\mathcal{F}\) of subsets of a set \(X\) such that \(A,B\in\mathcal{F}\) implies \(A\cup B\in\mathcal{F}\). then is there an element \(x\in X\) such that \(d(x)\geq \|\mathcal{F}\|/2\)?</i></p>
+
+            <h3>> <u>frankl's antichain conjecture</u></h3>
+            <p><b>the problem:</b> <i>consider a family \(\mathcal{F}\) of subsets of a set \(X\) such that \(A,B\in\mathcal{F}\) implies \(A\cup B\in\mathcal{F}\). then is there an element \(x\in X\) such that \(d(x)\geq \|\mathcal{F}\|/2\)?</i></p>
+        </div>
+        </div>
+</body>
+
+</html>

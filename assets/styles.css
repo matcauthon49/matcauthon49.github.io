@@ -1,0 +1,247 @@
+body {
+    background-color: white;
+    font-family: "helvetica", sans-serif;
+    font-weight: 300;
+  }
+  
+h1 {
+    color: black;
+    font-size: 125%;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 2em;
+  }
+  
+p {
+    font-family: "helvetica", sans-serif;
+    font-size: 20px;
+  }
+
+.wrap {
+    width: 100%;
+    overflow:auo;
+  }
+
+a.mainlink:link {
+    color: forestgreen;
+    text-decoration: none;
+}
+
+a.mainlink:visited {
+    color: forestgreen;
+    text-decoration: none;
+}
+
+a.mainlink:active {
+  color: forestgreen;
+}
+
+a.mainlink:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a.author:link {
+  color: grey;
+  text-decoration: none;
+}
+
+a.author:visited {
+  color: grey;
+  text-decoration: none;
+}
+
+a.author:active {
+color: grey;
+}
+
+a.author:hover {
+color: grey;
+text-decoration: underline;
+}
+
+.nav {
+    float: left; 
+    width: 10%;
+    background:white;;
+
+    p {
+      font-size: 75%;
+      text-align: right;
+      margin: 0;
+    }
+
+    p.hdrone {
+      font-size: 80%;
+      margin-top: 4em;
+      font-weight: normal;
+    }
+
+    p.disclaimer {
+      font-size: 40%;
+      margin-top: 20em;
+      font-family: "Helvetica", sans-serif;
+    }
+
+    p.hdrtwo {
+      margin-top: 1em;
+      margin-bottom: 0.25em;
+    }
+
+    p.baby {
+      color: gray;
+    }
+
+    a.hdr:link {
+      color: black;
+      text-decoration: none;
+    }
+
+    a.par:link {
+      color: grey;
+      text-decoration: none;
+    }
+
+    a.par:visited {
+      color: grey;
+      text-decoration: none;
+    }
+
+    a:active {
+      color: black;
+    }
+
+    a.hdr:visited {
+      color: black;
+    }
+
+    a.hdr:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    a.par:hover {
+      text-decoration: underline;
+    }
+}
+
+ol {
+  color: black;
+  font-size: 80%;
+}
+
+.main {
+  float: right; 
+  width: 86%;
+  background:white;
+
+  p {
+    font-size: 75%;
+  }
+
+  p.maintext {
+    margin-top: 1em;
+    margin-bottom: 0.5%;
+  }
+
+  h2 {
+    color: black;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 1%;
+    margin-top: 1em;
+  }
+
+  h3 {
+    color: black;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 1%;
+    margin-top: 2em;
+  }
+
+  ul {
+    color: black;
+    font-size: 75%;
+    margin: 0;
+    list-style: none;
+    padding-left: 3em;
+  }
+
+  li.hd {
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  li.notelist {
+    padding-top: 1%;
+  }
+
+  li.authors {
+    color: grey;
+    padding-top: 0.5%;
+    padding-left: 2em;
+  }
+
+  li.conference {
+    padding-top: 0.5%;
+    padding-left: 2em;
+  }
+
+  li.links {
+    color: grey;
+    font-weight: normal;
+    padding-top: 0.5%;
+    padding-left: 2em;
+  }
+
+  li.space {
+    padding: 1em;
+  }
+
+  a.print {
+    color: forestgreen;
+    text-decoration: none;
+  }
+
+  a.print:hover {
+    text-decoration: underline;
+  }
+
+  a.print:visited {
+    color: forestgreen;
+  }
+
+  
+}
+
+.mainbox {
+  float: left;
+  width: 70%;
+}
+
+#foot {
+  position : absolute;
+  left: 45%;
+  bottom : 0;
+  height : 1em;
+  margin-top : 1em;
+  margin-bottom: 1.25%;
+
+  p {
+    font-size: 60%;
+    font-family: "Helvetica", sans-serif;
+  }
+
+  a.disclaimer {
+    color: black;
+    text-decoration: none;
+  }
+
+  a.disclaimer:hover {
+    color: black;
+    text-decoration: underline;
+  }
+}
