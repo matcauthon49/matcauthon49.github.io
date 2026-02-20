@@ -1,1363 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>naman kumar - cryptographer</title>
-    <link rel="icon" type="image/png" href="fav.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>    <style>
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            font-weight: 300;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #333;
-            line-height: 1.6;
-            transition: background-color 0.3s, color 0.3s;
-            position: relative;
-            overflow-x: hidden;
-        }
-        body::before {
-            content: '';
-            position: absolute;
-            top: 5%;
-            left: -5%;
-            width: 300px;
-            height: 300px;
-            opacity: 0.08;
-            z-index: -1;
-            transform: rotate(-15deg) skew(5deg);
-        }
-        body::after {
-            content: '';
-            position: absolute;
-            bottom: 10%;
-            right: -10%;
-            width: 250px;
-            height: 250px;
-            opacity: 0.1;
-            z-index: -1;
-            transform: rotate(25deg) scale(1.2);
-        }
-        .art-element {
-            position: absolute;
-            z-index: -1;
-            opacity: 0.07;
-        }
-        .art-element:nth-child(1) {
-            top: 20%;
-            right: 5%;
-            width: 120px;
-            height: 120px;
-            background: #A1887F;
-            clip-path: polygon(50% 0%, 100% 25%, 75% 75%, 25% 100%, 0% 50%);
-            transform: rotate(67deg) skew(-10deg);
-        }
-        .art-element:nth-child(2) {
-            top: 60%;
-            left: 5%;
-            width: 100px;
-            height: 100px;
-            background: #FFCC80;
-            clip-path: polygon(10% 10%, 90% 0%, 100% 90%, 20% 100%, 0% 30%);
-            transform: rotate(-45deg) scale(0.8);
-        }
-        body.dark-mode {
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            flex-shrink: 0;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            font-size: 1.2em;
-            color: #666;
-        }
-        body.dark-mode .subtitle {
-            color: #aaa;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        #about {
-            background-color: #f0f9f0;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-        }
-        body.dark-mode #about {
-            background-color: #1e3a1e;
-        }
-        .about-content {
-            flex: 1;
-        }
-        h2 {
-            border-bottom: 1px solid #e8f5e8;
-            padding-bottom: 10px;
-            font-size: 1.5em;
-        }
-        body.dark-mode h2 {
-            border-bottom-color: #2e4d2e;
-        }
-        h3 {
-            font-size: 1.2em;
-            color: #666;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        body.dark-mode h3 {
-            color: #aaa;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .publication-list li {
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
-        .pub-title {
-            font-weight: bold;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-        }
-        .pub-venue {
-            font-weight: bold;
-            color: #4CAF50;
-            margin-bottom: 5px;
-        }
-        .pub-details {
-            font-size: 0.9em;
-            color: #666;
-        }
-        .toggle-symbol {
-            font-weight: bold;
-            font-size: 1.2em;
-            cursor: pointer;
-            color: #4CAF50;
-            margin-left: 10px;
-        }
-        @keyframes glitch {
-            0% { transform: translate(0); filter: hue-rotate(0deg); }
-            10% { transform: translate(-1px, 1px); filter: hue-rotate(90deg); }
-            20% { transform: translate(-1px, -1px); filter: hue-rotate(180deg); }
-            30% { transform: translate(1px, 1px); filter: hue-rotate(270deg); }
-            40% { transform: translate(1px, -1px); filter: hue-rotate(0deg); }
-            50% { transform: translate(-2px, 2px); filter: hue-rotate(90deg); text-shadow: 2px 0 #ff0000, -2px 0 #00ff00; }
-            60% { transform: translate(-2px, -2px); filter: hue-rotate(180deg); text-shadow: 2px 0 #0000ff, -2px 0 #ff00ff; }
-            70% { transform: translate(2px, 2px); filter: hue-rotate(270deg); text-shadow: -2px 0 #ffff00, 2px 0 #00ffff; }
-            80% { transform: translate(2px, -2px); filter: hue-rotate(0deg); text-shadow: 1px 1px #ff0000, -1px -1px #00ff00; }
-            90% { transform: translate(0); filter: hue-rotate(90deg); text-shadow: 0 0 #000; }
-            100% { transform: translate(0); filter: hue-rotate(0deg); text-shadow: none; }
-        }
-        .glitch {
-            animation: glitch 0.5s ease-in-out;
-        }
-        /* Glitchy link effects */
-        a {
-            transition: all 0.2s ease;
-            position: relative;
-        }
-        a:hover {
-            animation: link-glitch 0.3s ease-in-out;
-        }
-        @keyframes link-glitch {
-            0% { transform: translateX(0) skew(0deg); filter: hue-rotate(0deg); }
-            25% { transform: translateX(-2px) skew(-1deg); filter: hue-rotate(90deg); color: #ff6b6b; }
-            50% { transform: translateX(2px) skew(1deg); filter: hue-rotate(180deg); color: #4ecdc4; }
-            75% { transform: translateX(-1px) skew(-0.5deg); filter: hue-rotate(270deg); color: #ffe66d; }
-            100% { transform: translateX(0) skew(0deg); filter: hue-rotate(360deg); color: #a8e6cf; }
-        }
-        /* Random movement on hover for certain elements */
-        .pub-title:hover, .toggle-symbol:hover {
-            animation: random-jitter 0.4s ease-in-out;
-        }
-        @keyframes random-jitter {
-            0% { transform: translate(0, 0) rotate(0deg); }
-            20% { transform: translate(-1px, -1px) rotate(-0.5deg); }
-            40% { transform: translate(1px, 1px) rotate(0.5deg); }
-            60% { transform: translate(-2px, 0px) rotate(-1deg); }
-            80% { transform: translate(1px, -1px) rotate(0.5deg); }
-            100% { transform: translate(0, 0) rotate(0deg); }
-        }
-        .synopsis {
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #e8f5e8;
-            border-radius: 5px;
-            font-size: 0.9em;
-            line-height: 1.6;
-            opacity: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: opacity 0.3s, max-height 0.3s, padding 0.3s;
-        }
-        body.dark-mode .synopsis {
-            background-color: #1e3a1e;
-        }
-        .dark-mode-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            font-size: 1.5em;
-            cursor: pointer;
-            z-index: 1000;
-            color: #333;
-        }
-        body.dark-mode .dark-mode-toggle {
-            color: #e0e0e0;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-            position: relative;
-            transition: color 0.3s;
-        }
-        a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #4CAF50;
-            transition: width 0.3s;
-        }
-        a:hover::after {
-            width: 100%;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #666;
-            font-size: 0.9em;
-        }
-        body.dark-mode footer {
-            color: #aaa;
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin: 0 10px;
-            font-size: 0.9em;
-        }
-            .colortext-cyan {
-            color: #00d5ff; 
-        }
-            .colortext-cyan:hover {
-            color: #00d5ff; 
-            padding-right: 10%;
-        }
-            .colortext-orange {
-            color: #ffc02c;
-        }
-            .colortext-orange:hover {
-            color: #ffc02c;
-            padding-left: 5%;
-        }
-            .fontchange:hover {
-            font-family: 'Courier New', Courier, monospace;
-        }
-            .dank {
-                height: 42px;
-                width: 42px;
-                border: 3px solid currentColor;
-                border-radius: 0;
-                background: #ececec;
-                box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
-                position: fixed;
-                top: 20px;
-                right: 78px;
-                z-index: 1100;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 0;
-                transition: transform 0.12s steps(2, end), box-shadow 0.12s steps(2, end);
-        }
-            .dank:hover {
-                transform: translate(1px, 1px);
-                box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.7);
-        }
-            body.dark-mode .dank {
-                background: #141414;
-                box-shadow: 5px 5px 0 rgba(255, 255, 255, 0.35);
-        }
-            .dank span {
-                display: block;
-                font-size: 0.62rem;
-                font-weight: 700;
-                text-transform: uppercase;
-                letter-spacing: 0.08em;
-        }
-        
-        /* postmodern override */
-        body {
-            background:
-                radial-gradient(circle at 8% 12%, rgba(255, 0, 140, 0.22) 0%, transparent 36%),
-                radial-gradient(circle at 88% 16%, rgba(0, 213, 255, 0.24) 0%, transparent 38%),
-                repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.04) 0 1px, transparent 1px 36px),
-                #fffdf6;
-            color: #121212;
-            letter-spacing: 0.01em;
-            overflow-x: hidden;
-        }
-        body.dark-mode {
-            background:
-                radial-gradient(circle at 10% 15%, rgba(255, 70, 70, 0.18) 0%, transparent 34%),
-                radial-gradient(circle at 88% 24%, rgba(119, 0, 255, 0.2) 0%, transparent 40%),
-                repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 40px),
-                #090909;
-            color: #f0f0f0;
-        }
-        body::before,
-        body::after {
-            pointer-events: none;
-            filter: blur(0.4px) saturate(140%);
-        }
-        .container {
-            max-width: 860px;
-            margin: 30px auto;
-            padding: 28px;
-            border: 2px solid rgba(0, 0, 0, 0.5);
-            background: rgba(255, 255, 255, 0.72);
-            backdrop-filter: blur(4px);
-            box-shadow: 14px 14px 0 rgba(0, 0, 0, 0.25);
-            transform: rotate(-0.4deg);
-        }
-        body.dark-mode .container {
-            border-color: rgba(255, 255, 255, 0.4);
-            background: rgba(18, 18, 18, 0.76);
-            box-shadow: 14px 14px 0 rgba(255, 255, 255, 0.12);
-        }
-        header {
-            transform: skewY(-1.5deg);
-            margin-bottom: 30px;
-        }
-        h1 {
-            font-size: clamp(2.4rem, 8vw, 4.2rem);
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            text-shadow: -4px -2px 0 rgba(0, 213, 255, 0.45), 4px 2px 0 rgba(255, 0, 128, 0.35);
-        }
-        .subtitle {
-            text-transform: lowercase;
-            letter-spacing: 0.06em;
-        }
-        nav {
-            margin: 18px 0 28px;
-            padding: 10px 14px;
-            border: 1px dashed currentColor;
-            transform: rotate(0.6deg);
-            background: rgba(255, 255, 255, 0.45);
-        }
-        body.dark-mode nav {
-            background: rgba(255, 255, 255, 0.06);
-        }
-        nav a {
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            font-weight: 600;
-        }
-        section {
-            border: 1px solid rgba(0, 0, 0, 0.35);
-            padding: 16px 18px;
-            margin: 18px 0;
-            background: rgba(255, 255, 255, 0.5);
-        }
-        body.dark-mode section {
-            border-color: rgba(255, 255, 255, 0.28);
-            background: rgba(255, 255, 255, 0.04);
-        }
-        section:nth-of-type(odd) {
-            transform: rotate(-0.45deg);
-        }
-        section:nth-of-type(even) {
-            transform: rotate(0.55deg);
-        }
-        h2 {
-            font-size: 1.3rem;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            border-bottom: 2px solid currentColor;
-        }
-        a {
-            color: #0f5cff;
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
-        }
-        a:hover {
-            color: #ff2670;
-            text-decoration-style: wavy;
-            transform: skewX(-8deg);
-            display: inline-block;
-        }
-        .profile-pic {
-            border-radius: 0;
-            border: 3px solid currentColor;
-            transform: rotate(3deg);
-            box-shadow: -8px 8px 0 rgba(0, 0, 0, 0.28);
-        }
-        .publication-list li {
-            border-left: none;
-            padding-left: 12px;
-        }
-        .dark-mode-toggle {
-            border: 2px solid currentColor;
-            border-radius: 0;
-            padding: 6px;
-            background: rgba(255, 255, 255, 0.65);
-        }
-        body.dark-mode .dark-mode-toggle {
-            background: rgba(0, 0, 0, 0.75);
-        }
-        footer {
-            text-transform: lowercase;
-            letter-spacing: 0.05em;
-            border-top: 2px dashed currentColor;
-            padding-top: 14px;
-        }
-        @keyframes poster-shift {
-            0% { transform: translateX(0) rotate(0deg); }
-            25% { transform: translateX(0.5px) rotate(0.15deg); }
-            50% { transform: translateX(-0.5px) rotate(-0.15deg); }
-            100% { transform: translateX(0) rotate(0deg); }
-        }
-        .container {
-            animation: poster-shift 6s infinite alternate;
-        }
-        
-        /* brutal-plus override */
-        body {
-            background:
-                repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.06) 0 2px, transparent 2px 11px),
-                repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.04) 0 1px, transparent 1px 34px),
-                #d6d6d6;
-            color: #0b0b0b;
-            position: relative;
-            overflow-x: hidden;
-        }
-        body.dark-mode {
-            background:
-                repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px 10px),
-                repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 32px),
-                #060606;
-            color: #f1f1f1;
-        }
-        body::before,
-        body::after {
-            content: '';
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-        }
-        body::before {
-            background: repeating-linear-gradient(135deg, rgba(255, 183, 0, 0.07) 0 12px, rgba(0, 0, 0, 0) 12px 24px);
-            mix-blend-mode: multiply;
-            opacity: 0.24;
-            animation: noise-drift 11s linear infinite;
-        }
-        body.dark-mode::before {
-            mix-blend-mode: screen;
-            opacity: 0.18;
-        }
-        body::after {
-            background: radial-gradient(circle at 10% 20%, rgba(255, 42, 0, 0.1) 0 1px, transparent 2px);
-            background-size: 9px 9px;
-            opacity: 0.1;
-            animation: static-flicker 1.2s steps(2, end) infinite;
-        }
-        .container {
-            max-width: 980px;
-            margin: 22px auto;
-            border: 3px solid #050505;
-            box-shadow: 12px 12px 0 #000;
-            background: rgba(236, 236, 236, 0.9);
-            position: relative;
-            z-index: 1;
-        }
-        body.dark-mode .container {
-            border-color: #f0f0f0;
-            box-shadow: 12px 12px 0 #4a4a4a;
-            background: rgba(17, 17, 17, 0.9);
-        }
-        nav {
-            border-width: 3px;
-            background:
-                linear-gradient(180deg, rgba(199, 244, 255, 0.55), rgba(255, 255, 255, 0.05)),
-                repeating-linear-gradient(135deg, rgba(255, 196, 0, 0.2) 0 9px, rgba(0, 0, 0, 0.12) 9px 18px);
-            position: relative;
-        }
-        body.dark-mode nav {
-            background:
-                linear-gradient(180deg, rgba(93, 175, 255, 0.24), rgba(255, 255, 255, 0.03)),
-                repeating-linear-gradient(135deg, rgba(255, 196, 0, 0.16) 0 9px, rgba(255, 255, 255, 0.08) 9px 18px);
-        }
-        nav::before {
-            content: '*** WELCOME 2 MY WEBPAGE ***';
-            display: block;
-            font-size: 0.65rem;
-            letter-spacing: 0.14em;
-            margin-bottom: 8px;
-            opacity: 0.58;
-        }
-        .serif-pop {
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: 700;
-            letter-spacing: 0.02em;
-        }
-        .visitor-tag {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 4px 10px;
-            border: 1px solid rgba(0, 0, 0, 0.55);
-            background: linear-gradient(180deg, rgba(197, 247, 255, 0.85), rgba(220, 232, 255, 0.55));
-            color: #0b2c54;
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 0 6px rgba(85, 188, 255, 0.35);
-            letter-spacing: 0.08em;
-            font-size: 0.78em;
-        }
-        body.dark-mode .visitor-tag {
-            border-color: rgba(255, 255, 255, 0.5);
-            color: #d7efff;
-            background: linear-gradient(180deg, rgba(58, 121, 184, 0.45), rgba(20, 42, 74, 0.45));
-        }
-        section {
-            border-left-width: 9px;
-            border-width: 3px;
-        }
-        section:nth-of-type(3n+1) { transform: rotate(-0.18deg); }
-        section:nth-of-type(3n+2) { transform: rotate(0.15deg); }
-        section:nth-of-type(3n) { transform: rotate(-0.08deg) translateX(1px); }
-        section:hover { animation: brutal-shake 0.2s steps(2, end) 2; }
-        h1 { animation: title-fry 5s steps(2, end) infinite; }
-        h2::after {
-            content: ' ▓';
-            animation: cursor-blink 1s steps(2, end) infinite;
-        }
-        .pub-title {
-            color: #111111;
-        }
-        .pub-venue {
-            color: #b30000;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-        }
-        .pub-details {
-            color: #1f1f1f;
-        }
-        .toggle-symbol {
-            color: #003dff;
-        }
-        .synopsis {
-            background: rgba(255, 255, 255, 0.9);
-            color: #111111;
-            border: 2px solid #1a1a1a;
-            border-left: 8px solid #ff2a00;
-        }
-        body.dark-mode .pub-title {
-            color: #f4f4f4;
-        }
-        body.dark-mode .pub-venue {
-            color: #ff6a4d;
-        }
-        body.dark-mode .pub-details {
-            color: #d4d4d4;
-        }
-        body.dark-mode .toggle-symbol {
-            color: #5fa8ff;
-        }
-        body.dark-mode .synopsis {
-            background: rgba(10, 10, 10, 0.92);
-            color: #ededed;
-            border-color: #d0d0d0;
-            border-left-color: #ff6a4d;
-        }
-        a:hover {
-            animation: link-snap 0.2s steps(2, end) 2;
-        }
-        .dark-mode-toggle {
-            border-width: 3px;
-            transform: rotate(-1deg);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65), 0 0 8px rgba(95, 195, 255, 0.35);
-        }
-        .dank {
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65), 0 0 8px rgba(95, 195, 255, 0.35);
-        }
-        @keyframes brutal-shake {
-            0% { transform: translate(0, 0); }
-            33% { transform: translate(-1px, 1px); }
-            66% { transform: translate(1px, -1px); }
-            100% { transform: translate(0, 0); }
-        }
-        @keyframes title-fry {
-            0%, 90%, 100% { text-shadow: -2px 0 #00b7ff, 2px 0 #ff3d00; }
-            91% { text-shadow: -4px 0 #00b7ff, 4px 0 #ff3d00; }
-            92% { text-shadow: 3px 0 #00b7ff, -3px 0 #ff3d00; }
-            93% { text-shadow: -1px 0 #00b7ff, 1px 0 #ff3d00; }
-        }
-        @keyframes link-snap {
-            0% { transform: translateX(0); }
-            50% { transform: translateX(1px) skewX(-6deg); }
-            100% { transform: translateX(0); }
-        }
-        @keyframes static-flicker {
-            0% { opacity: 0.08; }
-            50% { opacity: 0.12; }
-            100% { opacity: 0.09; }
-        }
-        @keyframes noise-drift {
-            0% { transform: translate(0, 0); }
-            50% { transform: translate(2px, -1px); }
-            100% { transform: translate(0, 0); }
-        }
-        @keyframes cursor-blink {
-            0%, 49% { opacity: 1; }
-            50%, 100% { opacity: 0; }
-        }
-        @keyframes synopsis-pop {
-            0% {
-                opacity: 0;
-                transform: scale(0.965) translateY(-7px);
-                filter: brightness(1.2) saturate(1.2);
-            }
-            60% {
-                opacity: 1;
-                transform: scale(1.012) translateY(0);
-                filter: brightness(1.06) saturate(1.08);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-                filter: brightness(1);
-            }
-        }
-        @keyframes synopsis-digital {
-            0% {
-                transform: translateX(0);
-                clip-path: inset(0 0 0 0);
-                text-shadow: 0 0 rgba(0, 0, 0, 0);
-                box-shadow: 0 0 rgba(0, 0, 0, 0);
-            }
-            14% {
-                transform: translateX(-2px);
-                clip-path: inset(8% 0 66% 0);
-                text-shadow: -1.5px 0 rgba(0, 195, 255, 0.42), 1.5px 0 rgba(255, 60, 0, 0.35);
-            }
-            28% {
-                transform: translateX(2px);
-                clip-path: inset(58% 0 10% 0);
-                text-shadow: 1.2px 0 rgba(0, 195, 255, 0.34), -1.2px 0 rgba(255, 60, 0, 0.3);
-            }
-            42% {
-                transform: translateX(-1px);
-                clip-path: inset(24% 0 48% 0);
-                text-shadow: -1px 0 rgba(0, 195, 255, 0.25), 1px 0 rgba(255, 60, 0, 0.22);
-            }
-            60% {
-                transform: translateX(1px);
-                clip-path: inset(72% 0 3% 0);
-                text-shadow: 0.8px 0 rgba(0, 195, 255, 0.2), -0.8px 0 rgba(255, 60, 0, 0.18);
-            }
-            82% {
-                transform: translateX(0);
-                clip-path: inset(0 0 0 0);
-                text-shadow: 0.4px 0 rgba(0, 195, 255, 0.12), -0.4px 0 rgba(255, 60, 0, 0.1);
-            }
-            100% {
-                transform: translateX(0);
-                clip-path: inset(0 0 0 0);
-                text-shadow: 0 0 rgba(0, 0, 0, 0);
-                box-shadow: 0 0 rgba(0, 0, 0, 0);
-            }
-        }
-        #about {
-            display: block !important;
-        }
-        #about::after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-        #about .profile-pic {
-            float: right;
-            margin: 0 0 8px 12px;
-        }
-        body.glitch {
-            animation: glitch 0.5s ease-in-out !important;
-        }
-        /* motion lock */
-        *, *::before, *::after {
-            animation: none !important;
-            transition: none !important;
-        }
-        section:hover,
-        a:hover,
-        .dank:hover {
-            transform: none !important;
-        }
-        a,
-        a:visited {
-            transition: color 0.15s linear !important;
-        }
-        a:hover {
-            color: #ff2a00 !important;
-        }
-        body.glitch {
-            animation: glitch 0.5s ease-in-out !important;
-        }
-        .synopsis {
-            transform-origin: top center;
-            transition: opacity 0.22s ease, max-height 0.22s ease, padding 0.22s ease !important;
-            backdrop-filter: blur(2px) saturate(1.08);
-        }
-        .synopsis.synopsis-opening {
-            animation: synopsis-pop 0.34s cubic-bezier(0.22, 1, 0.36, 1) !important;
-        }
-        body.dark-mode .synopsis.synopsis-opening {
-            animation:
-                synopsis-pop 0.34s cubic-bezier(0.22, 1, 0.36, 1),
-                synopsis-digital 0.42s steps(2, end) !important;
-        }
-        /* kitsch boost */
-        body {
-            background-color: #f6f6f6;
-        }
-        .container {
-            border-color: #1a1a1a;
-            background: rgba(250, 250, 250, 0.94);
-            box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.65), 0 0 0 2px rgba(255, 255, 255, 0.35) inset;
-        }
-        h1 {
-            text-shadow: -2px 0 #66e2ff, 2px 0 #ff4f9d;
-        }
-        nav::before {
-            color: #5e0078;
-            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-        }
-        .visitor-tag {
-            transform: rotate(-1.2deg);
-            border-radius: 2px;
-            color: #5b0a5b;
-            background: linear-gradient(180deg, rgba(255, 246, 128, 0.9), rgba(255, 188, 244, 0.58));
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 0 8px rgba(255, 97, 255, 0.35);
-        }
-        .pub-venue {
-            color: #c0005e;
-        }
-        .dank,
-        .dark-mode-toggle {
-            border-color: #3c0052;
-        }
-        a:hover {
-            color: #ff008c !important;
-        }
-        /* thin borders */
-        .container,
-        nav,
-        section,
-        .dark-mode-toggle,
-        .dank,
-        .visitor-tag {
-            border-width: 1px !important;
-        }
-        section {
-            border-left-width: 3px !important;
-        }
-        h2,
-        footer {
-            border-width: 1px !important;
-        }
-        .synopsis {
-            border-width: 1px !important;
-            border-left-width: 3px !important;
-        }
-        /* sterile pass */
-        body:not(.dark-mode) {
-            background: #ffffff !important;
-            background-image: none !important;
-            color: #1f1f1f !important;
-        }
-        body:not(.dark-mode)::before,
-        body:not(.dark-mode)::after,
-        body:not(.dark-mode) nav::before,
-        body:not(.dark-mode) h2::after {
-            display: none !important;
-            content: '' !important;
-        }
-        body:not(.dark-mode) .container,
-        body:not(.dark-mode) nav,
-        body:not(.dark-mode) section,
-        body:not(.dark-mode) .synopsis,
-        body:not(.dark-mode) .visitor-tag,
-        body:not(.dark-mode) .dark-mode-toggle,
-        body:not(.dark-mode) .dank {
-            background: #ffffff !important;
-            border-color: #d8d8d8 !important;
-            box-shadow: none !important;
-            transform: none !important;
-            filter: none !important;
-        }
-        body:not(.dark-mode) h1,
-        body:not(.dark-mode) .subtitle,
-        body:not(.dark-mode) .pub-title,
-        body:not(.dark-mode) .pub-venue,
-        body:not(.dark-mode) .pub-details {
-            text-shadow: none !important;
-            letter-spacing: normal !important;
-        }
-        /* vaporwave dark mode + light glitch headings */
-        @keyframes lite-heading-glitch {
-            0%, 100% { text-shadow: -1px 0 #00c8ff, 1px 0 #ff4fd8; }
-            50% { text-shadow: -2px 0 #00e5ff, 2px 0 #ff71ce; }
-        }
-        body:not(.dark-mode) h1,
-        body:not(.dark-mode) h2 {
-            text-shadow: -1px 0 #00c8ff, 1px 0 #ff4fd8 !important;
-            animation: lite-heading-glitch 4.8s steps(2, end) infinite !important;
-        }
-        body.dark-mode {
-            background:
-                radial-gradient(circle at 12% 10%, rgba(0, 255, 255, 0.18), transparent 34%),
-                radial-gradient(circle at 88% 18%, rgba(255, 0, 190, 0.2), transparent 36%),
-                linear-gradient(135deg, #130726 0%, #230b45 55%, #121933 100%) !important;
-            color: #f4e9ff !important;
-        }
-        body.dark-mode::before,
-        body.dark-mode::after {
-            display: block !important;
-            content: '' !important;
-        }
-        body.dark-mode .container {
-            background: linear-gradient(180deg, rgba(80, 26, 135, 0.55), rgba(21, 16, 56, 0.8)) !important;
-            border-color: #ff71ce !important;
-            box-shadow: 0 0 0 1px rgba(125, 249, 255, 0.4) inset, 0 0 22px rgba(255, 113, 206, 0.35) !important;
-        }
-        body.dark-mode nav,
-        body.dark-mode section,
-        body.dark-mode .synopsis,
-        body.dark-mode .visitor-tag,
-        body.dark-mode .dark-mode-toggle,
-        body.dark-mode .dank {
-            background: linear-gradient(180deg, rgba(58, 31, 107, 0.78), rgba(23, 20, 52, 0.86)) !important;
-            border-color: #7df9ff !important;
-            box-shadow: 0 0 12px rgba(125, 249, 255, 0.18) !important;
-        }
-        body.dark-mode h1,
-        body.dark-mode h2 {
-            text-shadow: -2px 0 #7df9ff, 2px 0 #ff71ce !important;
-        }
-        body.dark-mode a,
-        body.dark-mode .toggle-symbol {
-            color: #7df9ff !important;
-        }
-        body.dark-mode a:hover {
-            color: #ff71ce !important;
-        }
-        /* borderless light mode */
-        body:not(.dark-mode) .container,
-        body:not(.dark-mode) nav,
-        body:not(.dark-mode) section,
-        body:not(.dark-mode) .synopsis,
-        body:not(.dark-mode) .visitor-tag,
-        body:not(.dark-mode) .dark-mode-toggle,
-        body:not(.dark-mode) .dank,
-        body:not(.dark-mode) h2,
-        body:not(.dark-mode) footer {
-            border: none !important;
-            border-left: none !important;
-            border-top: none !important;
-            border-bottom: none !important;
-        }
-        body:not(.dark-mode) .container {
-            box-shadow: none !important;
-            outline: none !important;
-        }
-        /* apeshit brutal vaporwave dark mode */
-        @keyframes vapor-grid-drift {
-            0% { background-position: 0 0, 0 0; }
-            100% { background-position: 0 60px, 40px 0; }
-        }
-        @keyframes vapor-flicker {
-            0%, 100% { opacity: 0.22; }
-            35% { opacity: 0.34; }
-            68% { opacity: 0.18; }
-        }
-        @keyframes neon-burn {
-            0%, 100% { text-shadow: -2px 0 #00f6ff, 2px 0 #ff2fb0, 0 0 8px rgba(255, 47, 176, 0.28); }
-            50% { text-shadow: -3px 0 #00f6ff, 3px 0 #ff2fb0, 0 0 14px rgba(0, 246, 255, 0.35); }
-        }
-        body.dark-mode {
-            background:
-                radial-gradient(circle at 15% 8%, rgba(0, 246, 255, 0.14), transparent 30%),
-                radial-gradient(circle at 82% 18%, rgba(255, 47, 176, 0.16), transparent 34%),
-                linear-gradient(135deg, #04030a 0%, #090015 45%, #070017 70%, #020204 100%) !important;
-            color: #f7edff !important;
-        }
-        body.dark-mode::before,
-        body.dark-mode::after {
-            display: block !important;
-            content: '' !important;
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-        }
-        body.dark-mode::before {
-            background:
-                repeating-linear-gradient(0deg, rgba(0, 246, 255, 0.1) 0 1px, transparent 1px 34px),
-                repeating-linear-gradient(90deg, rgba(255, 47, 176, 0.09) 0 1px, transparent 1px 40px);
-            animation: vapor-grid-drift 12s linear infinite !important;
-            opacity: 0.38;
-        }
-        body.dark-mode::after {
-            background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.16), transparent 58%);
-            mix-blend-mode: screen;
-            animation: vapor-flicker 2.4s steps(2, end) infinite !important;
-        }
-        body.dark-mode .container {
-            background: linear-gradient(180deg, rgba(38, 9, 70, 0.84), rgba(10, 6, 31, 0.92)) !important;
-            border-color: #ff2fb0 !important;
-            box-shadow: 0 0 0 1px rgba(0, 246, 255, 0.5) inset, 0 0 28px rgba(255, 47, 176, 0.35), 0 0 44px rgba(0, 246, 255, 0.2) !important;
-        }
-        body.dark-mode nav,
-        body.dark-mode section,
-        body.dark-mode .synopsis,
-        body.dark-mode .visitor-tag,
-        body.dark-mode .dark-mode-toggle,
-        body.dark-mode .dank {
-            background: linear-gradient(180deg, rgba(52, 17, 96, 0.75), rgba(14, 10, 38, 0.88)) !important;
-            border-color: #00f6ff !important;
-            box-shadow: 0 0 14px rgba(0, 246, 255, 0.2) !important;
-        }
-        body.dark-mode h1,
-        body.dark-mode h2 {
-            animation: neon-burn 2.6s ease-in-out infinite !important;
-            text-shadow: -2px 0 #00f6ff, 2px 0 #ff2fb0, 0 0 8px rgba(255, 47, 176, 0.28) !important;
-        }
-        body.dark-mode a,
-        body.dark-mode .toggle-symbol {
-            color: #00f6ff !important;
-            text-shadow: 0 0 8px rgba(0, 246, 255, 0.42);
-        }
-        body.dark-mode a:hover {
-            color: #ff2fb0 !important;
-            text-shadow: 0 0 10px rgba(255, 47, 176, 0.48);
-        }
-        body.dark-mode .pub-venue {
-            color: #ff6ae0 !important;
-            text-shadow: 0 0 8px rgba(255, 106, 224, 0.35);
-        }
-        /* dark mode chaos pack */
-        @keyframes chaos-scan {
-            0% { transform: translateY(-30%) skewX(-8deg); }
-            100% { transform: translateY(120%) skewX(8deg); }
-        }
-        @keyframes chaos-border {
-            0%, 100% { box-shadow: 0 0 0 1px rgba(0, 246, 255, 0.45) inset, 0 0 20px rgba(255, 47, 176, 0.25); }
-            50% { box-shadow: 0 0 0 1px rgba(255, 47, 176, 0.5) inset, 0 0 28px rgba(0, 246, 255, 0.3); }
-        }
-        @keyframes chaos-hover-glitch {
-            0% { transform: translateX(0) skewX(0deg); }
-            25% { transform: translateX(-1px) skewX(-6deg); }
-            50% { transform: translateX(1px) skewX(6deg); }
-            75% { transform: translateX(-1px) skewX(-4deg); }
-            100% { transform: translateX(0) skewX(0deg); }
-        }
-        @keyframes chaos-text-jump {
-            0%, 100% { transform: translateY(0); }
-            33% { transform: translateY(-1px); }
-            66% { transform: translateY(1px); }
-        }
-        @keyframes chaos-bg-warp {
-            0%, 100% { filter: saturate(1.02) contrast(1.02); }
-            50% { filter: saturate(1.12) contrast(1.05); }
-        }
-        body.dark-mode {
-            animation: chaos-bg-warp 8s ease-in-out infinite !important;
-        }
-        body.dark-mode .container {
-            animation: chaos-border 4.6s ease-in-out infinite !important;
-        }
-        body.dark-mode nav,
-        body.dark-mode section {
-            position: relative;
-            overflow: hidden;
-        }
-        body.dark-mode nav::after,
-        body.dark-mode section::after {
-            content: '';
-            position: absolute;
-            inset: -30% -10%;
-            background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0 1px, transparent 1px 8px);
-            opacity: 0;
-            pointer-events: none;
-        }
-        body.dark-mode nav:hover::after,
-        body.dark-mode section:hover::after {
-            opacity: 0.32;
-            animation: chaos-scan 0.45s linear 1 !important;
-        }
-        body.dark-mode h1,
-        body.dark-mode h2 {
-            animation: neon-burn 2.6s ease-in-out infinite, chaos-text-jump 1.4s steps(2, end) infinite !important;
-        }
-        body.dark-mode a:hover,
-        body.dark-mode .toggle-symbol:hover,
-        body.dark-mode .dark-mode-toggle:hover,
-        body.dark-mode .dank:hover {
-            animation: chaos-hover-glitch 0.25s steps(2, end) 2 !important;
-        }
-        body.dark-mode .visitor-tag {
-            animation: chaos-border 5.4s ease-in-out infinite !important;
-        }
-        body.dark-mode.glitch {
-            animation: chaos-bg-warp 8s ease-in-out infinite, glitch 0.5s ease-in-out !important;
-        }
-        /* stabilize dark mode: keep color mood, remove floating glitch artifacts */
-        body.dark-mode::before {
-            animation: none !important;
-            opacity: 0.24 !important;
-        }
-        body.dark-mode::after {
-            animation: none !important;
-        }
-        body.dark-mode nav::after,
-        body.dark-mode section::after,
-        body.dark-mode nav:hover::after,
-        body.dark-mode section:hover::after {
-            display: none !important;
-            opacity: 0 !important;
-            animation: none !important;
-        }
-        body.dark-mode h1,
-        body.dark-mode h2 {
-            animation: neon-burn 2.6s ease-in-out infinite !important;
-        }
-        body.dark-mode a:hover,
-        body.dark-mode .toggle-symbol:hover,
-        body.dark-mode .dark-mode-toggle:hover,
-        body.dark-mode .dank:hover,
-        body.dark-mode .visitor-tag {
-            animation: none !important;
-            transform: none !important;
-        }
-        body.dark-mode {
-            animation: none !important;
-            filter: none !important;
-        }
-        body {
-            --mouse-x: 50vw;
-            --mouse-y: 50vh;
-        }
-        body.dark-mode::after {
-            background:
-                radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.16), transparent 58%) !important;
-            z-index: 5 !important;
-            mix-blend-mode: screen !important;
-            opacity: 0.32 !important;
-        }
-        #dark-spotlight {
-            position: fixed;
-            width: 340px;
-            height: 340px;
-            margin-left: -170px;
-            margin-top: -170px;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 40;
-            opacity: 0;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.11) 34%, rgba(255, 255, 255, 0) 70%);
-            mix-blend-mode: screen;
-            transition: opacity 0.2s ease;
-        }
-        body.dark-mode #dark-spotlight {
-            opacity: 0.95;
-        }
-        @keyframes chaos-max-chroma {
-            0%, 100% { box-shadow: 0 0 0 1px rgba(0, 246, 255, 0.5) inset, 0 0 28px rgba(255, 47, 176, 0.35), 0 0 44px rgba(0, 246, 255, 0.2) !important; }
-            50% { box-shadow: 0 0 0 1px rgba(255, 47, 176, 0.55) inset, 0 0 34px rgba(0, 246, 255, 0.36), 0 0 58px rgba(255, 47, 176, 0.26) !important; }
-        }
-        @keyframes chaos-max-title {
-            0%, 100% { text-shadow: -2px 0 #00f6ff, 2px 0 #ff2fb0, 0 0 8px rgba(255, 47, 176, 0.28), 0 0 16px rgba(0, 246, 255, 0.18); }
-            50% { text-shadow: -3px 0 #00f6ff, 3px 0 #ff2fb0, 0 0 14px rgba(0, 246, 255, 0.35), 0 0 22px rgba(255, 47, 176, 0.24); }
-        }
-        @keyframes chaos-max-link {
-            0%, 100% { color: #00f6ff; text-shadow: 0 0 8px rgba(0, 246, 255, 0.42), 0 0 16px rgba(0, 246, 255, 0.2); }
-            50% { color: #ff71ce; text-shadow: 0 0 10px rgba(255, 47, 176, 0.46), 0 0 20px rgba(255, 47, 176, 0.26); }
-        }
-        @keyframes chaos-max-spot {
-            0%, 100% { transform: scale(1); filter: saturate(1); }
-            50% { transform: scale(1.08); filter: saturate(1.25); }
-        }
-        body.dark-mode .container {
-            animation: chaos-max-chroma 2.2s ease-in-out infinite !important;
-        }
-        body.dark-mode h1,
-        body.dark-mode h2 {
-            animation: chaos-max-title 1.8s ease-in-out infinite !important;
-        }
-        body.dark-mode a,
-        body.dark-mode .toggle-symbol {
-            animation: chaos-max-link 2.4s ease-in-out infinite !important;
-        }
-        body.dark-mode #dark-spotlight {
-            animation: chaos-max-spot 2.2s ease-in-out infinite !important;
-            opacity: 1 !important;
-        }
-        /* final reddish dark-mode palette override */
-        @keyframes chaos-max-chroma {
-            0%, 100% { box-shadow: 0 0 0 1px rgba(0, 246, 255, 0.45) inset, 0 0 28px rgba(255, 59, 48, 0.36), 0 0 44px rgba(255, 59, 48, 0.2) !important; }
-            50% { box-shadow: 0 0 0 1px rgba(255, 59, 48, 0.58) inset, 0 0 34px rgba(0, 246, 255, 0.3), 0 0 58px rgba(255, 59, 48, 0.28) !important; }
-        }
-        @keyframes chaos-max-title {
-            0%, 100% { text-shadow: -2px 0 #00f6ff, 2px 0 #ff3b30, 0 0 8px rgba(255, 59, 48, 0.34), 0 0 16px rgba(255, 59, 48, 0.2); }
-            50% { text-shadow: -3px 0 #00f6ff, 3px 0 #ff3b30, 0 0 14px rgba(255, 59, 48, 0.42), 0 0 22px rgba(255, 59, 48, 0.28); }
-        }
-        @keyframes chaos-max-link {
-            0%, 100% { color: #00f6ff; text-shadow: 0 0 8px rgba(0, 246, 255, 0.42), 0 0 16px rgba(0, 246, 255, 0.2); }
-            50% { color: #ff3b30; text-shadow: 0 0 10px rgba(255, 59, 48, 0.5), 0 0 20px rgba(255, 59, 48, 0.3); }
-        }
-        body.dark-mode {
-            background:
-                radial-gradient(circle at 15% 8%, rgba(0, 246, 255, 0.14), transparent 30%),
-                radial-gradient(circle at 82% 18%, rgba(255, 59, 48, 0.2), transparent 36%),
-                linear-gradient(135deg, #04030a 0%, #120106 45%, #160406 70%, #020204 100%) !important;
-        }
-        body.dark-mode .container {
-            border-color: #ff3b30 !important;
-        }
-        body.dark-mode h1,
-        body.dark-mode h2 {
-            color: #ffe8e6 !important;
-        }
-        body.dark-mode a:hover,
-        body.dark-mode .toggle-symbol:hover {
-            color: #ff3b30 !important;
-        }
-        body.dark-mode .pub-venue {
-            color: #ff8a80 !important;
-            text-shadow: 0 0 8px rgba(255, 59, 48, 0.4) !important;
-        }
-    </style>
-</head>
-<body>
-    <div id="dark-spotlight"></div>
-    <div class="container">
-        <header>
-            <h1><span class="fontchange">naman kumar</span></h1>
-            <p class="subtitle"><span class="serif-pop">cryptographer</span> <span class="colortext-cyan">@matcauthon49</span><br>
-            <span class="colortext-orange"><span class="serif-pop">irif</span></span>, up-cité</p>
-        </header>
-
-        <nav>
-            <a href="index.html">home</a> | <a href="more.html">more</a>
-
-        </nav>
-
-        <button id="dark-mode-toggle" class="dark-mode-toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
-
-        <section id="about">
-            <img src="profile.jpg" alt="naman kumar" class="profile-pic">
-            <div class="about-content">
-                <h2>> about</h2>
-                <p>i am a cryptographer and computer scientist.</p>
-
-                <p>i am currently working as a phd student under the supervision of <a href="https://geoffroycouteau.github.io">geoffroy couteau</a> at the <a href="https://www.irif.fr">institut de recherche en informatique fondamentale (irif)</a> as part of université paris-cité.</p>
-
-                <p>i completed my undergraduate degree in math // cs at <a href="https://www.cmi.ac.in">cmi</a>. i completed my masters' at <a href="https://engineering.oregonstate.edu/EECS">oregon state</a>, where i was advised by <a href="https://garbledcircus.com">mike rosulek</a> and <a href="https://sites.google.com/view/jiayux">jiayu xu</a>.</p>
-            </div>
-        </section>
-
-        <section id="research">
-            <h2>> research interests</h2>
-            sort of everything. i like foundations and cryptanalysis of practical protocols, but that's also not the kind of thing i work on all day. recently i've been doing some of this:
-            <ul>
-                <li>mpc hss pcg</li>
-                <li>threshold [thing]</li>
-                <li>black-box impossibilities</li>
-            </ul>
-        </section>
-
-        <section id="publications">
-            <h2>> pubs</h2>
-            <h3>preprints</h3>
-            <ul class="publication-list">
-                <li>
-                    <div class="pub-title">From OT to OLE with Almost-Linear Communication</div>
-                    <div class="pub-venue">Preprint</div>
-                    <div class="pub-details"> Geoffroy Couteau, Naman Kumar | <a href="https://eprint.iacr.org/2026/295">[eprint]</a> <span class="toggle-symbol" onclick="toggleSynopsis(this)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><circle cx="12" cy="16" r="1"></circle><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></div>
-                    <div class="synopsis" style="opacity: 0; max-height: 0; padding: 0 10px; overflow: hidden;">Doing OLEs in the OT-hybrid model used to take \(O(n\log n)\) communication. Now we can do it with \(O(n\cdot 2^{\log^{*}n})\).</div>
-                </li>
-                <li>
-                    <div class="pub-title">Threshold Signing for Standard Hash-Based Signatures is Expensive</div>
-                    <div class="pub-venue">Preprint</div>
-                    <div class="pub-details"> Yashwanth Kondi, Naman Kumar, Hernán Vanegas | <a href="#">[eprint]</a> <span class="toggle-symbol" onclick="toggleSynopsis(this)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><circle cx="12" cy="16" r="1"></circle><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></div>
-                    <div class="synopsis" style="opacity: 0; max-height: 0; padding: 0 10px; overflow: hidden;">Hash-based schemes seem great: the security assumption is straightforward (SHA), SPHINCS+ has been standardized as SLH-DSA, and they don't use any super-fancy cryptography. We show that it's not so good if you want to threshold sign them; there are some inherent limitations that make threshold signing prohibitively expensive if you're doing it in a way that makes black-box use of the hash-function.</div>
-                </li>
-                <li>
-                    <div class="pub-title">Minicrypt PRFs Do Not Admit Black-Box Oblivious Evaluations</div>
-                    <div class="pub-venue">Preprint</div>
-                    <div class="pub-details">Cruz Barnum, Mohammad Hajiabadi, David Heath, Jake Januzelli, Naman Kumar, Mike Rosulek | <a href="https://eprint.iacr.org/2025/1947">[eprint]</a> <span class="toggle-symbol" onclick="toggleSynopsis(this)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><circle cx="12" cy="16" r="1"></circle><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></div>
-                    <div class="synopsis" style="opacity: 0; max-height: 0; padding: 0 10px; overflow: hidden;">OPRFs (Oblivious PseudoRandom Functions) are how you do PSI and PAKE, but they come in two varieties: key-reusable OPRFs, where the key \(k\) is fixed at the beginning by the sender, and ephemeral-key OPRFs, where you generate a new key each time the receiver wants to obtain the OPRF output at any input point of its choice. The first kind is nicer for updatable applications, but it looks like you can only ever build it using public key crypto. We show this gap is inherent: there's no PRF in Minicrypt which supports a nice OPRF protocol.</div>
-                </li>
-                <li>
-                    <div class="pub-title">On the UC-(In)security of PAKE Protocols without Random Oracles</div>
-                    <div class="pub-venue">Preprint</div>
-                    <div class="pub-details">Naman Kumar, Jiayu Xu | <a href="https://eprint.iacr.org/2025/998">[eprint]</a> <span class="toggle-symbol" onclick="toggleSynopsis(this)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><circle cx="12" cy="16" r="1"></circle><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></div>
-                    <div class="synopsis" style="opacity: 0; max-height: 0; padding: 0 10px; overflow: hidden;">KOY is an age-old PAKE protocol which bases its security purely on the DDH assumption. Is KOY UC-Secure? We show that it isn't, but that if you're working in the AGM you can prove it secure under a different assumption.</div>
-                </li>
-            </ul>
-            <h3>2025</h3>
-            <ul class="publication-list">
-                <li>
-                    <div class="pub-title">Multiparty Homomorphic Secret Sharing and More from LPN and MQ</div>
-                    <div class="pub-venue">TCC 2025</div>
-                    <div class="pub-details">Geoffroy Couteau, Naman Kumar, Xiaxi Ye | <a href="https://eprint.iacr.org/2025/966">[eprint]</a> <span class="toggle-symbol" onclick="toggleSynopsis(this)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><circle cx="12" cy="16" r="1"></circle><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></div>
-                    <div class="synopsis" style="opacity: 0; max-height: 0; padding: 0 10px; overflow: hidden;">Can you securely a circuit with less communication than the circuit size? We use LPN and MQ to construct \(n\)-party DPFs, HSS and PCGs for constant-degree correlations—and show that you can do \(n\)-party MPC for layered circuits with \(O(n/\log^{*} n)\) communication.</div>
-                </li>
-                <li>
-                    <div class="pub-title">\(\omega(1/\lambda)\)-Rate Boolean Garbling Scheme from Generic Groups</div>
-                    <div class="pub-venue">CRYPTO 2025</div>
-                    <div class="pub-details">Geoffroy Couteau, Carmit Hazay, Aditya Hegde, Naman Kumar | <a href="https://eprint.iacr.org/2025/268">[eprint]</a> <span class="toggle-symbol" onclick="toggleSynopsis(this)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><circle cx="12" cy="16" r="1"></circle><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></div>
-                    <div class="synopsis" style="opacity: 0; max-height: 0; padding: 0 10px; overflow: hidden;">Boolean garbled circuits need an \(O(\lambda)\) communication overhead—or do they? We show a garbling scheme that does slightly better under a variant of the Power-DDH Assumption.</div>
-                </li>
-                <li>
-                    <div class="pub-title">Breaking the \(1/\lambda\)-Rate Arithmetic Garbling Barrier</div>
-                    <div class="pub-venue">EUROCRYPT 2025 + TPMPC 2025</div>
-                    <div class="pub-details">Geoffroy Couteau, Carmit Hazay, Aditya Hegde, Naman Kumar | <a href="https://eprint.iacr.org/2025/1053">[eprint]</a> <span class="toggle-symbol" onclick="toggleSynopsis(this)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><circle cx="12" cy="16" r="1"></circle><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></div>
-                    <div class="synopsis" style="opacity: 0; max-height: 0; padding: 0 10px; overflow: hidden;">Arithmetic garbled circuits need an \(O(\lambda)\) communication overhead—or do they? We show a garbling scheme that does slightly better under a variant of the Power-DDH Assumption.</div>
-                </li>
-            </ul>
-            <h3>2024</h3>
-            <ul class="publication-list">
-                <li>
-                    <div class="pub-title">10-Party Sublinear Secure Computation from Standard Assumptions</div>
-                    <div class="pub-venue">CRYPTO 2024</div>
-                    <div class="pub-details">Geoffroy Couteau, Naman Kumar | <a href="https://eprint.iacr.org/2025/269">[eprint]</a> <span class="toggle-symbol" onclick="toggleSynopsis(this)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><circle cx="12" cy="16" r="1"></circle><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></div>
-                    <div class="synopsis" style="opacity: 0; max-height: 0; padding: 0 10px; overflow: hidden;">Can you securely a circuit with less communication than the circuit size? We use a standard assumption soup to construct \(10\)-party MPC for layered circuits with \(O(n/\log\log\log n)\) communication.</div>
-                </li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>> contact</h2>
-            <p>naman [dot] kumar [at] irif [dot] fr<br> namankr02 [at] gmail [dot] com</p>
-
-            <p>please use these emails for all professional inquiries. i have others, but they don't work well; you certainly won't get an immediate response.</p>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 naman kumar. all rights reserved. | <a href="disclaimer.html">disclaimer</a></p>
-            <p style="font-size: 0.8em; color: #666; font-style: italic;">photo courtesy of my boy jake!</p>
-            <p class="visitor-tag">visitor #0042087</p>
-        </footer>
-    </div>
-
-    <audio id="audio" src="audio.mp3"></audio>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>naman kumar | cryptography</title>
+    <meta
+      name="description"
+      content="academic homepage of naman kumar, phd student in cryptography and computer science at irif, université paris-cité."
+    />
+    <link rel="icon" type="image/png" href="fav.png" />
+    <link rel="alternate icon" type="image/png" href="fav.png" />
+    <link rel="stylesheet" href="styles.css" />
     <script>
-        function toggleSynopsis(btn) {
-            var synopsis = btn.parentElement.nextElementSibling;
-            const lockSVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><circle cx="12" cy="16" r="1"></circle><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>';
-            const unlockSVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><circle cx="12" cy="16" r="1"></circle><path d="M7 11V7a5 5 0 0 1 9.9-1"></path></svg>';
-            if (synopsis.style.opacity === '0' || synopsis.style.opacity === '') {
-                synopsis.style.opacity = '1';
-                synopsis.style.maxHeight = '200px';
-                synopsis.style.padding = '10px';
-                synopsis.classList.remove('synopsis-opening');
-                void synopsis.offsetWidth;
-                synopsis.classList.add('synopsis-opening');
-                btn.innerHTML = unlockSVG;
-            } else {
-                synopsis.style.opacity = '0';
-                synopsis.style.maxHeight = '0';
-                synopsis.style.padding = '0 10px';
-                synopsis.classList.remove('synopsis-opening');
-                btn.innerHTML = lockSVG;
-            }
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
         }
-
-        // Dark mode toggle
-        const toggleButton = document.getElementById('dark-mode-toggle');
-        const audio = document.getElementById('audio');
-        const darkSpotlight = document.getElementById('dark-spotlight');
-        const updateSpotlight = (x, y) => {
-            const mouseX = `${x}px`;
-            const mouseY = `${y}px`;
-            document.documentElement.style.setProperty('--mouse-x', mouseX);
-            document.documentElement.style.setProperty('--mouse-y', mouseY);
-            document.body.style.setProperty('--mouse-x', mouseX);
-            document.body.style.setProperty('--mouse-y', mouseY);
-            darkSpotlight.style.left = mouseX;
-            darkSpotlight.style.top = mouseY;
-        };
-        updateSpotlight(window.innerWidth / 2, window.innerHeight / 2);
-        document.addEventListener('mousemove', (event) => {
-            updateSpotlight(event.clientX, event.clientY);
-        });
-        document.addEventListener('pointermove', (event) => {
-            updateSpotlight(event.clientX, event.clientY);
-        });
-        const moonSVG = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
-        const sunSVG = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.add('glitch');
-            setTimeout(() => {
-                document.body.classList.remove('glitch');
-            }, 500);
-            document.body.classList.toggle('dark-mode');
-            const isDark = document.body.classList.contains('dark-mode');
-            if (isDark) {
-                audio.play().catch(() => {});
-            } else {
-                audio.pause();
-                audio.currentTime = 0;
-            }
-            toggleButton.innerHTML = isDark ? sunSVG : moonSVG;
-            localStorage.setItem('darkMode', isDark);
-        });
-
-        // Load dark mode preference
-        if (localStorage.getItem('darkMode') === 'true') {
-            document.body.classList.add('dark-mode');
-            toggleButton.innerHTML = sunSVG;
-        } else {
-            toggleButton.innerHTML = moonSVG;
-        }
+      };
     </script>
-</body>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <audio id="mode-audio" src="audio.mp3" preload="auto" loop></audio>
+    <button class="theme-toggle" id="theme-toggle" aria-label="toggle dark mode" title="toggle dark mode">
+      <span class="toggle-mark" aria-hidden="true">?</span>
+    </button>
+    <header class="site-header">
+      <div class="profile-wrap">
+        <div>
+          <h1>naman kumar</h1>
+          <p class="subtitle">cryptographer <span class="tag-matcauthon">@matcauthon49</span></p>
+          <p class="subtitle"><span class="tag-irif">irif</span>, up-cité</p>
+          <p>
+            <a href="index.html">home</a>
+            |
+            <a href="more.html">more</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">&gt; about</h2>
+        <img class="about-photo" src="profile.jpg" alt="portrait of naman kumar" />
+        <p>i am a cryptographer and computer scientist.</p>
+        <p>
+          i am currently working as a phd student under the supervision of
+          <a href="https://geoffroycouteau.github.io/" target="_blank" rel="noopener noreferrer">geoffroy couteau</a>
+          at
+          <a href="https://www.irif.fr/" target="_blank" rel="noopener noreferrer">institut de recherche en informatique fondamentale (irif)</a>
+          as part of université paris-cité.
+        </p>
+        <p>
+          i completed my undergraduate degree in math // cs at
+          <a href="https://www.cmi.ac.in/" target="_blank" rel="noopener noreferrer">cmi</a>.
+          i completed my masters' at
+          <a href="https://engineering.oregonstate.edu/EECS" target="_blank" rel="noopener noreferrer">oregon state</a>,
+          where i was advised by
+          <a href="https://garbledcircus.com/" target="_blank" rel="noopener noreferrer">mike rosulek</a>
+          and
+          <a href="https://sites.google.com/view/jiayux" target="_blank" rel="noopener noreferrer">jiayu xu</a>.
+        </p>
+      </section>
+
+      <section id="interests" aria-labelledby="interests-title">
+        <h2 id="interests-title">&gt; research interests</h2>
+        <p>
+          i am interested in cryptography and theoretical computer science. my work mostly spans foundational results along with the cryptanalysis of concrete cryptographic protocols. more broadly i am interested in mathematical problems, often with a combinatorial flavor, and questions about the nature of computer science and what it implies about the world. recently i have been working on the following keywords:
+        <ul>
+          <li>mpc hss pcg</li>
+          <li>threshold [thing]</li>
+          <li>black-box impossibilities</li>
+        </ul>
+        </p>
+      </section>
+
+      <section id="publications" aria-labelledby="pub-title">
+        <h2 id="pub-title">&gt; pubs</h2>
+
+        <h3>preprints</h3>
+        <ul class="publication-list">
+          <li>
+            <div class="paper-head">
+              <span class="paper-title">From OT to OLE with Almost-Linear Communication</span>
+            </div>
+            <span class="paper-meta">Geoffroy Couteau, Naman Kumar<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2026/295" target="_blank" rel="noopener noreferrer">eprint 2026/295</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-ot-ole">&gt;</button></span>
+            <div class="paper-synopsis" id="synopsis-ot-ole">
+              Doing OLEs in the OT-hybrid model used to take \(O(n\log n)\) communication. Now we can do it with \(O(n\cdot 2^{\log^{*}n})\).
+            </div>
+          </li>
+          <li>
+            <div class="paper-head">
+              <span class="paper-title">Threshold Signing for Standard Hash-Based Signatures is Expensive</span>
+            </div>
+            <span class="paper-meta">Yashwanth Kondi, Naman Kumar, Hernán Vanegas<br><span class="conf-name">Preprint</span> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-threshold-hash">&gt;</button></span>
+            <div class="paper-synopsis" id="synopsis-threshold-hash">
+              Hash-based schemes seem great: the security assumption is straightforward (SHA), SPHINCS+ has been standardized as SLH-DSA, and they don't use any super-fancy cryptography. We show that it's not so good if you want to threshold sign them; there are some inherent limitations that make threshold signing prohibitively expensive if you're doing it in a way that makes black-box use of the hash-function.
+            </div>
+          </li>
+          <li>
+            <div class="paper-head">
+              <span class="paper-title">Minicrypt PRFs Do Not Admit Black-Box Oblivious Evaluations</span>
+            </div>
+            <span class="paper-meta">Cruz Barnum, Mohammad Hajiabadi, David Heath, Jake Januzelli, Naman Kumar, Mike Rosulek<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2025/1947" target="_blank" rel="noopener noreferrer">eprint 2025/1947</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-minicrypt-oprf">&gt;</button></span>
+            <div class="paper-synopsis" id="synopsis-minicrypt-oprf">
+              OPRFs (Oblivious PseudoRandom Functions) are how you do PSI and PAKE, but they come in two varieties: key-reusable OPRFs, where the key \(k\) is fixed at the beginning by the sender, and ephemeral-key OPRFs, where you generate a new key each time the receiver wants to obtain the OPRF output at any input point of its choice. The first kind is nicer for updatable applications, but it looks like you can only ever build it using public key crypto. We show this gap is inherent: there's no PRF in Minicrypt which supports a nice OPRF protocol.
+            </div>
+          </li>
+          <li>
+            <div class="paper-head">
+              <span class="paper-title">On the UC-(In)security of PAKE Protocols without Random Oracles</span>
+            </div>
+            <span class="paper-meta">Naman Kumar, Jiayu Xu<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2025/998" target="_blank" rel="noopener noreferrer">eprint 2025/998</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-uc-pake">&gt;</button></span>
+            <div class="paper-synopsis" id="synopsis-uc-pake">
+              KOY is an age-old PAKE protocol which bases its security purely on the DDH assumption. Is KOY UC-Secure? We show that it isn't, but that if you're working in the AGM you can prove it secure under a different assumption.
+            </div>
+          </li>
+        </ul>
+
+        <h3>2025</h3>
+        <ul class="publication-list">
+          <li>
+            <div class="paper-head">
+              <span class="paper-title">Multiparty Homomorphic Secret Sharing and More from LPN and MQ</span>
+            </div>
+            <span class="paper-meta">Geoffroy Couteau, Naman Kumar, Xiaxi Ye<br><span class="conf-name">TCC 2025</span> | <a href="https://eprint.iacr.org/2025/966" target="_blank" rel="noopener noreferrer">eprint 2025/966</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-hss-lpn-mq">&gt;</button></span>
+            <div class="paper-synopsis" id="synopsis-hss-lpn-mq">
+              Can you securely a circuit with less communication than the circuit size? We use LPN and MQ to construct \(n\)-party DPFs, HSS and PCGs for constant-degree correlations—and show that you can do \(n\)-party MPC for layered circuits with \(O(n/\log^{*} n)\) communication.
+            </div>
+          </li>
+          <li>
+            <div class="paper-head">
+              <span class="paper-title">Low-Rate Boolean Garbling Scheme from Generic Groups</span>
+            </div>
+            <span class="paper-meta">Geoffroy Couteau, Carmit Hazay, Aditya Hegde, Naman Kumar<br><span class="conf-name">CRYPTO 2025</span> | <a href="https://eprint.iacr.org/2025/268" target="_blank" rel="noopener noreferrer">eprint 2025/268</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-boolean-garbling">&gt;</button></span>
+            <div class="paper-synopsis" id="synopsis-boolean-garbling">
+              Boolean garbled circuits need an \(O(\lambda)\) communication overhead—or do they? We show a garbling scheme that does slightly better under a variant of the Power-DDH Assumption.
+            </div>
+          </li>
+          <li>
+            <div class="paper-head">
+              <span class="paper-title">Breaking the Low-Rate Arithmetic Garbling Barrier</span>
+            </div>
+            <span class="paper-meta">Geoffroy Couteau, Carmit Hazay, Aditya Hegde, Naman Kumar<br><span class="conf-name">EUROCRYPT 2025 + TPMPC 2025</span> | <a href="https://eprint.iacr.org/2025/1053" target="_blank" rel="noopener noreferrer">eprint 2025/1053</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-arithmetic-garbling">&gt;</button></span>
+            <div class="paper-synopsis" id="synopsis-arithmetic-garbling">
+                Arithmetic garbled circuits need an \(O(\lambda)\) communication overhead—or do they? We show a garbling scheme that does slightly better under a variant of the Power-DDH Assumption.            </div>
+          </li>
+        </ul>
+
+        <h3>2024</h3>
+        <ul class="publication-list">
+          <li>
+            <div class="paper-head">
+              <span class="paper-title">10-Party Sublinear Secure Computation from Standard Assumptions</span>
+            </div>
+            <span class="paper-meta">Geoffroy Couteau, Naman Kumar<br><span class="conf-name">CRYPTO 2024</span> | <a href="https://eprint.iacr.org/2025/269" target="_blank" rel="noopener noreferrer">eprint 2025/269</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-10-party">&gt;</button></span>
+            <div class="paper-synopsis" id="synopsis-10-party">
+              Can you securely a circuit with less communication than the circuit size? We use a standard assumption soup to construct \(10\)-party MPC for layered circuits with \(O(n/\log\log\log n)\) communication.
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">&gt; contact</h2>
+        <p>naman [dot] kumar [at] irif [dot] fr</p>
+        <p>namankr02 [at] gmail [dot] com</p>
+        <p>please use these emails for all professional inquiries. i have others, but they don't work well; you certainly won't get an immediate response.</p>
+        
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 naman kumar</p>
+      <p class="footer-note">photo courtesy of my boy jake!</p>
+    </footer>
+
+    <script>
+      (() => {
+        const toggle = document.getElementById("theme-toggle");
+        const modeAudio = document.getElementById("mode-audio");
+
+        const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const saved = localStorage.getItem("theme") || preferred;
+
+        const setTheme = (mode) => {
+          document.body.setAttribute("data-theme", mode);
+          toggle.setAttribute("aria-label", mode === "dark" ? "switch to light mode" : "switch to dark mode");
+          toggle.setAttribute("title", mode === "dark" ? "switch to light mode" : "switch to dark mode");
+
+          if (modeAudio) {
+            if (mode === "dark") {
+              modeAudio.play().catch(() => {});
+            } else {
+              modeAudio.pause();
+              modeAudio.currentTime = 0;
+            }
+          }
+        };
+
+        const triggerGlitch = () => {
+          document.body.classList.remove("glitching");
+          void document.body.offsetWidth;
+          document.body.classList.add("glitching");
+          window.setTimeout(() => {
+            document.body.classList.remove("glitching");
+          }, 230);
+        };
+
+        setTheme(saved);
+
+        toggle.addEventListener("click", () => {
+          const next = document.body.getAttribute("data-theme") === "dark" ? "light" : "dark";
+          setTheme(next);
+          triggerGlitch();
+          localStorage.setItem("theme", next);
+        });
+
+        const synopsisButtons = document.querySelectorAll(".synopsis-toggle");
+        const synopsisPanels = document.querySelectorAll(".paper-synopsis");
+
+        synopsisPanels.forEach((panel) => {
+          panel.style.maxHeight = "0px";
+          panel.classList.remove("open");
+        });
+
+        synopsisButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const panelId = button.getAttribute("aria-controls");
+            const panel = document.getElementById(panelId);
+            if (!panel) {
+              return;
+            }
+
+            const expanded = button.getAttribute("aria-expanded") === "true";
+
+            const currentHeight = panel.getBoundingClientRect().height;
+            panel.style.maxHeight = `${currentHeight}px`;
+            void panel.offsetHeight;
+
+            if (expanded) {
+              button.setAttribute("aria-expanded", "false");
+              panel.classList.remove("open");
+              panel.style.maxHeight = "0px";
+            } else {
+              button.setAttribute("aria-expanded", "true");
+              panel.classList.add("open");
+              panel.style.maxHeight = `${panel.scrollHeight}px`;
+            }
+          });
+
+          const panelId = button.getAttribute("aria-controls");
+          const panel = panelId ? document.getElementById(panelId) : null;
+          if (panel) {
+            panel.addEventListener("transitionend", (event) => {
+              if (event.propertyName !== "max-height") {
+                return;
+              }
+
+              const isOpen = button.getAttribute("aria-expanded") === "true";
+              if (isOpen) {
+                panel.style.maxHeight = "none";
+              } else {
+                panel.style.maxHeight = "0px";
+              }
+            });
+          }
+        });
+      })();
+    </script>
+  </body>
 </html>
