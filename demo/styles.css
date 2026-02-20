@@ -27,6 +27,11 @@ body {
   overflow-x: hidden;
 }
 
+mjx-container,
+.MathJax {
+  text-transform: none !important;
+}
+
 body::before {
   content: "";
   position: fixed;
