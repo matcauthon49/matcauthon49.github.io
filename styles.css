@@ -241,6 +241,8 @@ body[data-theme="dark"] footer {
   justify-content: center;
   cursor: pointer;
   padding: 0;
+  z-index: 1000;
+  touch-action: manipulation;
   transition: transform 140ms ease, border-color 180ms ease, background 180ms ease;
 }
 
@@ -583,6 +585,8 @@ footer {
   .theme-toggle {
     top: 0.65rem;
     right: 0.65rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .about-photo {
