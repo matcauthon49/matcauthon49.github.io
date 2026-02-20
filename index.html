@@ -21,7 +21,7 @@
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
-  <body>
+  <body class="index-page">
     <audio id="mode-audio" src="audio.mp3" preload="auto" loop></audio>
     <button class="theme-toggle" id="theme-toggle" aria-label="toggle dark mode" title="toggle dark mode">
       <span class="toggle-mark" aria-hidden="true">?</span>
@@ -44,6 +44,7 @@
     <main>
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">&gt; about</h2>
+        <div class="section-line" aria-hidden="true"></div>
         <img class="about-photo" src="profile.jpg" alt="portrait of naman kumar" />
         <p>i am a cryptographer and computer scientist.</p>
         <p>
@@ -67,18 +68,20 @@
 
       <section id="interests" aria-labelledby="interests-title">
         <h2 id="interests-title">&gt; research interests</h2>
+        <div class="section-line" aria-hidden="true"></div>
         <p>
           i am interested in cryptography and theoretical computer science. my work mostly spans foundational results along with the cryptanalysis of concrete cryptographic protocols. more broadly i am interested in mathematical problems, often with a combinatorial flavor, and questions about the nature of computer science and what it implies about the world. recently i have been working on the following keywords:
-        <ul>
+        <ol>
           <li>mpc hss pcg</li>
           <li>threshold [thing]</li>
           <li>black-box impossibilities</li>
-        </ul>
+        </ol>
         </p>
       </section>
 
       <section id="publications" aria-labelledby="pub-title">
         <h2 id="pub-title">&gt; papers</h2>
+        <div class="section-line" aria-hidden="true"></div>
 
         <h3>preprints</h3>
         <ul class="publication-list">
@@ -166,6 +169,7 @@
 
       <section id="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">&gt; contact</h2>
+        <div class="section-line" aria-hidden="true"></div>
         <p>naman [dot] kumar [at] irif [dot] fr</p>
         <p>namankr02 [at] gmail [dot] com</p>
         <p>please use these emails for all professional inquiries. i have others, but they don't work well; you certainly won't get an immediate response.</p>
