@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap");
+
 :root {
   --paper: #fbfaf6;
   --paper-soft: #f4f1e8;
@@ -22,6 +24,7 @@ body {
 body {
   min-height: 100vh;
   color: var(--ink);
+  font-size: 0.95rem;
   background:
     radial-gradient(900px 500px at -10% -15%, #ffffff 0%, transparent 55%),
     radial-gradient(800px 450px at 110% -20%, var(--paper-soft) 0%, transparent 52%),
@@ -33,7 +36,7 @@ body {
       transparent 5px
     ),
     var(--paper);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", serif;
+  font-family: "EB Garamond", Garamond, "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", serif;
   line-height: 1.72;
 }
 
@@ -264,12 +267,34 @@ code {
 }
 
 @media (max-width: 640px) {
+  body {
+    line-height: 1.62;
+  }
+
   .site-shell {
-    width: min(var(--max-width), calc(100% - 1.4rem));
-    padding: 1.8rem 0 2.2rem;
+    width: min(var(--max-width), calc(100% - 1rem));
+    padding: 1.4rem 0 1.8rem;
+  }
+
+  .site-header {
+    margin-bottom: 1.6rem;
+  }
+
+  .story-section {
+    margin-bottom: 1.7rem;
+  }
+
+  .story-item {
+    padding: 0.6rem 0;
+  }
+
+  .story-body p {
+    margin: 0 0 0.4rem;
   }
 
   .story-nav {
+    margin-top: 1.5rem;
+    padding-top: 0.8rem;
     flex-direction: column;
   }
 }

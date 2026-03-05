@@ -7,9 +7,9 @@ from pathlib import Path
 
 SITE_TITLE = "short stories"
 SITE_SUBTITLE = "by Naman Kumar"
-SITE_HEAD_TITLE = "Quiet Ink | Short Stories"
+SITE_HEAD_TITLE = "Naman Kumar | Short Stories"
 SITE_DESCRIPTION = (
-	"A minimalist library of short stories in a clean serif reading experience."
+	"Short stories by Naman Kumar."
 )
 FOOTER_TEXT = "&copy; Naman Kumar. All rights reserved."
 
@@ -435,7 +435,7 @@ def render_story_page(story: Story) -> str:
 			"  <head>",
 			"    <meta charset=\"UTF-8\" />",
 			"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
-			f"    <title>{escape_html(story.title)} | Quiet Ink</title>",
+			f"    <title>{escape_html(story.title)} | Naman Kumar</title>",
 			'    <link rel="stylesheet" href="../styles.css" />',
 			"  </head>",
 			'  <body class="story-page">',
