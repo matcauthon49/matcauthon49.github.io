@@ -24,7 +24,7 @@ body {
   color: var(--ink);
   font-size: 1.06rem;
   background: #ffffff;
-  font-family: "Literata", "Baskerville", "Baskerville Old Face", "Iowan Old Style", "Times New Roman", serif;
+  font-family: "Baskervville", "Baskerville", "Baskerville Old Face", "Iowan Old Style", "Times New Roman", serif;
   font-optical-sizing: auto;
   line-height: 1.72;
 }

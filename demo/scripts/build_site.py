@@ -12,7 +12,7 @@ SITE_DESCRIPTION = (
 	"Short stories by Naman Kumar."
 )
 FONT_STYLESHEET_HREF = (
-	"https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap"
+	"https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap"
 )
 FOOTER_TEXT = "&copy; Naman Kumar. All rights reserved."
 
