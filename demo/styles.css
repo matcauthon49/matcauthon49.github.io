@@ -189,7 +189,7 @@ code {
 .story-body p {
   margin: 0;
   text-indent: 1.6rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .story-body p:first-of-type {
