@@ -272,16 +272,16 @@ code {
   }
 
   .site-shell {
-    width: min(var(--max-width), calc(100% - 1rem));
-    padding: 1.4rem 0 1.8rem;
+    width: min(var(--max-width), calc(100% - 1.8rem));
+    padding: 1.6rem 0 2rem;
   }
 
   .site-header {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.9rem;
   }
 
   .story-section {
-    margin-bottom: 1.7rem;
+    margin-bottom: 2rem;
   }
 
   .story-item {
@@ -293,7 +293,7 @@ code {
   }
 
   .story-nav {
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
     padding-top: 0.8rem;
     flex-direction: column;
   }
