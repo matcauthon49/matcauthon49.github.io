@@ -26,6 +26,7 @@ class Story:
 	excerpt: str
 	order: int
 	body_html: str
+	is_draft: bool
 
 
 def main() -> None:
@@ -38,9 +39,7 @@ def main() -> None:
 	for file_path in markdown_files:
 		raw = file_path.read_text(encoding="utf-8")
 		meta, body = parse_front_matter(raw)
-
-		if is_truthy(meta.get("draft", "")):
-			continue
+		is_draft = is_truthy(meta.get("draft", ""))
 
 		default_slug = slugify(file_path.stem)
 		title = meta.get("title") or infer_title(body) or humanize_slug(default_slug)
@@ -55,11 +54,14 @@ def main() -> None:
 				excerpt=excerpt,
 				order=order,
 				body_html=markdown_to_html(body),
+				is_draft=is_draft,
 			)
 		)
 
 	validate_unique_slugs(stories)
 	stories.sort(key=lambda story: (story.order, story.title.lower()))
+	published_stories = [story for story in stories if not story.is_draft]
+	draft_stories = [story for story in stories if story.is_draft]
 
 	expected_html_files = {f"{story.slug}.html" for story in stories}
 	for existing_file in STORIES_DIR.glob("*.html"):
@@ -73,11 +75,13 @@ def main() -> None:
 			encoding="utf-8",
 		)
 
-	INDEX_FILE.write_text(render_index_page(stories), encoding="utf-8")
+	INDEX_FILE.write_text(render_index_page(published_stories, draft_stories), encoding="utf-8")
 
 	count = len(stories)
+	published_count = len(published_stories)
+	draft_count = len(draft_stories)
 	noun = "story" if count == 1 else "stories"
-	print(f"Built {count} {noun}.")
+	print(f"Built {count} {noun} ({published_count} published, {draft_count} drafts).")
 
 
 def parse_front_matter(raw_text: str) -> tuple[dict[str, str], str]:
@@ -356,25 +360,38 @@ def escape_html_attribute(value: str) -> str:
 	return escape_html(value).replace("`", "&#96;")
 
 
-def render_index_page(stories: list[Story]) -> str:
+def render_story_list_items(stories: list[Story], *, animate: bool, empty_text: str) -> str:
 	if not stories:
-		list_html = "            <li class=\"story-item\"><p>No stories published yet.</p></li>"
-	else:
-		list_items: list[str] = []
+		return f'            <li class="story-item"><p>{escape_html(empty_text)}</p></li>'
 
-		for index, story in enumerate(stories):
-			delay_class = f" delay-{index + 1}" if index < 3 else ""
-			item_html = "\n".join(
-				[
-					f'            <li class="story-item{delay_class}">',
-					f'              <a class="story-link" href="stories/{escape_html_attribute(story.slug)}.html">{escape_html(story.title)}</a>',
-					f"              <p>{escape_html(story.excerpt)}</p>",
-					"            </li>",
-				]
-			)
-			list_items.append(item_html)
+	list_items: list[str] = []
 
-		list_html = "\n\n".join(list_items)
+	for index, story in enumerate(stories):
+		delay_class = f" delay-{index + 1}" if animate and index < 3 else ""
+		item_html = "\n".join(
+			[
+				f'            <li class="story-item{delay_class}">',
+				f'              <a class="story-link" href="stories/{escape_html_attribute(story.slug)}.html">{escape_html(story.title)}</a>',
+				f"              <p>{escape_html(story.excerpt)}</p>",
+				"            </li>",
+			]
+		)
+		list_items.append(item_html)
+
+	return "\n\n".join(list_items)
+
+
+def render_index_page(published_stories: list[Story], draft_stories: list[Story]) -> str:
+	published_list_html = render_story_list_items(
+		published_stories,
+		animate=True,
+		empty_text="No stories published yet.",
+	)
+	draft_list_html = render_story_list_items(
+		draft_stories,
+		animate=False,
+		empty_text="No drafts yet.",
+	)
 
 	return "\n".join(
 		[
@@ -398,10 +415,15 @@ def render_index_page(stories: list[Story]) -> str:
 			"      </header>",
 			"",
 			"      <main>",
-			'        <section aria-labelledby="stories-heading" class="story-section">',
-			'          <h2 id="stories-heading">Stories</h2>',
+			'        <section class="story-section" aria-label="Stories">',
 			'          <ul class="story-list">',
-			list_html,
+			published_list_html,
+			"          </ul>",
+			"        </section>",
+			'        <section class="story-section" aria-labelledby="drafts-heading">',
+			'          <h2 id="drafts-heading">Drafts</h2>',
+			'          <ul class="story-list">',
+			draft_list_html,
 			"          </ul>",
 			"        </section>",
 			"      </main>",
@@ -421,7 +443,7 @@ def render_story_page(story: Story) -> str:
 	nav_html = "\n".join(
 		[
 			'      <nav class="story-nav story-nav-single" aria-label="Story navigation">',
-			'        <a href="../index.html">Story list</a>',
+			'        <a href="../index.html">Back</a>',
 			"      </nav>",
 		]
 	)

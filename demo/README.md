@@ -27,4 +27,4 @@ Your story page will be generated at `stories/<slug>.html`, and the homepage lis
 
 ## Draft stories
 
-Set `draft: true` in frontmatter to skip publishing while you are writing.
+Set `draft: true` in frontmatter to place a story under the `Drafts` section on the homepage while you are writing.

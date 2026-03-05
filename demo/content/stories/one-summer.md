@@ -1,0 +1,296 @@
+---
+title: One Summer North Dakota, 2025
+slug: one-summer
+order: 3
+excerpt: Draft—in progress.
+draft : true
+---
+
+And if you asked Neal Stockwell, later, why he’d decided to uproot his life at 29 to move to a city he’d been to once when he was fourteen as part of a high school field trip and only ever seen since on Christmas cards from his third cousin and reruns of The Blues Brothers on H.B.O. he’d give you the usual tidbits about Q.o.Ls and Expected R.O.Is and maybe even let slip a little about how he was, quote, ‘getting on in age’ and wanted to live a little before resigning himself to ‘a quiet little life in, I don’t know, Minnesota,’ and he wouldn’t be wrong, exactly, but he wouldn’t tell you about that one evening April 2025 when he caught a brief snippet of Dan Aykroyd and John Belushi letting out the theme from ‘Rawhide’ for what was maybe the twenty-second time in his no-longer-brief life while he lay on his bed with a side of takeout and his cellphone blaring that the number of films written and shot entirely in North Dakota, his present residence and the only place he’d ever called home, was something like seven of which exactly zero had proved to be culturally impactful in any manner whatsoever, and he certainly wouldn’t tell you about how the quiet magic of his so-called ‘ascetic’ lifestyle drained away in a singular moment to reveal a hollowness and dark void at the heart of his seven years of service as an IT administrator in local government, about how he first called up his parents in Bend, OR and told them that he ‘needed a change otherwise he was going to shoot himself in the head,’ about how he took down his his poster of Risky Business Rebecca de Mornay looking seductively at the camera that he’d sticky note’d with ‘One of these days!’ and shredded it until he couldn’t even make out the blue of her eyes anymore, and finally, of course, he definitely wouldn’t mention how he’d called up that aforementioned third cousin and given him both a piece of his mind and his C.V. before he’d replied that he’d heard that, I dunno, WAMCO or something were always looking for a junior strategist that they could pay fifty or so grand which was peanuts for a job on the Loop but had a tendency to attract the exact type of dull, midwestern male going through a spiritual crisis that Neal was a fine representative of, and that he could, if Neal wanted, have a quick talk with Ken Bravermann, who was a great guy, by the way, and see if ‘anything could come of it.’ And guess what? Something did. He did actually do it—drove down all the way in the only valuable possession he had, the ’77 Trans Am from Smokey and the Bandit he’d bought four years ago and fixed, meticulously, from the glovebox insert to the leaky valve seals (it’d taken a year and half to get the whole thing working, more or less; a year to teach himself how to be the kind of person who’d fix an old car like that in the first place, then another half to get the damn thing on the road), all the way the up from Jamestown to a $1,200 studio he’d somehow landed in Uptown along with his cousin’s assurance that taking the L to work was something that everyone did, especially these days with gas so expensive and all. If you’d known Neal Stockwell for those years in North Dakota and maybe even before that back in Oregon you’d know what this whole business must’ve been like for him—Neal the guy who sputtered out his sentences, hadn’t looked at a girl in the eyes since he was twenty-one, Neal the cheery young lad in the office, fair-haired and boyish, looking half his age and always half an inch away from letting out the biggest grin you’d ever seen and saying something about Billy Wilder or quoting Gene Kelly before stammering back to the library where he checked out yet another kung-fu movie for the evening before giving the librarian a wink and heading back to his condo, Neal that kid with his head in the clouds with Fred Astaire and Brigitte Bardot who you’d catch eating a popsicle when it was ten degrees out? That Neal packed up and moved to Chicago one August?
+
+We’d have to think that he had something in mind, after all, but once it was settled and done—late October, Halloween approaching and a final recliner carried up four sets of stairs and barely snuggled into the desk under the loft bed, after having enough deep-dish pizza to last a lifetime and even wasting some of that hard-earned ad agency money on a Cubs game—he found himself, more often than not, flipping through some nouvelle vague on a second-hand DVD player, or so it was until his daily lunch schedule collapsed into one driven primarily by the whimsical urges of one junior executive (a title as lofty as his ‘junior strategist,’ though carrying marginally higher pay) Eric James ‘Jimmy’ Chapman, who everyone but Neal called Jimmy and Neal called Eric, dressed impeccably in a suit, tie, trench coat, briefcase, the whole thing in sharp contrast with his messy brown hair that lay tousled over his forehead in distinctive Massachusetts boy scout fashion, not a day over twenty-five and a filled with a distaste for the denizens of this bourgeois hellscape that were precisely as vapid and degenerate as Eric himself—‘I love being a hypocrite,’ he was known to say, ‘it lets me judge people for the same shit I do.’
+
+‘…fucking hate that Bravermann,’ he was saying. ‘Fucker giving me shit for a coffee order.’ He contorted into a nasal voice. ‘“As I was saying, Jimmy, the clients from Chanel prefer their coffee au lait, as they call it, and, as you know, client satisfaction is the number one priority here at WAMCO.” Fucker. He’s shooting up, I can tell.’
+
+‘You’re going to choke on that sandwich,’ said Neal.
+
+‘Fat chance,’ said Eric. 
+
+‘Why do you carry that briefcase around, anyway?’
+
+He gave him a quizzical look. ‘The trench coat, obviously.’
+
+‘You can’t wear a backpack?’
+
+‘On a trench coat?’
+
+‘Well, you don’t really need the trench coat.’
+
+Eric looked at him for several seconds, then shook his head. ‘Man, Neal, you’re really fucking dumb. I don’t know how you’re surviving. I really don’t.’ 
+
+He took a bite out of what appeared to be at best a slab of tuna wrested between two end slices of bread. They sat on a pair of plastic chairs thrown haphazardly with the occasional lunch table over a large atrium overlooking the street far below, the vastness of the great Lake an icy backdrop over the city.
+
+‘It’s going to get too cold for a trench coat anyway,’ said Neal. ‘Just get a nice down jacket or something.’
+
+‘Down? I live in fucking Hyde Park, man. Look, I may be working in advertising, but I have to communicate to ze chicks down there that I make more than PhD salary. You gotta respect the pecking order. I’ve only ever seen Chinese freshman wearing down. What are you doing Tuesday?’
+
+‘Tuesday? That’s a work night.’
+
+‘Yes, Tuesday. Tuesday’s ladies’ night at the bars.’
+
+Neal made a face.
+
+‘What?’
+
+‘Unless you’ve been less forthcoming than you make it out to be, we don’t seem to be ladies.’
+
+‘No we’re not. We’re opportunists. What do you say?’
+
+Neal shook his head, shifting around in his seat. ‘I don’t know. It’s not my style.’
+
+Eric snorted. ‘Have you got a style?’
+
+‘Alright, that’s enough,’ said Neal. ‘I’m heading back to work. Break’s over.’
+
+‘You’re incorrigible,’ sighed Eric. ‘Besides, why do you talk like that?’
+
+‘Like what?’
+
+‘“Break’s over.” What are you, Tom Cruise? You’ve been stacking up on DVDs every evening again, haven’t you?’
+
+‘I like my movies.’
+
+‘I’m sure,’ said Eric. ‘Alright, I’ll see you tomorrow. Text me.’
+
+‘I’ll try,’ said Neal, stashing plans with Eric into the part of his mind labelled ‘maybe not even if under extreme distress.’
+
+So what, then, was Neal’s deal? Cause you wouldn’t see him in a weight room, or out by the beach, or playing tennis, God forbid, anything tangible that might require him to actually apply those senses given to him in some kind of conjoined fashion rather than merely use them as inputs to his television screen. He’s not a seagull, he’s a hibernator. This is a guy whose neighbors think that fresh air is poisonous to him. And you’d suppose it’d always been that way, but it wasn’t—there was a time back in college when he’d had his tics but he wouldn’t grimace himself into an early sleep with assurances of banalities like ‘one step at a time’ which, though true, were banalities nevertheless, and he for sure wouldn’t be as rigid as he was lying down partly because he’d been more slovenly in his youth but mostly because he wouldn’t be alone on that bed anyway, snuggled up next to Caroline Davis, biology major, brunette (the very best) looking at him with a tight-lipped smile and seeing something there he could never neither before nor after and not there in his Chicago apartment, either, thinking what an unfamiliar sort of place this was and that you could take the man out of North Dakota but you couldn’t take North Dakota out of the man. Things were a bit slow for him. Not mentally—he was a sharp guy—but physically, like he was moving through an amorphous ether. People were opaque. And there was too much metal all around him, probably interfering with his fundamental biochemical processes that left him somewhat unable to appreciate the dark Shearling coats that the women of the town seemed to be getting on these days or even the jazz, really. But, hey—one step at a time, wasn’t it? And the step, that Friday, seemed to be a screening of Hitchcock’s Vertigo about half-hour from his place preceded by a Q&A with, of all people, Paul Schrader, who’d decided to drop by in the hopes of selling whatever new disturbed middle-aged man fantasy his fans (Neal included) were planning on buying.
+
+So at 6:30PM, the sky is purple, Lincoln Park all brown in the autumn foliage, Neal Stockwell puts on over his old university sweatshirt a puffer jacket that was a grand buy in North Dakota but he’s only just beginning to realize is both too warm and too impoverished-looking for Illinois—he’s got for the first time in a while a pretty good haircut about a month ago from this Latino barbershop downtown, like a real barbershop where they’ll be talking about the game and hark at him in a vague accent to which he knows all the stock replies like ‘no sir-ee,’ it’s been about three and a half weeks since then and the hair’s now slightly overgrown to give it a pretty natural-looking quality that exemplifies all his bony features, and he’s walking, hands in pockets, down dingy streets fashioning himself to be some kind of dirty cop-like figure, maybe even Philip Marlowe from the correct angle, puffer jacket be damned. And he enters into a large, cavernous theater, bigger than any he’s seen before, jaw dropped at the fact that they make these things so big in the first place and holy shit how might Lawrence of Arabia look on one of these when he takes his seat close to the front, ignores the chattering audience and waits till the lights dim and a cheery young woman, the type who’s always considered wanting to get a nose ring but never really committed, emerges on stage and gives the audience a brief rundown of their seventh film in the Hitchcock retrospective they’ve been doing now that the 4K remasters from the 125th anniversary of the old master’s birth they did last year have finally been made available, and that they’d be joined tonight by a very special guest, a wheezing old midwestern man, somewhat crummy but in a way that fed into his legend even more—as if these earthly things had no manner of effect on him—Paul Schrader. But Neal’s got no eyes for Schrader, yet. Because there’s a young woman who’s just entered the hallway and is looking for a place to sit, evidently, and since the seats on the back of the theatre haven’t yielded any openings she’s walked up all the way to Neal’s row and now even his column, he’s chosen a spot which is kind of secluded and she’s seen this immediately and calculated that there must certainly be available seats there, like yeah Paul Schrader’s a cool guy but surely not the entirety of Chicago’s turned up to listen to him drone on about Bresson or whatever and so there’s gotta be some seat in the left corner of the front few rows, right where Neal is sitting, hands on armrests, waiting for the auteur to come on stage, when he glimpses that this young woman is going to approach him and ask if he’s saving this seat for someone, he’s got his puffer jacket nested nicely on the head of the seat behind him, and of course he’s willing to let someone sit next to him like that’s not a problem, of course, it’s in front that’s the problem cause then their head blocks the view, but this particular girl, as he sees—and Jesus Christ what the fuck are the chances—is a five foot three brunette with dazed green eyes and a sharp nose and wavy hair and all the things that made Caroline look like Caroline, they could be fucking sisters, what the fuck, how is this even possible, this girl looks exactly like Caroline but how could she Caroline’s, well, dead—?
+
+‘Did you go to the University of Minnesota?’
+
+The last thing he’s expecting. ‘Excuse me?’
+
+‘Your sweatshirt,’ she says. ‘It says Minnesota. Did you go to the University of Minnesota?’ She’s got herself a vague ditziness about her, as if she’s talking to the seat he’s sitting on. But her eyes are staring point-blank into his.
+
+‘Yeah,’ he says.
+
+‘I went there, too. When?’
+
+‘Um. Class of ’17.’
+
+‘Okay,’ she replies. ‘I’m sitting next to you.’
+
+‘Sure.’
+
+She pulls off her own sweater, brushing it against his face, and folds it into her lap. ‘It’s too warm in here.’
+
+‘Yeah,’ he replies. ‘When were you there?’
+
+Her replies were off; either too fast or too slow. This time she’s too slow. ‘I graduated in 2020.’
+
+‘Oh,’ he says. Well, at least it’s not Caroline—she’d have graduated in 2018. ‘What did you study?’
+
+She squints, and that’s another pang—a very un-Caroline expression. But even up close she looks so similar that it’s all he can do to not reach out and brush her hair behind her ear. She’s got pitch-perfect skin but with a star-shaped pimple patch on her forehead, and he doesn’t know how long he’s allowed to look at her.
+
+‘You’re staring,’ she says.
+
+‘I’m sorry,’ he replies, shifting his gaze.
+
+She chuckles. ‘I thought you were doing a bit. Vertigo. Have you watched it before?’
+
+‘Uh-huh.’
+
+Long, long pause. ‘Is that a yes or a no?’
+
+‘I’m sorry, I’m kind of disoriented.’ Hands on temples, but he laughs and passes it along as if he’s just surprised at her suddenness. She perks back up at that.
+
+‘English,’ she says. ‘I’m a copywriter.’
+
+‘They still have copywriters in 2025?’
+
+‘Yeah.’
+
+‘What—what exactly does that entail?’
+
+‘Social media marketing,’ she says, relaxing. ‘Like putting stuff online. Writing blog posts. And you?’
+
+‘Advertising. I work as a strategist.’ 
+
+She laughs, somewhat loudly. ‘Don’t tell me you’re a yuppie.’
+
+Neal laughs, too. ‘I’m not a yuppie. They don’t have yuppies anymore.’
+
+‘You’re in Chicago, working in advertising, watching a screening of Vertigo. That sounds like a yuppie to me.’
+
+‘Okay, okay. I meant that I haven’t seen it before. Have you seen it before?’
+
+‘Yes. But I fell asleep the first time.’
+
+Neal’s not sure how to reply to that, but she’s not expecting anything, either—her attention’s back on stage, where an old man is wheezing out. He’s short and dressed in a black shirt and they’re saying he wrote Taxi Driver. ‘I’d have thought he’d be more imposing.’
+
+‘I saw an interview of his,’ she replies. ‘He’s a genius, no doubt, but also really stupid. Do you come here often?’
+
+‘Not really,’ he says. ‘I was here for Mirror a few months ago, but usually I just rent DVDs from the library.’
+
+She x-rays Neal. He’s barely able to make out what Eric’s trying to say, but Eric’s a swimming pool to this girl’s lead chamber. And yet Schrader’s been introduced and she’s still going. Neal might explode. We’re a question down and she’s still going. At some point he’s gotta say something—the green eyes want him to. Sure she’s a sharpshooter, but this is kooky territory. ‘Why do you think he’s stupid if he’s a genius?’ he offers.
+
+She untenses. ‘Have you watched Pickpocket?’
+
+‘Yeah. I’m not a big fan of Bresson, though. He’s too slow.’
+
+‘You’re right. He is too slow. Wait and watch. At some point, Schrader’s going to mention Bresson.’
+
+‘What’s your name, by the way?’
+
+‘Deborah,’ she says, before he can even finish the sentence. ‘My friends call me Debbie. Do you want to be friends?’
+
+‘Uh—sure.’
+
+Her expressions are pretty animated—Neal can physically identify the moment she becomes pleased. ‘Then you can call me Debbie. What’s yours?’
+
+‘Neal. Do you come here often?’
+
+‘Neal. Does that mean anything?’
+
+‘Not that I know of.’
+
+‘I’m new to the city. I only moved here a month ago.’
+
+‘Oh, okay. Where are you from?’
+
+‘Hartford, Connecticut. You?’
+
+‘North Dakota.’
+
+Neal shifts back to the Q&A. No mysticism there, at least. Schrader’s saying something about him and ‘Marty’ on Raging Bull, and his process of writing the screenplay. He calls Vertigo the ultimate movie about a yearning of the senses and says he’s jealous he didn’t write it. Then he starts talking about, of all things, how the first time he read the screenplay he could immediately feel the Bresson influence, even though A Man Escaped had only come out a year or so earlier, and how every one of his own movies are just remakes of Bresson movies.
+
+‘Gotcha,’ says Debbie.
+
+‘So he’s a Bresson fan. I guess that tracks. He’s channeling that “young man against the world” energy.’
+
+‘Here’s why I think he’s stupid: he thinks he’s remaking Pickpocket. But Schrader himself has made several films better than Pickpocket…’
+
+‘Deborah? You’re telling me that you’ve got the hots for some chick called Deborah?’
+
+‘What’s wrong with Deborah?’ replied Neal.
+
+They were seated on the coffee table at the end of the hallway, far out of earshot of any of the suits or secretaries on the newly refurbished ‘co-working spaces,’ as they called them, inventions that had usurped even the oppression of the cubicle by replacing the whole structure with merely a series of large, open worktables. But it’s not as if Neal’s job—which formally had something complex to do with presentations and statistical inferences and buzzwords from marketing bureaus but nevertheless proved sufficiently easier than running sysadmin for the elderly that it only used about ten percent and not a full quarter of the things he’d learned during his own computer science degree—it’s not as if Neal’s job required him to spend too long seated on those worktables anyway; the presentations took about fifteen minutes and he’d heard from Eric that for the first time in the post-COVID economy they were considering actually promoting one of these so-called junior strategists into a real strategist instead of firing him to hire another specimen for extracting labor, perhaps even some kind of unpaid intern, a suspicion furthered by the fact that Bravermann had passed him by last week and said that if he was planning to stick around until Christmas he might hear something quite appealing for a change. It was good moods around the office, anyway, and the economy, though bad, had been bad all the while as far as living memory went, and instead the matter Neal had summoned Eric to discuss was far more serendipitous.
+
+‘What’s wrong with Deborah?’ Eric repeated, taking too big a gulp of coffee. ‘You’re in the big leagues now, Neal. You’re not chasing tail in the midwest anymore. Didn’t you go to Wrigley Field this September?’
+
+‘She’s from Connecticut.’
+
+‘Big deal. Look around you. Deborah, my God. You’ve got access to Skylers, Stacies, Heathers, Madisons, and you’re stuck on Deborah. She let you call her Debbie?’
+
+‘Well—yeah.’
+
+‘Of course she did. What happened next? Did you get her number?’
+
+‘Not really.’
+
+‘Did you ask?’
+
+‘Yeah, duh. You think I’m a retard.’
+
+‘I don’t think you’re a retard, but I think you’d agree you’re not doing all that well in the ladies’ department. What, she said no?’
+
+‘She said that she doesn’t just give her number out to anyone.’
+
+‘Well, from what I hear, you’re not just anyone. Didn’t you say you had a long talk?’
+
+‘We had a mild talk.’
+
+‘What the fuck is a mild talk?’
+
+‘It wasn’t too long, but it wasn’t just small talk, either. We discussed movies.’
+
+‘Okay, that’s not the worst. I’m assuming you didn’t go on some unhinged rant.’
+
+‘Of course not, idiot.’
+
+‘Well, that’s not all that bad. I’m impressed. So, you get her Instagram?’
+
+‘Well—’
+
+He took another swig of coffee. ‘No, Neal… don’t tell me—’
+
+‘Look, what would I possibly do with an Instagram?’
+
+‘I can’t believe it,’ he said, feigning surprise. ‘It’s a Christmas miracle. A man has just time-travelled from 2005 straight to the present day. Great Scott, Marty! We did it.’
+
+‘Okay, no need for the hysterics, alright—’
+
+‘Look, if you’re planning on any kind of fraternizing, you gotta have an Instagram.’
+
+‘I don’t know… sounds kinda sleazy.’
+
+‘Who’re you calling sleazy?’
+
+‘I’m just saying, you know—’
+
+‘Hey! I’m not sleazy—a man’s gotta make a living in this town. Look around you—how many women in this office have I slept with?’
+
+‘Didn’t you have something going on with Sharon—’
+
+‘I didn’t sleep with her. We just made out.’
+
+‘Tongue?’
+
+‘Okay, I’m not doing this, Neal, we’re not in high school. Tell me this—did you make any plans with her?’
+
+‘She didn’t really let me walk her back to her car, or anything, even though I offered. But she said she’s going to be at the next screening this Friday.’
+
+‘Hey, that’s something—that’s something, alright. That’s a win.’
+
+‘You think so?’
+
+‘That’s a win in my eyes, man. Look at that. Finally, after all this time—Neal Stockwell has an internal monologue. You love to see it.’
+
+‘How am I supposed to respond to that?’
+
+‘Don’t. Come on—I know you’re working till midnight today, but you’ve gotta be free tomorrow. It’s Tuesday. We won’t drink much. I found this old disco bar sort of place downtown, alright—it’s a bit like a club, but it’s more like a bar with a nice bit of dancing space. What do you think. Come on.’
+
+Neal sighed. ‘I know you just want my car.’
+
+‘It’s the best goddamn car in the state.’
+
+‘You know what? Fine. I’ll entertain you this time, alright?’
+
+But ‘entertained’ was far too modest a term to correctly enunciate the totality of the primal awe that gripped Eric as he turned the corner on that woeful housing block Uptown that would eventually become a detour of frequency matched only by the Loop office—‘transfixed’ was more like it, or perhaps even ‘reduced to a babbling nonexistence,’ though the verb of choice for Neal was ‘bewitched,’ owing to how the expression of that transfixion was in the manner of Eric prostrating himself upon that decalled hood and inundating it, repeatedly, with the sloppy wetness of his mouth.
+
+‘Okay, what the fuck are you doing to my car?’ said Neal, gripping him back by the collar.
+
+Eric shrugged. ‘You have to treat a car like you treat a lady, Neal. And that is no ordinary car, and therefore cannot be treated like no ordinary lady.’
+
+‘So I’m to take that the preferred strategy in Boston is “mouth first, ask questions later”? That hood’s got pigeon shit on it, dude.’
+
+He wiped his tongue on his sleeve. ‘Small price to pay.’
+
+‘How about gas? I think that’s a fairer price.’
+
+‘Fuck you, Neal. Look at you. Bullying the short boy. Making him pay for gas.’
+
+‘Don’t you make more money than me?’
+
+‘Yeah, sure, five bucks is greater than four. Big deal. And I’m not from Boston, I’m from upstate. There’s a big difference. Don’t lump me in with those dweebs.’
+
+‘Did you really just say “dweeb”? I don’t think I’ve heard that since 2014.’
+
+‘You’d say “dweebs” too if you had to hang out with them, trust me. I call shotgun.’
+
+Neal gave him an incredulous look. ‘There are two people in this car.’
+
+‘Hey, I’m just making sure. Next thing I know you’re gonna make me drive, make me pay for gas—pretty soon you’ll have your own personal chauffeur service running.’
+
+‘Get in the fucking car,’ he finished, shaking his head.
+
+ 
+
+…he rang the doorbell.
+
+There was a twenty-second pause, then two clicks, and the door opened.
+
+Neither of them had registered the other before he found his hands on her waist, his mouth on hers, the softest, most wonderful lips in Chicago and Illinois and maybe even the whole universe,—and she was pulling him closer, she’d latched onto his shirt, and they seemed to be going on and on forever and the few seconds they broke apart she immediately reached back in and caught him with her arms around him, now smelling like cinnamon, lavender, all the good things he could think of—though right there, then, he couldn’t think of anything, really, and as they fell over laughing on her living room floor the only thought on his mind was a befuddled mixture of how soft she was and how bright those eyes were and how he wanted to reach out and grab her and just hold here there, right there, and so he did.
+
