@@ -1,0 +1,715 @@
+---
+title: Portland, Maine
+slug: portland-maine
+order: 4
+excerpt: 
+---
+
+
+
+
+It didn’t have to be this way. The first time I met Sandrine it was 2023 and she was wearing all black and Prada sunglasses and looked just a little too much like a Matrix character for me to be fully settled in her presence, but the essentials really did all check out. She’d been in Seattle for about a decade now—first as a museum curator, then as an art historian—and some of that offbeat slant was to be expected. And it’s not like I didn’t like her or anything. She laughed a little bit too much and a little bit too loudly and gave Jeremy too many knowing looks for my taste, but though she had a tendency to be in-your-face she was perfectly pleasant company if the time called for it. Ate pizza with her hands, that sort of thing. What was hard for me to believe was that they were twins—it didn’t seem like they shared any of the same concerns, to put it mildly. Jeremy was all earth, solid core. Put him on a football field and he’d throw forty yards a play. She looked like she’d never stepped foot out of New York City. But the resemblance was there, all right, and if you took one look at the jet-black hair and the upturned noses and the white knuckles gripping the steering wheel you’d know that a decade of displacement didn’t hold a candle to basic biology.
+
+Back then she’d driven down to Palo Alto and announced herself as guest of honor at Jeremy’s thesis-slash-birthday party, and I guess we were all either too stoked or too high to complain. It was hot and dry and the air conditioning wasn’t working as well as we’d have liked it to and she was being a bitch about it and being a bitch to Catherine in general, but Cat and I were far too interested in her for it to really register. I don’t remember the details, really. We drove her out to this Japanese restaurant and then up to the golden gate bridge, and then Cat and I left to watch the Eagles game and I don’t think we saw her again. A couple days later she was gone, Jeremy took the Caltrain up to Berkeley and I moved out to the city to start my stupid fucking job writing code while the memory of her speaking French and rolling her own tobacco slowly faded away.
+
+So when Jeremy said that she was going to join us on the road trip this July it wasn’t really her that bothered me. This was supposed to be our thing. His postdoc was over, godspeed, and though Jeremy was a smart guy the state of higher mathematics was bad enough that he was a long way away from teaching at Harvard or Columbia or anything like that. Not that he wanted to—he was midwestern through and through, but shared a fascination for the old country, you know, Delaware, Vermont, places like that. God knows what the hell he saw in them. But he got the job in Maine and he took at it at once and he had enough stuff to need a car to carry it all around and so we packed it up in his F-150 raptor and got ready to set off. 10 days, 10 nights. All the way from the Pacific to the Atlantic. But then there was her stupid thing with Israel—she was flying there for a wedding, or something, and they got into a war like they always do, and suddenly she’d blown up several thousand dollars on nothing and was running low enough on funds that she couldn’t buy her way back to Michigan for the 4th and so Jeremy offered to string her along, no questions asked. The official story was that three drivers were better than two. In the end it was mostly two anyway, because she freaked out after getting a speeding ticket on the second day and refused to step behind the wheel any further, but that was the official story. And I protested. I was in Boston getting high and watching Whit Stillman movies when he calls me up and says that Sandrine’s going to be joining us on the trip—it’s 7PM and I’m with these MIT guys I’ve met like twice before and I’m yelling on their couch and they’re looking at me, laughing, not knowing what’s happening as I tell him that this is a bad idea and it’s going to kill the vibe, but he was adamant. I offered to pay for her flight but that just got him bemused. I mean, they were good midwesterners, and all that, no matter how they turned out in the end—they wouldn’t just take my money like imbeciles. ‘It’s my sister, Adam,’ he says. ‘It’s going to be fine.’
+
+So this was the plan: I fly back from Boston, which I did, and a couple days later we stash his stuff into the car and set out to Oregon, which we did, and we meet her at this little windsurfing village a couple hours east of Portland where Cat’s been staying with her parents while waiting to hear back from law school. And we spend the night at Cat’s, the three of us, and then we start the drive east into the fucking Ozarks.
+
+
+It started out alright—first day was about 12 hours, give or take, which was a lot of driving, but nothing that we hadn’t done before. Drove all the way along the coast. I have this thing about driving where it invigorates me instead of being draining, and I’d driven up the I-5 to Portland so many times with Cat that the route was second nature at this point. Usually it involved a lot more kissing and moaning but Jeremy wasn’t all that bad as a substitute—we talked about movies and video games and other dumb shit like that, I made fun of his chronic insomnia, and by the time we got to Hood River we weren’t even close to being sick of each other. And I just loved being in a car. It was the best thing in the world, driving along the coast with the wind in your hair, and even when I was so done with the whole fucking thing ten days later it wasn’t the physical exhaustion that got me; I could’ve been in that truck for another month, if it came down to it. But that was just the first day and we weren’t late enough to miss the sunset along the Columbia River Valley and I got to meet Cat again, you know, scooped her up in my arms and all, and she told me that she’d been keeping it from me as a surprise but she’d got off the waitlist into Yale. I did end up moving out East myself a few months later—not Connecticut, of course; I’ve got a nice place in Brooklyn now and she comes down often enough for it to be just worth it.
+
+We made a bit of a campfire at night—Jeremy was a big s’mores guy—and goddamn did I think I’d miss him when he was gone.
+
+‘Remember when we went down to Miami?’ he said.
+
+‘God,’ I replied. ‘Fucking Latinas. Latinas everywhere.’
+
+Cat gave me a sharp rap on the shoulder. ‘What’s that about Latinas?’
+
+‘I wish you were a Latina,’ I replied. ‘Imagine that.’
+
+‘Fuck you,’ she said, laughing. ‘Why couldn’t it be the other way around? You could be a Latino. Get a little manliness in your life, asshole. God knows I need someone to move the furniture around sometimes.’
+
+Jeremy laughed. ‘Adam? A Latino? He wouldn’t survive a day working construction.’
+
+‘That’s racist,’ I said. ‘I could be a lawyer, you know. Down in Albuquerque. A defense lawyer. How’s that sound, Cat? We could practice together. You can, uh, get, uh, get them off, if you know what—’
+
+She tried to push me into the fire, that time, but I managed to restrain her and we tumbled down laughing in the dirt.
+
+‘That’s not why I mentioned Miami, though,’ said Jeremy, frowning.
+
+‘Why, then?’ said Cat.
+
+‘I don’t know,’ he said, and there was something going on in that head of his.
+
+‘You ever been to FSU?’ I asked.
+
+He shook his head. ‘I don’t think so.’
+
+‘I was there for a summer. 2019, I think. It was nice. I met this Asian girl who was doing this project on Greek history, and we would talk all evening about Cupid and Psyche and Prometheus and Achilles and god knows whatnot.’
+
+‘You ever hear that thing about Achilles’ rage? The untranslatability of it?’
+
+‘No,’ said Cat. ‘What’s that?’
+
+He sighed, and he was larger than usual looming in the darkness—he was a big guy, six-foot-four, something like that, and the shadow cast across his face made him look menacing. ‘Those are the first words in the Western Canon: “The Rage of Achilles.” That’s how Homer starts off the Iliad. Except the word for rage isn’t the usual word for anger, that the Greeks used, but rather the word mênis, which we can’t really translate, but it’s more like a cosmic righteousness, and it’s only ever used to refer to Achilles and the Gods. All that’s to say that if you read the Iliad you’d think that the hero is Hector—like any reasonable person would—but the Greeks thought it was Achilles. Hector was a good guy, and all that. He was devoted, he was pious, and he took good care of his family. Achilles was a spoiled brat who desecrated Hector’s body when he got the chance. And yet the Greeks thought that Achilles was the hero of the story. I’ve always wondered what they saw in him.’
+
+‘They weren’t like us,’ I said. ‘They didn’t think of trickery as a vice, they didn’t consider bravery as nobility.’
+
+‘I suppose,’ he replied.
+
+When we went to sleep later, Sandrine-free, I remember thinking for a long time about Achilles and Hector, crown prince of Troy, and at night my dreams had constellations running all through them.
+
+I woke up to the rooster crowing and a pleasant smell of Chanel and honey, and for a while there it was almost as if I’d passed out because it was so unfamiliar that it took a minute to orient myself to the fact that I was in Oregon sleeping next to Cat and not back in my studio apartment in the city. I lay there for quite a bit before she woke up and we entered the living room to find Jeremy shirtless on the recliner, cradling a cell phone. It was buzzing like crazy—I pulled it out of his hand to find that it was Sandrine.
+
+‘Hello?’ I said.
+
+‘Jerms?’ she said.  There were intense gusts of wind in the background. ‘Why didn’t you pick up? I’ve been ringing you for like forty minutes.’
+
+I put my hand over the speakerphone and laughed, mouthing ‘Jerms’ to Cat, which Sandrine pronounced as ‘germs.’ Unable to continue the conversation without breaking into a fit, I simply passed the phone over to her.
+
+‘Hello, Sandrine?’ she said. ‘Yeah, this is Catherine. Jeremy and Adam were staying at my place overnight. Do you know where you are? I can help you out.’
+
+The bell rung after about forty minutes; Jeremy was still fast asleep. Sandrine walked in all groggy and dressed in a plain black jumpsuit—a look that wouldn’t have been flattering on anyone, really, but looked particularly unbecoming on her. She pulled out a vape and produced two bulging duffel bags, pure black like the rest.
+
+‘Jesus, I hope you got here alright,’ I said, offering her a hand with the bags.
+
+She grimaced. ‘That’s what you get if you take the Greyhound.’
+
+‘You didn’t drive here?’
+
+‘And what would I have done with the car?’
+
+‘Fair enough,’ I said sheepishly, scratching the back of my head and yawning for additional effect. ‘Come in, we’ll get you all dressed up and ready.’
+
+‘That you, Sandy?’ said Jeremy suddenly, his head rising up from behind the recliner, which was facing away from the front door.
+
+‘Jerms!’ she exclaimed, dropping her things and giving him a deep kiss on the cheek. She stood there embracing him for an uncomfortably long time, and it struck me how much shorter she was—they could have had a whole foot between them, easily. When they broke apart she got down on the floor and started mumbling something about coffee.
+
+‘We can make some coffee,’ I said. ‘How do you like it?’
+
+‘Just plain, give me a couple shots of espresso.’
+
+‘You forgot the magic word,’ I yawned, setting the machine on the counter.
+
+She gave me an incredulous look. ‘What’s that supposed to mean?’
+
+‘Whoa there,’ I replied. ‘I didn’t mean nothing. You want coffee, Jerms?’
+
+Jeremy chuckled, but stopped dead upon noticing how evil Sandrine’s eyes had gotten. ‘Milk and sugar, please.’
+
+Cat emerged from the bathroom and gave Sandrine a quick hug, which she obliged, and whisked her away into the bedroom under the guise of showing her some new designer handbags she’d thrifted online. Once she was out of earshot I turned to Jeremy.
+
+‘Boy, she’s in a bad mood, isn’t she?’ I said.
+
+‘Give her her coffee,’ he replied. ‘She’ll perk right back up.’
+
+This proved to be true—Sandrine was certainly a lot more amicable upon receiving her coffee, and once she got her hair all straightened out she proved to be a lot prettier, too. When we finally put our clothes on and packed the bags in the trunk, ready to leave, it was shaping out to be a pretty great day, on the whole, and my apprehension about the trip had all but vanished. I gave Cat a deep good-bye kiss after breakfast and she gave me a list of errands I had to run before I’d gotten back, and by the time I waved her good-bye it was about 9AM and the road stretched out infinitely before us. It was Sandrine’s turn to drive—Jeremy and I having done all of the driving on day one—and I’d called shotgun; most of the backseat was packed with boxes and snacks.
+
+This first leg—down through Oregon into Idaho, ending at Ketchum, site of Ernest Hemingway’s grave—was one of the longer drives on our journey, and the plan was that I’d take over about halfway through because I liked driving in the dark a lot more than the other two, but it also meant that the first half of the day we were doing 65 in 80 zones because Sandrine hadn’t driven a car in a few years and it would ‘take her time to get acquainted again,’ or something like that. But I’d never been to Idaho before and so it wasn’t the speed that got me. About an hour into the ride she adjusted her rear-view mirror so it was staring straight into Jeremy’s face and gave him an awkward smile and a giggle, and he reached out from the back and clasped her free hand and there they held it until there was a turn and she had to go back to the wheel again. 
+
+I didn’t really know how to respond to that. Cat was still on my mind and I didn’t have much to say, anyway, so I decided to ignore it and turn on the radio—which was connected to Sandrine’s phone, and immediately started playing something atonal and electronic and containing off-putting lyricism about plastic surgery and ketamine highs.
+
+‘What’s this?’ I asked.
+
+‘It’s this indie artist I listen to, Tatiana,’ she said. ‘She was in Seattle in 2021—one of my friends was studying music production and he introduced me to her. I saw her live last September, it was crazy.’
+
+‘Oh,’ I said. ‘It sounds a bit weird. I don’t know. I don’t dislike it, it’s just kind of… sparse. Like she isn’t singing along with the music, or anything.’
+
+‘It’s hyperpop- and trap-influenced. Have you ever been to an experimental noise concert?’
+
+‘No. Have you?’
+
+‘Oh,’ she said. ‘Well, I’m really into music, so…’
+
+‘I mean I’m into music as well, but I guess I’m not into all kinds, you know. But we have this playlist that we made a while ago for the trip, so I was thinking I could just put that on.’
+
+‘What’s on it?’
+
+‘I mean—road trip music. Life is a Highway, yada yada yada.’
+
+She was wearing sunglasses, and if any emotion flashed across her face I couldn’t see it. ‘You can play it later,’ she said. ‘We’ve got time.’
+
+‘I guess we do,’ I replied, looking over at Jeremy, who was looking out the window with a slightly dazed expression, having missed the conversation entirely. His eyes were red and there was the blotch of a popped blood vessel on his left eye. Shaking my head, I pulled out the pair of earplugs in the glovebox and spent the next couple of hours listening to my dumb ‘80s pop tunes in peace. After a while his hand shot back up again and started stroking her hair, and she couldn’t stop her smile and I don’t even know if she was looking at the road or looking at him but before we knew it that 65 turned into 95 and I saw the flashing lights of a police car approaching on the right-hand mirror.
+
+‘Is that us?’ she asked.
+
+‘Pulled over on your first day back?’ I chuckled. ‘That’s gotta be some kind of record.’
+
+I still couldn’t see her eyes but from what I can gather they would probably have been enough to reduce me to dust on the spot, although I couldn’t help but notice that her hands were shaking when she stopped.
+
+‘You okay?’ I asked.
+
+‘I’ve just never been pulled over,’ she replied, taking her sunglasses off—panicked eyes fixed on Jeremy in the mirror, beseeching him to do something. ‘It’s okay, Sandy,’ he said, in a tone I’d never really heard him use before. ‘It’s going to be alright.’
+
+I balked. ‘You’ve never been pulled over?’
+
+‘Never,’ she said.
+
+‘Well, I mean—you must’ve seen it on TV, or something.’
+
+‘I don’t know…’ She looked back at Jeremy, lower lip trembling. ‘Can we swap?’
+
+‘No you can’t,’ I said. ‘They have cameras.’
+
+‘Let’s swap,’ said Jeremy. 
+
+‘You can’t,’ I repeated. ‘They’ve got cameras, numbskull.’
+
+‘Oh my god,’ she said, hands on temples. ‘I can’t do this. I’ve never gotten a ticket. He’s going to write me a ticket.’
+
+‘Hell yeah,’ I said. ‘Your first ticket.’
+
+But from their expressions you would’ve thought that someone’d died, and when the cop did finally walk over and everything was settled he gave Sandrine a ticket for going ten to fifteen over the speed limit, and her hands couldn’t stop shaking enough for her to drive so they put me in the driver’s seat and the rest of the day passed by without much talking or laughing or anything at all, really, and the Idaho countryside was a fair bit grayer than I thought it’d be, and the tension only really began to break once we pulled over close to Ketchum. I thought it’d be nice to engage Sandrine in a conversation about music, and though she resisted, at first, her enthusiasm eventually gave way and I was first subjected to what I would later christen ‘The Sandrine Show,’ and despite how lurid it was I can’t deny I was fascinated by every bit of it.
+
+‘I saw them in 2016,’ she’d say. ‘Back at UW. That was before they broke up for the first time, since then they’ve lost all their sound. They got this new drummer, Steven. One of my friends, Molly, she hooked up with him and her boyfriend got into this whole mess and they had a fight in the parking lot, oh my god, it was so bloody. Did I ever tell you about that, Jerms?’ And she’d shoot a nervous look over at Jeremy, who sat there smiling, as if he were in a trance. ‘And Molly introduced me to the lead singer of the Animals, too, he was such a creep, like he kissed my hand when I met him, but it wasn’t a European kiss, it was all tongue. A couple years later he got arrested for vandalism in Massachusetts. And I was like why even go to Massachusetts, the Boston audience is always so awful, it’s so fratty, really. But then I guess the posters just say Boston but it’s always in, like, Cambridge, usually—I guess no one ever wants to go to Fenway or Allston or fucking Roxbury, God forbid.’
+
+‘I saw the Animals,’ I said. ‘They did a tour for their new album, I saw them in Austin.’
+
+She was too quick on the uptake. ‘Yeah but I saw them in 2017, when they were just starting out. The new album was really bad, anyway, all the media was on their case. Also, what in the world were you doing in Austin? It’s not 1975 anymore.’
+
+‘I’m from Austin,’ I replied. ‘I grew up there.’
+
+‘Oh,’ she said, pursing her lip. ‘Well, I’ve never been. But I guess it’s probably better than, like, Minneapolis.’
+
+‘What’s wrong with Minneapolis? My Mom’s from Minnesota!’
+
+It was astonishing how little control she had over her facial expressions—the polar opposite of Jeremy, who had made a pretty little career off his poker face. ‘I didn’t mean anything by it,’ she said, and I didn’t know if she couldn’t or wasn’t even trying to hide the sneer.
+
+‘I don’t know. You might like Austin, it’s a big city. And Texas has a bunch of great parks—Big Bend, Guadalupe Mountains—Houston’s a big art city, as well.’
+
+‘I don’t know what I’d do at Big Bend, but I’ve been to Houston. I saw the Rothko Chapel, it was beautiful—this guy I knew in high school, Scooter, he had family over in Houston and he took me to a Kanye concert there in, like, 2016—this was before he went crazy, of course…’
+
+It went on like this for several hours until we pulled over into Ketchum, which proved to be a surprisingly nice resort town.
+
+‘Who made the itinerary for this trip?’ asked Sandrine.
+
+‘Adam did,’ said Jeremy, yawning. Now that I think about it, it was astonishing how little sleep he got throughout the whole trip—at the time nothing about it seemed amiss, chronic insomnia and all, but in retrospect he was bordering on dangerously low levels for someone planning to drive several hours a day. I guess you don’t really see these risks when you’re taking them, and I had more immediate annoyances than the possibility of Jeremy falling asleep at the wheel.
+
+‘I’m impressed,’ she nodded. ‘Hemingway’s grave—do you like Hemingway?’
+
+‘He’s the best,’ I said. ‘Nothing like ol’ Miss Catherine Barkley.’
+
+‘Wasn’t he bipolar, or something?’
+
+‘Where even is the grave?’ asked Jeremy, interrupting.
+
+We found the grave alright—a pretty sight in the middle of a cemetery on a grass field, right under a tree and marked with no headstone. After paying our respects we bought some gas station food and headed to our hotel room where I fell asleep almost immediately. As much as I loved driving, once I got out of the car it did take a toll on me.
+
+There was a tap on my shoulder in the middle of night and I opened my eyes to find Sandrine staring into my face, but when I started she merely made a shushing sound and gestured me to step out of the hotel for a moment. I put on my pants and my shoes and followed her out the door and down the stairs into a back alley that seemed to lead to nothing more than some shrubby wilderness, but after about fifteen minutes’ walk it appeared that I’d been led out onto some kind of large hilltop. Jeremy stood waiting there, looking straight up at the sky, and when I looked up I saw the vivid expanse of the Milky Way stretch forth in all directions above me.
+
+‘Oh my God,’ I said. ‘Have you ever seen it before?’
+
+‘Never,’ said Sandrine. ‘It’s beautiful, isn’t it? You can barely even see stars in Seattle.’
+
+‘I’ve seen it,’ replied Jeremy. ‘Way out in Yosemite, once—we were camping.’
+
+‘You’ve been to Yosemite?’ I asked.
+
+He hummed. ‘Mmm, yeah. Fall 2020. You were in Austin.’
+
+‘Oh, yeah,’ I remembered. ‘Pandemic. Must’ve been surreal.’
+
+‘You know what I’m thinking about? Every little star out there—that’s a galaxy on its own. A hundred billion stars in each of them. That’s Carl Sagan.’
+
+‘You think there are people on them?’ asked Sandrine.
+
+‘Imagine how many of them are fucking,’ I said, and they both laughed.
+
+Sandrine shivered. ‘It’s cold out here.’
+
+‘We’re really in the middle of nowhere, aren’t we?’ I said. Out of the corner of my eye I noticed the faint outline of a figure on the ground, and whispered a silent ‘wow’ on realizing that the stars were bright enough to cast shadows on the dirt below. I tried to point it out to the two of them, but when I looked back up Sandrine had latched onto Jeremy’s waist and they were giving each other eerily familiar looks—he was stroking her hair again, up-and-down, and I quickly sent a text to Cat intimating that we needed to check out the Milky Way sometime and made a big show of yawning and deciding to go back to sleep. I never heard the two of them come back to the hotel before I drifted off.
+
+The next time I was woken up it was to Sandrine’s face again, which—pretty though it was—had already started becoming a weary sight. Once I came to I realized that I couldn’t see Jeremy anywhere and most of the hotel room was in disarray—the mattress on the double bed which they were sleeping on lay flat on the ground, and even the sheets on my additional single had been pulled out without my realization. ‘What’s the problem?’ I asked.
+
+She immediately rolled her eyes. ‘My vape,’ she said. ‘I can’t find it.’
+
+ ‘Have you checked the car?’
+
+A lightbulb went off in her head. ‘Of course,’ she said, and snatched the keys off the nightstand, slamming the door behind her as she left. Jeremy emerged from the bathroom with a toothbrush in his mouth. ‘Everything alright?’ he asked.
+
+‘Your petit sœurette has lost her vape,’ I replied.
+
+‘Don’t be gross,’ he said. ‘She’s addicted to nicotine, you know.’
+
+‘Who could’ve guessed,’ I groaned. She returned a few minutes later and excitedly displayed her vape to Jeremy, who told her it was lovely in the same off-putting voice I’d heard him use yesterday, as if he were talking to a cat, or something.
+
+The next section was mine to drive—I’d specifically planned to do Wyoming, since I’d never been there before, either—and by 8AM I was all ready to fill up with the complimentary breakfast and start the six-odd hours of driving before we made it to Jackson Hole and passed through the Rockies, but Sandrine was having none of it. She wanted coffee and the coffee at the hotel breakfast wasn’t cutting it; eventually Jeremy drove us down to the poshest café in town where she excitedly bought a seven-dollar double espresso. I gave him a quizzical look—she was supposed to be broke—but his eyes were only for her, and boy were they dazzling. He didn’t feel particularly hungry and decided to go for a walk so I bought a breakfast burrito each for Sandrine and I and we sat there in the morning glow wondering whether Hemingway himself had ever stepped foot in this particular establishment.
+
+At length I decided to make conversation—it struck me that I knew barely anything about her private life, and this was as good a time as any to find out more.
+
+‘You ever have a boyfriend, Sandrine?’ I asked. I don’t know how I didn’t notice this startling lack before—despite everything she was certainly beautiful and intelligent, and should have had no difficulty at all attracting potential suitors.
+
+She choked on her burrito. ‘What do you mean?’
+
+‘What could I possibly mean—?’
+
+‘No, I was just surprised, that’s all.’ She raised an eyebrow. ‘Why? You interested?’
+
+I made a retching sound. ‘Couldn’t be further from it.’
+
+She laughed, the first genuine laugh I’d seen her give the whole trip. ‘I had one a while ago, yeah. God, I guess it’s been a couple years. Why? Do I come off as a spinster?’
+
+I would eventually come to realize how pleasant she could be in the absence of Jeremy—it was astonishing, really, the variance in personality; there were moments I even found myself quite enjoying her company, and in this particular instance I laughed. ‘Maybe a bit, yeah. I’m really just curious, more than anything. What happened?’
+
+‘Nothing,’ she said, taking another bite. ‘We broke up, that was it. I don’t know. He was nice, but we didn’t really fit together, I think. He traveled a lot, and I don’t really like traveling all that much—it’s nice occasionally, like right now, but if I was moving around all the time I don’t think I’d ever get anything done.’
+
+‘Why’d you break up? I mean, I hope it’s not sensitive, or anything—’
+
+She shook her head. ‘I guess he was a lot older than me, that’s one.’
+
+‘Really? How old?’
+
+‘I don’t know—forty-six, something like that? I was twenty-six at the time.’
+
+I choked on my own burrito. ‘Twenty years, that’s a lot.’
+
+‘Yeah, well,’ she grimaced. ‘Women like older men.’
+
+‘Cat’s older than me,’ I blurted.
+
+‘Really? How much?’
+
+‘Not that much. About a year.’
+
+She shrugged. ‘There are always exceptions.’
+
+‘Oh yeah? How do you know that Cat’s the exception and not you?’
+
+She gave another laugh, this one louder and more genuine than the first. I smiled, too, despite myself. ‘Look at you, constantly prying. Why, you don’t think I’d be the type to be into older guys? I guess if you love someone enough, a year here and a year there wouldn’t matter.’
+
+‘I didn’t think you’d be into older guys, no,’ I said.
+
+‘What kind of guys did you think I’d be into?’
+
+‘Same age, I’d say.’
+
+‘As I said, a year here and a year there wouldn’t matter.’
+
+‘I meant exactly the same age.’
+
+Her eyes narrowed. ‘That’s enough about me,’ she said abruptly. ‘And what about you? Jeremy tells me you went to UVA. What was that like?’
+
+‘That was a long time ago,’ I said. I’d been a bit of a misanthrope during undergrad, and had enough stories to keep her occupied for the next hour until Jeremy returned and we decided to head out to Jackson Hole. It was a stunning drive, passing through mountains and valleys and wide open fields of grass; we stopped to take pictures, often, and Sandrine finally let me put my playlist on. I suspect that the conversation in Ketchum had warmed her up a bit—and I guess she’d gotten my message, too, because aside from a brief embrace at a rest stop there were no more knowing glances between the two of them that day. It was all road and burning rubber and when we reached Jackson Hole in the late afternoon we were greeted by a pleasant surprise: about half-hours’ drive out there was the beautiful Teton Range, and if we managed to make it there by sunset we’d see the splitting image of this Kanye West album cover we all really loved.
+
+It turned out pretty great—the best place to take pictures with the mountains was on a roadside stop, and we took a gazillion before heading back in the night. This time we were staying in an old house Jeremy had booked online, full of creaky floorboards and dusty bookshelves, but I was so glad to be given my own room that it didn’t strike me strange at all that the two of them had decided to share a bed again despite there being more than enough rooms to accommodate each individual. Eventually I made the observation when we were about to go to sleep, and mentioned it to Jeremy in passing.
+
+‘What, you’ve never slept on the same bed as your brother?’ he asked.
+
+‘I guess,’ I replied, shrugging. ‘But when there’s an option—’
+
+‘She gets scared, sometimes,’ he said. ‘She has a problem with nightmares, and I’m barely ever asleep, anyway, so it works itself out.’
+
+That seemed reasonable enough, and I didn’t think any more of it when I passed out.
+
+
+‘We could do Mount Rushmore,’ I said, the next day; Jeremy was driving. ‘We don’t have to go through Nebraska.’
+
+Sandrine was riding shotgun, this time—I’d tried to get her shotgun privileges revoked, considering that she was no longer a driver, but it’s always hard being two-to-one and I was still shellshocked enough from that night in Idaho that I didn’t really have it in me to argue. In truth I’d started thinking that what I’d witnessed was some kind of apparition, or dream—yeah they were a bit off-putting, and all, but the alternate possibility was so unbelievably gross that even the idea of saying it out loud was proving itself to be far beyond my limitations; it was what I imagined it would be like to tell your wife that you wanted a divorce. And besides, I didn’t feel the need to confront them, not really. After this trip was done I didn’t think I’d be seeing much of them, anyway, and I instead tried to fill my brain with thoughts of Cat rather than all the moments I’d spent with Jeremy eating pizza in his Stanford dorm.
+
+‘No, I don’t want to do that,’ yawned Sandrine. ‘I don’t want to see a loving tribute to slave-owners while on vacation. I’d have to write a thesis on the vanity of that sort of thing.’
+
+‘Teddy wasn’t a slave-owner,’ said Jeremy, humming Ride of the Valkyries.
+
+I was munching on pecans in the backseat, and yet, somehow, they seemed completely oblivious to my presence—I might as well have been across the Pacific in Japan. 
+
+‘Really?’ she said. ‘Well, I guess slavery was banned by then, but he had the spirit.’
+
+‘No, he was a great dude. You know he got fired at while making a speech, and instead of stopping he just finished it with a bullet in his chest? Went on for like an hour.’
+
+‘That’s scientifically impossible.’
+
+‘No, it’s true. And he spent most of his time doing safaris and that sort of thing. He went down the Amazon as well, and caught an anaconda. Definitely the cooler Roosevelt. Big boxer, too. “Talk softly and carry a big stick.” He was my president, that’s for sure.’
+
+She smiled and put her hand on his arm. ‘He sounds great, Jerms,’ she said. ‘Maybe we should go to Mount Rushmore.’ She turned around. ‘What do you say, Adam?’
+
+I retched. ‘No, it was just a thought. We’ve already booked a hotel in Valentine.’
+
+‘Really, Jerms? I want to go, now.’
+
+‘I don’t think so,’ he said, using his cat-voice again. ‘Adam’s right—we’ve already got a hotel, it’d be too expensive to change it.’
+
+‘I think that makes more sense,’ she said. She’d turned back and I couldn’t see her face, anymore, but I was willing to bet any amount of money that it was simpering. I was too grossed out by this exchange to continue this conversation any further, and by the time we entered Nebraska the cornfields proved repetitive enough to be hypnotizing, and I though I almost never have the ability to fall asleep in a car I eventually ended up dozing off. When I came to, about an hour later, I heard the monotonous drone of a primetime newscaster emanating from the speaker, but a few minutes in I realized it was instead the voice of David Foster Wallace narrating an audiobook which seemed to consist of bizarre accounts of extraordinarily disturbing and sexually challenged individuals—guys who could’ve given de Sade a run for his money.
+
+‘C’mon. Turn this shit off, will you?’ I said, after about a quarter-hour of listening.
+
+‘We’re enjoying it,’ snapped Sandrine, turning around.
+
+‘It’s just not appropriate,’ I replied. ‘We’re driving through Nebraska, you know, and if you’ll look outside for a second you’ll see that it’s really beautiful, actually, and it’s great weather, and I want to be thinking of nicer things.’
+
+‘I think it’s appropriate,’ said Jeremy. ‘This is the place you’d want to be listening to something like this.’
+
+‘What are you talking about? Why can’t you play Bruce Springsteen, or something?’
+
+‘This is more appropriate than Bruce Springsteen,’ she snickered.
+
+‘How is this more appropriate than Bruce Springsteen?’
+
+‘Well, if you use your mind—’
+
+‘Bruce Springsteen has an album called “Nebraska.”’
+
+That was a time-out, there—we’d driven about half a mile before someone spoke again.
+
+‘That’s not the point,’ said Sandrine. ‘Of course we could be listening to Bruce Springsteen or whatever if we wanted to.’
+
+‘I just don’t want this shit in my head,’ I protested.
+
+‘It’s important cultural commentary,’ said Jeremy. ‘It’s relevant. You know that.’
+
+I laughed. ‘Really? How many guys do you know who psychoanalyze their own moms and yell “Victory for the Forces of Democratic Freedom” every time they have an orgasm?’
+
+‘That’s not the point,’ he interrupted. ‘The point isn’t that we know people like that. It’s that anyone could be someone who does something like this. It’s that people like this exist out in the world.’
+
+‘I don’t know. It sounds like a fucking infohazard to me.’
+
+‘A what?’ said Sandrine.
+
+Jeremy sighed. ‘An infohazard.’
+
+‘What’s that?’
+
+‘It’s this thing we talk about sometimes. It’s that knowing something—you know what, never mind.’
+
+‘No, I want to hear it.’
+
+‘Of course you do,’ I said.
+
+‘What’s that supposed to mean?’
+
+‘All I’m saying is that I don’t want to listen to this. I don’t like thinking about such things, and especially not when I’m supposed to be enjoying myself.’
+
+‘I want to listen,’ she said, pleading to Jeremy.
+
+Jeremy smiled, running his hand through her hair. ‘It’s okay, Sandy. We’ll listen to it some other time. There are three of us in this car.’
+
+‘Thank you,’ I said. He blew her a little peck, and though the audiobook stopped and we drove the rest of the evening in silence I started wishing that I’d never said anything at all.
+
+
+The next few days flew by like that—somehow, somewhere, the little kernel of resentment I’d picked up transitioned into pure indifference, an indifference punctuated only by instances of Sandrine’s rapid-fire gossiping and rare moments in which we completed my itinerary. We were in Nebraska for another day of café-hunting, where even my nice scone was greeted with coldness—I’d placed it down on the table while I sipped on some cherry coke, and pre-coffee Sandrine reacted to it with bloodcurdling disgust. 
+
+‘Can you not fucking do that?’ she said. ‘Why can’t you use a tissue, or something?’
+
+But by that point I’d become too numb to care. The nice old woman at the counter gave me a free book which served as some serenity for the rest of the day; I sat in the backseat, calmly reading with only the hum of the road to grace my ears. It turned out that in my absence Jeremy and Sandrine didn’t actually seem to talk all that much. When they did it was usually something cloying, but their brazenness had (fortunately) worn off—there wasn’t much of it anymore apart from an embrace at an Arby’s rest stop. In the twilight hours the hum took upon an eerie quality and as we made our way to Iowa a thunderstorm arrived. Very much to Sandrine’s chagrin—evidently whatever anxieties had manifested themselves when she got pulled over were not limited to the authorities but also to natural disasters, and she was convinced, for a while, that we’d be struck by lightning and we’d all die, following which she took her feet off the dash and gripped on to Jeremy’s arm until he convinced her that it’d be fine. They called their parents—good people I’d met before—and at dark we were greeted by a bedazzling display of spinning red lights on turbine blades which we were certain had something to do with UFOs until Sandrine pointed out it might be a wind farm. The last couple hours were mine, owing to Jeremy nearly dozing off and almost slipping the wheel, and while he finally slept in the backseat Sandrine told me innumerable stories about her time in Seattle—a never-ending procession of celebrities, bands, and artists, some of which were indeed remarkably compelling. She could list off bands like she was pulling them from a hat, each of which she had caught live in a festival or even in the midst of rehearsals, sometimes, and although she wasn’t much of a fan of my road trip playlist she correctly synthesized my taste and her chosen alternatives were so good I’ve still got most of them on cycle.
+
+The next day was Gainesville, Iowa, site of the legendary Field of Dreams—my favorite dad movie—and though Sandrine spent much of this time complaining about the annoying groups of southerners who would pilgrimage to a place like this she turned out to be a far better pitcher than Jeremy, who revealed that his hand-eye coordination had been left devastated by a childhood slip on ice which had resulted in a wrist fracture. He was still the fastest runner, however, and for a short while there you could look at them and it was the easiest thing in the world to guess that they were twins. And I was thinking, you know, I was thinking that I’d known this guy for seven, eight years at this point—eight years in which I’d built up this illusion of him being a pretty fucking cool dude; we’d watched all the Eagles games together, last year, every single one of them, and we’d gotten drunk like a hundred times throughout all that, and it had somehow never really struck me as particularly strange until then that he could just not keep a stable girlfriend down. That was just his thing—being single, being there. It just didn’t compute out there in the sun. I hadn’t known about the wrist fracture, and I hadn’t really known much about his twin, really, and it struck me there that of the things I did know I probably knew less than half of what I thought I did, but the thought was so uncomfortable that when Sandrine—dressed, yet again, in all-black—started a long screed about how baseball had served as a source of historical oppression for a century I decided to entertain her, at least until she finished off a large cup of blueberry ice cream.
+
+We were supposed to have stopped at Gainesville overnight but there proved to be so little else to do there that we instead just drove straight through Illinois to arrive at Chicago in the evening. June had turned into July, and the moment we crossed the Mississippi we were greeted with long strands of bunting flags and U.S.A. lawn signs which carried us all the way through the countryside into the suburbs. An enormous sense of relief passed through me as we entered through the 88—I had not realized until that moment how claustrophobic it had been out there in the fields. Chicago was the only real city throughout our entire trip, and seeing the skyline emerging in the distance reminded me of every place I had ever called home like a whip-crack. By the time we hit West Loop the beige buildings and the concrete and the metal had all enmeshed together to remind me how joyless I found myself outside the comforts they offered. And I was thinking of Boston and SF and NYC and Austin all at once, really, and footpaths and tennis shoes and well-dressed women and glass panelling, and if you’d told me, at that moment, that I had to stay there for the rest of my life and I could never leave—not even for a moment—I wouldn’t shed a tear.
+
+ This change proved to be a great source of enjoyment to Sandrine, too, who had several friends that lived in the city and took off for Hyde Park to meet the lot of them mere moments after we checked into a hotel. It was the first time I’d been left alone with Jeremy since the campfire. I spent nearly an hour looking out the window, then put on a rerun of Family Guy and ordered some deep dish pizza. But Jeremy wasn’t in the mood to do much talking—until I mentioned Sandrine in passing and he perked up again.
+
+‘What was that?’
+
+‘I was just asking if she’s going to spend the night there,’ I said.
+
+‘Oh yeah,’ replied Jeremy. ‘It’s this friend of hers, Alice. They’ve been friends since high school. I think they used to do, like, quiz bowl together, or something.’
+
+‘I see,’ I said. ‘Say, what’re you reading?’
+
+He propped up his e-reader, which had a bunch of fingerprint marks all over it. ‘It’s that thing we were listening to in the car,’ he said.
+
+‘You really like that, huh?’
+
+He shrugged. ‘I think Sandrine wanted to listen to it. She asked me if she could listen to some audiobooks in the car, I think that’s the kind of thing she likes doing.’
+
+‘But you said you were enjoying it.’
+
+‘I guess I was. I don’t know. She can be weird sometimes.’
+
+I snorted. ‘That’s an understatement.’
+
+His eyes narrowed. ‘What do you mean by that?’
+
+‘Gee, dude, I just meant that she’s crazy, that’s all. Not in like a bad way, or anything.’
+
+‘She is what she is, man. Besides, I thought you’d like that kind of thing too, you know—she wanted to play Kiss of the Spider Woman first, but I knew you wouldn’t like that at all, so I told her to decide on something else. I thought you were like a big postmodernism guy, or whatever. And you’re always talking about all the crazy stuff you were doing in college.’
+
+‘I feel like there’s a time and place for that sort of thing. Not while were driving. It’s a pure thing, you know. I want it untainted.’
+
+‘I mean, it’s just driving.’
+
+I looked at him for just a second, but it felt like a long time. Maybe it was how sickly he looked or maybe it was something else, but at that moment he could’ve been made of ice. I guess it wasn’t me who was far away in Japan, after all. ‘That really you talking?’ I said.
+
+Pure blankness. ‘Yeah.’
+
+‘I thought you were looking forward to it.’
+
+I felt that if I snapped my fingers and told him to walk around in circles, he’d do it in an instant. Then he shook his head and the color returned to his face. ‘I was, I was,’ he said, sighing, but his face soon slipped into a grin. ‘Yeah, I know what you mean, this book shit is a head-spinner. I guess I’m just tired, that’s all. Let’s watch some TV—they got any games on?’
+
+Chicago. What a great name for a city.
+
+
+We rolled up to Ann Arbor a day earlier than we’d intimated—July 3rd, not 4th—and when Jeremy’s mom, Cassandra, poked her head out the door to see who was pulling up into the driveway she squealed and ran out, greeting everyone with big hugs. She was a fit old lady exactly the same height as Sandrine; very good-looking for someone closing in on sixty, though her hair was a deep auburn in stark contrast to the twins’.
+
+‘Where’s Dad?’ asked Jeremy.
+
+‘He’s still at work,’ she replied, hoisting Sandrine’s bags on her shoulder. ‘Now your dad has got more work than me—they’ve made him the head of the new faculty hiring committee, and because of that he has to stay overtime, listening to the candidates give talks. They’ve flown one in from Stanford, too, I think.’ Both their parents were professors up at the University of Michigan. ‘And this is why you kids need to tell us when you’re arriving before you do, so that we can stay here and be ready. What if I hadn’t been at home? And this one—’ she pointed to Sandrine—‘this one can’t even be bothered to call. When was the last time I saw you, Sandy?’
+
+‘It’s been a while,’ she replied. ‘Christmas ‘22, I think.’
+
+‘Come here, give your mom a hand. I would’ve been at work, too, you know, if Fiona, my postdoc, hadn’t taken the week off. She runs the lab and there’s no point going. And we’ve got no food, either. Especially for guests.’ She nodded towards me.
+
+‘It’s okay,’ I replied. ‘We’ll go out and grab something.’
+
+‘That one’s riding low, I think,’ said Jeremy, pointing at the nearside front tire. ‘I’ll need to get it checked. We can head out in a bit.’
+
+‘Well, have a snack before you all go,’ she replied, which turned out to be blueberry cobbler.
+
+We rode out downtown and met up with their Dad Mark before heading to a townie restaurant. He was a tall old man, bespectacled and jovial, who served as chair of the psychology department. He was almost exactly what I imagined Jeremy would look like at sixty, though Jeremy was both taller and much better built: out here, in his natural environment, he looked very much like a football player indeed. It took all I could take to not to interrogate their father about Freudian tendencies between siblings.
+
+‘So how’s your new apartment in Seattle?’ asked Cassandra, who was now wearing spectacles that made her look quite serious. ‘When did you move in—two months ago? Jeremy showed me the virtual house tour of his new place, and he hasn’t even moved in, yet, Sandrine. You ought to learn something from him.’
+
+‘Whatever,’ she replied. ‘I like it. And my flatmate’s very nice, she does all the dishes and all that, and she’s really very considerate about my art practice.’
+
+‘Now, Sandrine here,’ said Mark, turning towards me, ‘Sandrine here finds it appropriate to spend over a thousand extra dollars renting two out of three possible rooms in downtown Seattle, one of which she can turn into her little studio. Do you think that’s a good decision, Adam?’
+
+‘Not really,’ I replied, playing with my spaghetti, to which Sandrine responded with an evil look. She glanced pleadingly towards Jeremy like usual, but Jeremy made no such concessions this time; he shrugged and let her sulk. ‘She doesn’t want to show you her art,’ he said.
+
+‘If it’s good enough for exhibition it should be good enough for us,’ said Cassandra. ‘Now, tell me—last time, you left without answering, and this time I’m going to weasel this out from you before you can get away. We all know Jeremy will die a bachelor. But you, Sandrine—there’s no lucky boy? What about that Korean boy you were seeing? Kevin? Heaven knows I could do with some grandchildren.’
+
+Jeremy immediately turned towards her, eyes narrowed. She was trying hard not to look at him. ‘That wasn’t anything serious,’ she said. ‘He was just a friend, that’s all.’
+
+‘I’ve never heard of this guy,’ said Jeremy.
+
+‘Well, I mean, if you’d ever flown out to Seattle maybe you would’ve,’ she said. ‘I’ve been to Palo Alto thrice since the pandemic. When was the last time you were in Seattle?’
+
+‘She’s right,’ you know, said Mark. ‘You should visit your sister occasionally. You come here often enough—and Seattle’s far closer.’
+
+‘Eh, I’m going to be on the other side of the country now, anyway,’ he said, putting his fork down.
+
+Sandrine lit a cigarette, at which her mother laughed. After that nobody said anything much for the rest of the evening and even the rest of the day, really. When I saw Jeremy in the evening he roughly bid me good night and went to sleep in the basement.
+
+
+On evening of the 4th I video-called Cat and put on a nice navy blue shirt before heading out—the fireworks were going to be visible from the boardwalk across the river, though Jeremy and Sandrine’s parents’ were instead driving out to Detroit to watch them with their grandparents. Sandrine was dressed in plain black yet again, and didn’t seem to have any interest in participating in the festivities. When I questioned her she said she’d go downtown to meet up with a couple friends, instead, and vanished nearly the instant we parked.
+
+‘She needs a little Jesus in her life, man,’ I said to Jeremy, who hadn’t talked during the car ride at all.
+
+‘Aren’t you a fucking Buddhist, dude?’ he snapped, suddenly. 
+
+I was taken aback. I’d indeed adopted Buddhism for a year or so back when I was still a student, but I hadn’t practiced in years. ‘You know what I mean.’
+
+‘No, sorry, I don’t know what you mean,’ he replied. ‘Why are you constantly on her case?’
+
+‘What the hell are you talking about?’
+
+He looked at me full in the face, an imposing sight—I don’t think I’d ever seen him size up to anyone this way before. ‘You heard me. Why are you always on her case? What did she ever do to you? So she’s a bit weird—fine. Is it a crime to not have your shit together? I don’t want to hear the both of you constantly fucking bickering while I’m trying to get something done. Despite what you may think, I, too, want to enjoy myself. You want to talk about things you don’t want to hear—how about something I don’t want to hear? I don’t want to hear you say this shit about my sister. Yeah, okay, she’s a commie, whatever. So what? She’s here, isn’t she? She’s with her family, isn’t she? You have no idea how much she wanted to be here. You barely know her. You think she has an easy life? Everywhere she goes she meets guys like you. You think she’s an idiot? You think she hasn’t given serious thought to listening to Bruce Springsteen on the radio instead? She has, and she doesn’t want to. Why’s that so hard for you to process? So she doesn’t like the same things you do. Great, what should we do—kill her and bury her? Will you be happy, then? Or you can just shut the fuck up for a minute and take in the fireworks in peace?’
+
+It was the most he’d said the whole trip—eyes red like blood, face flushed with emotion. For a second I had no idea what to do; there was the river behind him, and I felt an instinctive urge to push. Then I shook my head. ‘Jesus, what the fuck is wrong with you?’
+
+‘What the fuck is your problem with her?’
+
+I felt hot; my hands had started shaking. ‘You know what my problem is,’ I said.
+
+‘Well, spit it out,’ he said, and a couple people behind him turned around.
+
+‘Fuck you,’ I said. ‘She wasn’t supposed to be on this fucking trip. You know that. This whole fucking thing blows, and it’s her fault, and it’s your fault, and you know what, just fuck you.’
+
+His normally calm eyes had turned into something deeply unpleasant, and it hit me with a pang that it was the same evil look that Sandrine had given to me yesterday. For the first time in my life I felt the strong desire to punch his face in. Right there, on the promenade, I had no idea who in the world I was talking to.
+
+Then, with what looked like monumental effort, he untensed. ‘Man, fuck that,’ he said. ‘She’s my sister, Adam. Just leave her alone. None of these things matter, now.’
+
+He tried to contort his face into something apologetic, but he was so extraordinarily tired that it was as if he were sleepwalking. I’d never known it to get this bad. Was he taking his pills? Had he gone to a doctor? Either way, I had no desire to talk to him, anymore, and I left to the other end of the boardwalk under the pretext of getting myself a corn dog. When we eventually got back I went straight to his old bedroom—which had been prepared especially for me—and crashed at once.
+
+
+At around 2AM I woke up on edge, stomach feeling hollow—evidently I’d been so annoyed I’d gone to sleep without having any dinner. I had no idea whether they had anything lying around in the kitchen, or even if it would be appropriate to head downstairs and make myself, say, a sandwich. If I could be out of that house I would. My bags were lying right there in the bedroom with me, waiting to be stuffed back into the raptor the next morning. And there were still two nights left—one in Syracuse, of course, and one in Boston, and though the guys over at Boston had been sending me all kinds of texts about buying whole new packs of playing cards and renting out a sailboat on the shore, having to put up with another night of Jeremy and Sandrine to get there made me want to put a shotgun into my mouth. But Detroit was right there, and along with it the airport—maybe I could force them to drive, I don’t know, an extra hour and drop me off, and I could take a plane—?
+
+There was a loud creaking sound, and I nearly tripped over in the hurry to press my ear against the door of the bedroom—it had come from outside. Trying as hard as I could to not make a sound, I clasped the handle and turned it just enough to give me the tiniest of windows to look through. My room was the first one up the stairs, and I had a full view down the stairwell—and there, right at the bottom, was Sandrine tiptoeing down the stairs into the basement, into Jeremy’s bedroom.
+
+
+I didn’t feel like having any breakfast in the morning, and by the time we bid their parents good-bye and got into the car—shotgun, with Jeremy at the wheel—I was in an awful mood. After a couple miles I was just about to announce my intention to get off at Detroit when I noticed that the directions on the map had changed entirely and we were heading in that direction, anyway—straight through Detroit into Canada, then following Lake Erie to Toronto. 
+
+‘We’re not going through Canada,’ I said, tapping the GPS. ‘You’ve got the directions all wrong—we have to circle Lake Erie along the south through Cleveland.’
+
+‘What’s the problem with Canada?’ asked Sandrine from the back.
+
+I looked at Jeremy, aghast; he had a shifty expression on his face. ‘What’s this? You want to tell her, or should I?’
+
+‘We can drive through Canada,’ he mumbled.
+
+‘And when was this decision made?’
+
+‘Last night, after you went to bed,’ said Jeremy. ‘It’s seems as though it’s going to be a lot less driving, and I’m too tired to do this any more.’
+
+‘Oh yeah? But I thought there were supposed to be three drivers in this car, weren’t there?’
+
+‘What’s the problem with Canada?’ repeated Sandrine.
+
+‘Wha—what?’ I couldn’t believe what I was hearing. I turned around and looked her in the face. ‘What’s not the problem with Canada? It’s fucking Canada! And we were going to go through upstate New York, and I told you I wanted to stop at Syracuse!’
+
+‘Why did you want to stop at Syracuse?’ she asked, livid.
+
+‘Tell her,’ I said to Jeremy.
+
+Jeremy sighed. ‘We have this bit about visiting places Gary Harkness played football.’
+
+‘Who’s Gary Harkness?’
+
+‘The protagonist of End Zone,’ I said. ‘By Don DeLillo.’
+
+‘We can drive through Canada,’ interjected Jeremy, before Sandrine could quip back. ‘In fact I think that’s a far better option, and it’ll be easier for us to find places to stop.’
+
+‘Good,’ she replied. ‘Besides, I’ve never been to Toronto, and I’ve always wanted to go.’
+
+‘You’ve always wanted to go to Toronto?’ I asked. ‘You don’t want to go to Big Bend, you don’t want to go to Minneapolis, you don’t want to go to Mount Rushmore, but you want to go to Toronto?’
+
+‘How do you know what it’s like? It’s not like you’ve been there.’
+
+‘I’ve been to Toronto,’ I said. ‘I was there last Fall.’
+
+‘Well, what were you doing there?’
+
+‘I was watching the Blue Jays game.’
+
+She shook her head. ‘Can you think about literally anything other than sports?’
+
+‘Can you think about literally anything other than fucking your brother?’
+
+I hadn’t meant to let it out, not in that way—but even though I’d already made up my mind to leave, their refusal to even mention the change in route had made something snap inside, and whatever final sympathy I possessed for them had collapsed; for all I cared they could be dead and rotting. Sandrine’s face drained of color—mouth grotesquely half-open, her usual aura of superiority replaced with eyes darting towards Jeremy, who resembled more than anything how she had looked when we’d been pulled over. The silence was like the tip of a needle.
+
+Then—‘That’s not a great joke.’ It was Jeremy.
+
+‘Oh fuck off,’ I said, and I couldn’t contain it anymore. ‘Like, actually, just fuck off. I’ve had enough of this shit. I’m done. You wanna drive through Canada, drive through fucking Canada, whatever. But don’t pretend like I’m a fucking idiot. I know the two of you were going at it in Wyoming, okay? It’s not a joke, I’m not making some kind of sick joke. I’ve seen the way you’re always caressing her fucking hair, I’ve seen the sick looks you give him. I’m so done. For all your fucking moral posturing and your I’m-so-great, you’re nothing more than a bunch of fucking freaks. God!’ I turned towards Jeremy; his hands were shaking. ‘And you? Her I can understand, what the fuck is wrong with you? I thought we were friends, goddamnit!’
+
+‘You don’t understand,’ he said, finally. ‘You don’t know what you’re saying.’
+
+‘What exactly don’t I understand?’
+
+‘This is all you’ve been doing this whole trip, goddamnit—’ he started.
+
+‘Shut the fuck up, Jeremy,’ said Sandrine.
+
+‘What—’
+
+‘No, shut up!’ she screamed. I turned around, and by the look on her face I was surprised I wasn’t instantly struck dead. ‘Shut up! Shut. Up. Nobody speak.’
+
+‘What are you trying to do,’ he said, panicked. ‘What exactly—’
+
+‘Didn’t you hear me? Shut up! I’m so tired of your shit, Jerms—’
+
+All of a sudden the car swerved to the right, nearly off the highway, and we were all thrown strongly in the other direction—I was looking back at Sandrine and slammed my head against the side of the driver seat, and Sandrine hit hers against the glass.
+
+‘What was that?’ she yelled. It hadn’t been anything major, but I was seeing double.
+
+‘You’re trying to kill us, now, Jeremy?’ I said, grabbing the wheel and steadying it back.
+
+‘Leave the wheel!’ he yelled. ‘I didn’t do a thing.’
+
+We swerved again, and my hand instinctively pressed the warning signal. Jeremy was working the rear-view mirror—it had been fixated on Sandrine instead of the road—and the right-side mirror showed that we were solidly on the highway with no one behind us. ‘What the fuck was that?’ I asked.
+
+‘Hold on,’ said Jeremy. ‘I’m stopping the car.’
+
+He parked onto the side of the highway, warning lights flashing—there was nothing but trees and field all around us for what seemed like miles, though cars ran by with a steady frequency. Jeremy and I exited to see that the front tire on the driver’s side looked loose, and on further inspection it was clear that the lug nuts had completely rusted through.
+
+‘Jesus fucking Christ,’ said Jeremy. ‘Those bastards.’
+
+‘We’ll have to take out the spare,’ I said. ‘There’s all that shit in the bed, though.’ 
+
+He shook his head. ‘This is the spare.’
+
+‘What—’
+
+‘The other one’s fried,’ he said. ‘They put the spare on, yesterday—and I didn’t want to spend all that money on a whole new one. But I didn’t notice they’d used the same lug nuts, they’re rusted all the way through.’
+
+‘So what, we can’t drive it?’
+
+He stood there, slack-jawed. ‘I don’t think so.’
+
+‘What, like we’re going to have to call someone to tow it, or?’
+
+He thought for a moment, then pulled Sandrine out and discussed something with her. She was still shell-shocked but a little bit more determined, if that made any sense. Eventually he turned back to me.
+
+‘We’re not too far out of Detroit, only about a half-hour. There’s a Michelin there—I could hitchhike and get the nuts back, we can find the specs in the glovebox, or I could take a couple pictures. I think the spare looks fine. It’s just the nuts.’
+
+‘So, what, you’re going to head out?’
+
+‘Couple hours,’ he said, then turned towards Sandrine. ‘What do you think?’
+
+She gulped. ‘Whatever you think so.’
+
+‘We’re in the middle of the fucking highway,’ I said. He was in a hurry to leave, I could tell.
+
+‘If you want to pay for the tow truck, then be my guest,’ he said. ‘But we could take it off, people stop here to piss all the time. I’ve driven this route a hundred times. I’m done with this fucking trip. Let’s quickly fix this shit and get out of here.’
+
+‘Well book yourself a cab,’ I said, but we were barely getting reception out here, let alone a cab. 
+
+I got in the car and slowly drove a quarter-mile till we could steer it off the highway onto a dirt track where the guardrails ended. About fifteen minutes later he was gone—a passing truck had picked him up—leaving me and Sandrine in the parked car, enveloped in a deathly quiet.
+
+ ‘Good timing, eh,’ I said at last.
+
+I looked at the rear-view mirror, focused fully on her face. She was shaking her head, trying to drown out the noise. ‘I don’t want to talk.’
+
+‘Of course you don’t,’ I muttered.
+
+‘You don’t understand. You don’t understand anything.’
+
+‘Yeah? Just what exactly do I not understand?’
+
+‘You don’t understand what it’s like,’ she said. ‘You think you know me, but you don’t. You don’t know a fucking thing. All you can do is sit there and judge, and think of yourself as great, or whatever, because you’ve got your job, and you’ve got your road trip, and whatever else you’ve got, but you’re never going to know what it’s like to be me, or to be him.’
+
+‘And just what exactly is there to know?’ I said. ‘I have an older brother. Guess what? I don’t fuck him.’
+
+‘Fuck you,’ she said. 
+
+‘So you do fuck him?’
+
+‘I didn’t say anything.’
+
+‘But you do.’
+
+‘Yeah I do,’ she said. ‘Yeah I fucking do. So what? Okay? So what? Yeah I love him. How does it matter to you? Why the fuck do you care?’
+
+‘Why do I care?’ I exclaimed. ‘Why do I care? Because, contrary to what you may assume, it’s not something that’s normal, and this isn’t some fucking hillbilly I picked up, this is my friend, and—’
+
+‘I need a cigarette,’ she said, opening the door and leaping out, and I followed.
+
+‘Quit that,’ she said.
+
+‘Quit what?’
+
+‘Quit whatever you’re doing. I know what you’re going to say.’
+
+It was extraordinarily windy outside; her hair was flying in the wind, and she looked astonishingly beautiful. Her shirt was a bright white.
+
+‘And just what do you think I’m going to say?’
+
+‘Aargh!’ she yelled, throwing the cigarette away and balling her hands into fists. ‘You’re going to say the same fucking things, same as all of them—you’re a smart girl, you’re a pretty girl, you don’t need to do all this, you can be doing a hundred fucking things and yet this is what you choose—yeah this is what I choose to do with my life, okay? But it’s my. fucking. life. It’s my life, it’s my choice, and you don’t get a fucking say in it, okay? Not you, not him, not anyone fucking else, you don’t get to choose—’
+
+She tried to light another cigarette, but with the wind she couldn’t turn on the lighter and her hands were shaking a little too much to do it effectively. ‘Here, let me help you,’ I said.
+
+‘Go away,’ she replied.
+
+‘Whatever,’ I said. ‘You can’t even—’
+
+‘I can’t even what? Go on, say it. Say it, you piece of shit.’
+
+I couldn’t move a muscle. Then, at last—‘Why?’
+
+‘Fuck you,’ she said, and there were tears in her eyes. ‘Fuck you.’
+
+‘Let me—’
+
+‘NO!’ she yelled. ‘Get away from me! Get away from me!’
+
+‘You don’t have to do whatever he says,’ I said. ‘I know that—’
+
+‘No! You don’t know anything! Leave me alone! You don’t know shit! You don’t understand anything! You don’t know what it’s like! You don’t know what he’s like, what they’re like—it’s not him, it’s me—you can’t tell anyone! You swear to fucking God, you swear—on his fucking name—that you’re not going to say a fucking word—you’re going to end my life, whatever’s left of it—’
+
+She was still struggling to light the cigarette; it was getting windier and windier—whatever sunlight there had been had gone away entirely, and the whole sky was filled with gray. I heard thunder in the distance.
+
+‘It’s going to rain,’ I said. ‘And let me—’
+
+I stepped up to her, hoping that I could at least light the cigarette, but the moment I got close enough I felt a thunderous pain in my chest and my mind went blank. It was like I’d been slammed into by a truck; I looked down and saw a switchblade handle protruding out of my front shoulder. I don’t know how she’d got it, or when, or when she’d retrieved it, even, but there it was, jammed in to the place where my shoulder ended and my chest started. I fell to my knees, barely able to breathe. There was blood everywhere.
+
+‘Oh my God,’ said Sandrine, over and over, crying, hands clasped to her mouth. ‘Oh my God. Oh my God.’ She began to run around in circles; I slipped to the ground. The last thing I saw was a truck pulling up on the highway.
+
+
+I remember waking up in a Detroit hospital, covered in bandages, a nurse peering over me. It didn’t seem like any time had passed in the interim; I was dazed for the first bit, unable to tell where I was—the life I was living wasn’t my own, and when I met the police I had no desire to speak. There were legalities, later, and I had to get a lawyer to get the whole thing dropped, but the cops agreed that we were just some dumb kids who got into a fight. Nothing really happened to anyone.
+
+I saw Jeremy on the first day, but I had even less desire to speak to him than I had to speak to the cops, and all I told him was to inform my parents that I’d had a small accident and was going to be perfectly fine. The knife hadn’t done much, if I understood correctly. It had missed all the major arteries and hadn’t torn up too much muscle, and in a couple days I was good to go with the only caveat being that I had to get the stitches taken off after another week. I couldn’t fly, and we made the stupid decision to drive our old route, anyway—passing through Syracuse without stopping—and they dropped me off at my friend’s place in Boston. The only time I saw Sandrine again was in the car. She was quiet, but a grateful sort of quiet. There was no music, no speaking, no windows, even, and I spent most of the long ride sleeping. Once I was in Boston I used up my insurance for the rest of the injuries and gave Cat a brief rundown of what had happened. She arrived in a couple days.
+
+Jeremy made it to Portland the day after he dropped me in Boston. He texted me that he wanted to get rid of the raptor; I told him that I’d buy it off him for a couple grand, and he didn’t protest. We didn’t change the names or anything, because it was under investigation, I think, but all that was dropped in a few weeks once I’d fully recovered. I took a bus up to Portland and met him for a few minutes in a bar as he dropped the keys off, and I don’t remember much of what he said except that he was sorry it’d turned out this way.
+
+A couple months later Cat and I did a little road trip of our own, driving the truck back from Maine down through the South into the desert lands of the Southwest, making our way to Gary Harkness’s final destination in West Texas where the wind was still and the Milky Way stretched far above us bigger and brighter than it had been in that brief moment in Idaho, even, and she could make out every one of the constellations that her father had taught her all those years ago back when they were friendly visitors to the nighttime Oregon skies. We kissed and we held each other and we made love and it was almost enough to forget the creaking of the bedroom underneath me or the cold feel of Sandrine’s knife against my skin. I don’t think she fully believes me, you know. She’d known Jeremy for half a decade at that point, and sometimes when you think you know people that well you think that they can’t catch you off guard, and if they do you don’t really believe them all the same. We got engaged in Big Bend—I’d been putting it off for far too long—and we drove out into the sandhills off the I-20 with the raptor and a rented station wagon and set the whole goddamn thing on fire in the middle of the desert. It was a pretty sight, the car burning like that; I didn’t care one bit about the money I’d put into it, I just wanted the damn fucking thing gone. And she and I took a few pictures against the burning landscape and when we drove back to El Paso I bought myself a nice little Miata. Something about the convertible finally fixed it. When Cat and I got back to California we had eyes for no one but ourselves. 
+
+Apparently Sandrine’s back in Seattle, or at least that’s what her webpage says, and I’ve never really felt the need to look Jeremy up, though Cat tells me that she saw a picture of him visiting Times Square the other day.

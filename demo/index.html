@@ -1,275 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>naman kumar | cryptography</title>
+    <title>Quiet Ink | Short Stories</title>
     <meta
       name="description"
-      content="academic homepage of naman kumar, phd student in cryptography and computer science at irif, université paris-cité."
+      content="A minimalist library of short stories in a clean serif reading experience."
     />
-    <link rel="icon" type="image/png" href="fav.png" />
-    <link rel="alternate icon" type="image/png" href="fav.png" />
     <link rel="stylesheet" href="styles.css" />
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
-          displayMath: [['$$', '$$'], ['\\[', '\\]']]
-        }
-      };
-    </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
-    <audio id="mode-audio" src="audio.mp3" preload="auto" loop></audio>
-    <button class="theme-toggle" id="theme-toggle" aria-label="toggle dark mode" title="toggle dark mode">
-      <span class="toggle-mark" aria-hidden="true">?</span>
-    </button>
-    <header class="site-header">
-      <div class="profile-wrap">
-        <div>
-          <h1>naman kumar</h1>
-          <p class="subtitle">cryptographer <span class="tag-matcauthon">@matcauthon49</span></p>
-          <p class="subtitle"><span class="tag-irif">irif</span>, up-cité</p>
-          <p>
-            <a href="index.html">home</a>
-            |
-            <a href="more.html">more</a>
-          </p>
-        </div>
-      </div>
-    </header>
+    <div class="site-shell fade-in">
+      <header class="site-header">
+        <a class="site-title" href="index.html">short stories</a>
+        <p class="site-subtitle">by Naman Kumar</p>
+      </header>
 
-    <main>
-      <section id="about" aria-labelledby="about-title">
-        <h2 id="about-title">&gt; about</h2>
-        <img class="about-photo" src="profile.jpg" alt="portrait of naman kumar" />
-        <p>i am a cryptographer and computer scientist.</p>
-        <p>
-          i am currently working as a phd student under the supervision of
-          <a href="https://geoffroycouteau.github.io/" target="_blank" rel="noopener noreferrer">geoffroy couteau</a>
-          at
-          <a href="https://www.irif.fr/" target="_blank" rel="noopener noreferrer">institut de recherche en informatique fondamentale (irif)</a>
-          as part of université paris-cité.
-        </p>
-        <p>
-          i completed my undergraduate degree in math // cs at
-          <a href="https://www.cmi.ac.in/" target="_blank" rel="noopener noreferrer">cmi</a>.
-          i completed my masters' at
-          <a href="https://engineering.oregonstate.edu/EECS" target="_blank" rel="noopener noreferrer">oregon state</a>,
-          where i was advised by
-          <a href="https://garbledcircus.com/" target="_blank" rel="noopener noreferrer">mike rosulek</a>
-          and
-          <a href="https://sites.google.com/view/jiayux" target="_blank" rel="noopener noreferrer">jiayu xu</a>.
-        </p>
-      </section>
+      <main>
+        <section aria-labelledby="stories-heading" class="story-section">
+          <h2 id="stories-heading">Stories</h2>
+          <ul class="story-list">
+            <li class="story-item delay-1">
+              <a class="story-link" href="stories/afternoon.html">Afternoon at Père-Lachaise</a>
+              <p>‘Let’s go,’ said Sophie, tugging at the sleeve of his jumper. ‘I want to see Jim Morrison before it gets dark.’</p>
+            </li>
 
-      <section id="interests" aria-labelledby="interests-title">
-        <h2 id="interests-title">&gt; research interests</h2>
-        <p>
-          i am interested in cryptography and theoretical computer science. my work mostly spans foundational results along with the cryptanalysis of concrete cryptographic protocols. more broadly i am interested in mathematical problems, often with a combinatorial flavor, and questions about the nature of computer science and what it implies about the world. recently i have been working on the following keywords:
-        <ul>
-          <li>mpc hss pcg</li>
-          <li>threshold [thing]</li>
-          <li>black-box impossibilities</li>
-        </ul>
-        </p>
-      </section>
+            <li class="story-item delay-2">
+              <a class="story-link" href="stories/the-wink.html">The Wink</a>
+              <p>I’m telling you, it really happened. I’d taken Monday off for a dentist appointment—a few weeks ago the nurse had written down all the numbers and...</p>
+            </li>
 
-      <section id="publications" aria-labelledby="pub-title">
-        <h2 id="pub-title">&gt; pubs</h2>
+            <li class="story-item delay-3">
+              <a class="story-link" href="stories/japanese-garden.html">The Japanese Garden</a>
+              <p>I don’t remember how I got the job, really. A lot of things are like that. I suppose it could be said that I was in a slump. Things didn’t seem to...</p>
+            </li>
 
-        <h3>preprints</h3>
-        <ul class="publication-list">
-          <li>
-            <div class="paper-head">
-              <span class="paper-title">From OT to OLE with Almost-Linear Communication</span>
-            </div>
-            <span class="paper-meta">Geoffroy Couteau, Naman Kumar<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2026/295" target="_blank" rel="noopener noreferrer">eprint 2026/295</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-ot-ole">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-ot-ole">
-              Doing OLEs in the OT-hybrid model used to take \(O(n\log n)\) communication. Now we can do it with \(O(n\cdot 2^{\log^{*}n})\).
-            </div>
-          </li>
-          <li>
-            <div class="paper-head">
-              <span class="paper-title">Threshold Signing for Standard Hash-Based Signatures is Expensive</span>
-            </div>
-            <span class="paper-meta">Yashwanth Kondi, Naman Kumar, Hernán Vanegas<br><span class="conf-name">Preprint</span> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-threshold-hash">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-threshold-hash">
-              Hash-based schemes seem great: the security assumption is straightforward (SHA), SPHINCS+ has been standardized as SLH-DSA, and they don't use any super-fancy cryptography. We show that it's not so good if you want to threshold sign them; there are some inherent limitations that make threshold signing prohibitively expensive if you're doing it in a way that makes black-box use of the hash-function.
-            </div>
-          </li>
-          <li>
-            <div class="paper-head">
-              <span class="paper-title">Minicrypt PRFs Do Not Admit Black-Box Oblivious Evaluations</span>
-            </div>
-            <span class="paper-meta">Cruz Barnum, Mohammad Hajiabadi, David Heath, Jake Januzelli, Naman Kumar, Mike Rosulek<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2025/1947" target="_blank" rel="noopener noreferrer">eprint 2025/1947</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-minicrypt-oprf">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-minicrypt-oprf">
-              OPRFs (Oblivious PseudoRandom Functions) are how you do PSI and PAKE, but they come in two varieties: key-reusable OPRFs, where the key \(k\) is fixed at the beginning by the sender, and ephemeral-key OPRFs, where you generate a new key each time the receiver wants to obtain the OPRF output at any input point of its choice. The first kind is nicer for updatable applications, but it looks like you can only ever build it using public key crypto. We show this gap is inherent: there's no PRF in Minicrypt which supports a nice OPRF protocol.
-            </div>
-          </li>
-          <li>
-            <div class="paper-head">
-              <span class="paper-title">On the UC-(In)security of PAKE Protocols without Random Oracles</span>
-            </div>
-            <span class="paper-meta">Naman Kumar, Jiayu Xu<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2025/998" target="_blank" rel="noopener noreferrer">eprint 2025/998</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-uc-pake">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-uc-pake">
-              KOY is an age-old PAKE protocol which bases its security purely on the DDH assumption. Is KOY UC-Secure? We show that it isn't, but that if you're working in the AGM you can prove it secure under a different assumption.
-            </div>
-          </li>
-        </ul>
+            <li class="story-item">
+              <a class="story-link" href="stories/portland-maine.html">Portland, Maine</a>
+              <p>It didn’t have to be this way. The first time I met Sandrine it was 2023 and she was wearing all black and Prada sunglasses and looked just a littl...</p>
+            </li>
 
-        <h3>2025</h3>
-        <ul class="publication-list">
-          <li>
-            <div class="paper-head">
-              <span class="paper-title">Multiparty Homomorphic Secret Sharing and More from LPN and MQ</span>
-            </div>
-            <span class="paper-meta">Geoffroy Couteau, Naman Kumar, Xiaxi Ye<br><span class="conf-name">TCC 2025</span> | <a href="https://eprint.iacr.org/2025/966" target="_blank" rel="noopener noreferrer">eprint 2025/966</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-hss-lpn-mq">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-hss-lpn-mq">
-              Can you securely a circuit with less communication than the circuit size? We use LPN and MQ to construct \(n\)-party DPFs, HSS and PCGs for constant-degree correlations—and show that you can do \(n\)-party MPC for layered circuits with \(O(n/\log^{*} n)\) communication.
-            </div>
-          </li>
-          <li>
-            <div class="paper-head">
-              <span class="paper-title">Low-Rate Boolean Garbling Scheme from Generic Groups</span>
-            </div>
-            <span class="paper-meta">Geoffroy Couteau, Carmit Hazay, Aditya Hegde, Naman Kumar<br><span class="conf-name">CRYPTO 2025</span> | <a href="https://eprint.iacr.org/2025/268" target="_blank" rel="noopener noreferrer">eprint 2025/268</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-boolean-garbling">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-boolean-garbling">
-              Boolean garbled circuits need an \(O(\lambda)\) communication overhead—or do they? We show a garbling scheme that does slightly better under a variant of the Power-DDH Assumption.
-            </div>
-          </li>
-          <li>
-            <div class="paper-head">
-              <span class="paper-title">Breaking the Low-Rate Arithmetic Garbling Barrier</span>
-            </div>
-            <span class="paper-meta">Geoffroy Couteau, Carmit Hazay, Aditya Hegde, Naman Kumar<br><span class="conf-name">EUROCRYPT 2025 + TPMPC 2025</span> | <a href="https://eprint.iacr.org/2025/1053" target="_blank" rel="noopener noreferrer">eprint 2025/1053</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-arithmetic-garbling">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-arithmetic-garbling">
-                Arithmetic garbled circuits need an \(O(\lambda)\) communication overhead—or do they? We show a garbling scheme that does slightly better under a variant of the Power-DDH Assumption.            </div>
-          </li>
-        </ul>
+            <li class="story-item">
+              <a class="story-link" href="stories/john-billingsley.html">Last Days of John Billingsley</a>
+              <p>Now I’ve really seen everything. War in Ukraine, the Cubs winning the world series, skin tones on emojis—and, two weeks ago, or three when you’ll b...</p>
+            </li>
 
-        <h3>2024</h3>
-        <ul class="publication-list">
-          <li>
-            <div class="paper-head">
-              <span class="paper-title">10-Party Sublinear Secure Computation from Standard Assumptions</span>
-            </div>
-            <span class="paper-meta">Geoffroy Couteau, Naman Kumar<br><span class="conf-name">CRYPTO 2024</span> | <a href="https://eprint.iacr.org/2025/269" target="_blank" rel="noopener noreferrer">eprint 2025/269</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-10-party">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-10-party">
-              Can you securely a circuit with less communication than the circuit size? We use a standard assumption soup to construct \(10\)-party MPC for layered circuits with \(O(n/\log\log\log n)\) communication.
-            </div>
-          </li>
-        </ul>
-      </section>
+            <li class="story-item">
+              <a class="story-link" href="stories/driving-out.html">Driving Out</a>
+              <p>My story ends something like this: on Saturday the 14th of January, 2023—about half-hour after having lunch at the Lake Oswego Burgerville—I backed...</p>
+            </li>
 
-      <section id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">&gt; contact</h2>
-        <p>naman [dot] kumar [at] irif [dot] fr</p>
-        <p>namankr02 [at] gmail [dot] com</p>
-        <p>please use these emails for all professional inquiries. i have others, but they don't work well; you certainly won't get an immediate response.</p>
-        
-      </section>
-    </main>
+            <li class="story-item">
+              <a class="story-link" href="stories/that-one-marine.html">That One Marine</a>
+              <p>This little cocksucker’s really got it going out for him—he keeps going this way he’s going to find himself in the kind of alligator water that swa...</p>
+            </li>
+          </ul>
+        </section>
+      </main>
 
-    <footer>
-      <p>© 2026 naman kumar</p>
-      <p class="footer-note">photo courtesy of my boy jake!</p>
-    </footer>
-
-    <script>
-      (() => {
-        const toggle = document.getElementById("theme-toggle");
-        const modeAudio = document.getElementById("mode-audio");
-
-        const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-        const saved = localStorage.getItem("theme") || preferred;
-
-        const setTheme = (mode) => {
-          document.body.setAttribute("data-theme", mode);
-          toggle.setAttribute("aria-label", mode === "dark" ? "switch to light mode" : "switch to dark mode");
-          toggle.setAttribute("title", mode === "dark" ? "switch to light mode" : "switch to dark mode");
-
-          if (modeAudio) {
-            if (mode === "dark") {
-              modeAudio.play().catch(() => {});
-            } else {
-              modeAudio.pause();
-              modeAudio.currentTime = 0;
-            }
-          }
-        };
-
-        const triggerGlitch = () => {
-          document.body.classList.remove("glitching");
-          void document.body.offsetWidth;
-          document.body.classList.add("glitching");
-          window.setTimeout(() => {
-            document.body.classList.remove("glitching");
-          }, 230);
-        };
-
-        setTheme(saved);
-
-        toggle.addEventListener("click", () => {
-          const next = document.body.getAttribute("data-theme") === "dark" ? "light" : "dark";
-          setTheme(next);
-          triggerGlitch();
-          localStorage.setItem("theme", next);
-        });
-
-        const synopsisButtons = document.querySelectorAll(".synopsis-toggle");
-        const synopsisPanels = document.querySelectorAll(".paper-synopsis");
-
-        synopsisPanels.forEach((panel) => {
-          panel.style.maxHeight = "0px";
-          panel.classList.remove("open");
-        });
-
-        synopsisButtons.forEach((button) => {
-          button.addEventListener("click", () => {
-            const panelId = button.getAttribute("aria-controls");
-            const panel = document.getElementById(panelId);
-            if (!panel) {
-              return;
-            }
-
-            const expanded = button.getAttribute("aria-expanded") === "true";
-
-            const currentHeight = panel.getBoundingClientRect().height;
-            panel.style.maxHeight = `${currentHeight}px`;
-            void panel.offsetHeight;
-
-            if (expanded) {
-              button.setAttribute("aria-expanded", "false");
-              panel.classList.remove("open");
-              panel.style.maxHeight = "0px";
-            } else {
-              button.setAttribute("aria-expanded", "true");
-              panel.classList.add("open");
-              panel.style.maxHeight = `${panel.scrollHeight}px`;
-            }
-          });
-
-          const panelId = button.getAttribute("aria-controls");
-          const panel = panelId ? document.getElementById(panelId) : null;
-          if (panel) {
-            panel.addEventListener("transitionend", (event) => {
-              if (event.propertyName !== "max-height") {
-                return;
-              }
-
-              const isOpen = button.getAttribute("aria-expanded") === "true";
-              if (isOpen) {
-                panel.style.maxHeight = "none";
-              } else {
-                panel.style.maxHeight = "0px";
-              }
-            });
-          }
-        });
-      })();
-    </script>
+      <footer class="site-footer">
+        <p>&copy; Naman Kumar. All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
