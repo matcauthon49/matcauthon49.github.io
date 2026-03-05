@@ -22,9 +22,10 @@ body {
 body {
   min-height: 100vh;
   color: var(--ink);
-  font-size: 1.12rem;
+  font-size: 1.06rem;
   background: #ffffff;
-  font-family: "Baskerville", "Baskerville Old Face", "Iowan Old Style", "Times New Roman", serif;
+  font-family: "Literata", "Baskerville", "Baskerville Old Face", "Iowan Old Style", "Times New Roman", serif;
+  font-optical-sizing: auto;
   line-height: 1.72;
 }
 

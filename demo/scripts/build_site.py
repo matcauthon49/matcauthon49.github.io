@@ -11,6 +11,9 @@ SITE_HEAD_TITLE = "Naman Kumar | Short Stories"
 SITE_DESCRIPTION = (
 	"Short stories by Naman Kumar."
 )
+FONT_STYLESHEET_HREF = (
+	"https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap"
+)
 FOOTER_TEXT = "&copy; Naman Kumar. All rights reserved."
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -405,6 +408,9 @@ def render_index_page(published_stories: list[Story], draft_stories: list[Story]
 			'      name="description"',
 			f'      content="{escape_html_attribute(SITE_DESCRIPTION)}"',
 			"    />",
+			'    <link rel="preconnect" href="https://fonts.googleapis.com" />',
+			'    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />',
+			f'    <link rel="stylesheet" href="{FONT_STYLESHEET_HREF}" />',
 			'    <link rel="stylesheet" href="styles.css" />',
 			"  </head>",
 			"  <body>",
@@ -458,6 +464,9 @@ def render_story_page(story: Story) -> str:
 			"    <meta charset=\"UTF-8\" />",
 			"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
 			f"    <title>{escape_html(story.title)} | Naman Kumar</title>",
+			'    <link rel="preconnect" href="https://fonts.googleapis.com" />',
+			'    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />',
+			f'    <link rel="stylesheet" href="{FONT_STYLESHEET_HREF}" />',
 			'    <link rel="stylesheet" href="../styles.css" />',
 			"  </head>",
 			'  <body class="story-page">',
