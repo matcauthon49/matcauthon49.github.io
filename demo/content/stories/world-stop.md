@@ -138,7 +138,7 @@ He tripped on the cobblestone. ‘Like hell. And besides, I’m not interested i
 
 ‘I’d kill for some dinner right now. What’d you say?’
 
-He laughed, eyes twinkling. ‘Lets walk to Pont Alexandre III. What do you think of kebab?’
+He laughed, eyes twinkling. ‘Let’s walk to Pont Alexandre III. What do you think of kebab?’
 
 ‘You’re going to buy me kebab?’
 
