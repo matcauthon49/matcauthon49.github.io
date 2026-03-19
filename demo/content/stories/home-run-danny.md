@@ -2,7 +2,7 @@
 title: Home Run Danny
 slug: home-run-danny
 order: 5
-excerpt: Draft—in progress.
+excerpt: After a string of small failures, a young boy is taken out for ice cream by his father, who tries to explain why life isn't fair and why that's okay.
 draft : true
 ---
 

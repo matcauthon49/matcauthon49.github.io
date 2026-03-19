@@ -2,7 +2,7 @@
 title: One Summer North Dakota, 2025
 slug: one-summer
 order: 3
-excerpt: Draft—in progress.
+excerpt: A directionless man uproots his life to Chicago and slowly, awkwardly, begins to find his footing.
 draft : true
 ---
 

@@ -2,7 +2,7 @@
 title: Molly’s Toys
 slug: mollys-toys
 order: 5
-excerpt: Draft—in progress.
+excerpt: A teenage babysitter grows fascinated by the surprisingly dark and intricate world a six-year-old girl has constructed for her dolls.
 draft : true
 ---
 

@@ -2,7 +2,7 @@
 title: Driving Out
 slug: driving-out
 order: 6
-excerpt: 
+excerpt: A grieving man explains, with startling calm and intelligence, exactly what led him to drive his car into a crowd of strangers.
 ---
 
 My story ends something like this: on Saturday the 14th of January, 2023—about half-hour after having lunch at the Lake Oswego Burgerville—I backed my car out the driveway onto the streets of Portland, Oregon, intending to find out how many pedestrians I could run over before the police intervened, preferably with lethal force.

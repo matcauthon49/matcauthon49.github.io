@@ -2,7 +2,7 @@
 title: The Japanese Garden
 slug: japanese-garden
 order: 3
-excerpt: 
+excerpt: A young housemaid in California becomes dangerously fixated on the beautiful woman living next door.
 ---
 
 I don’t remember how I got the job, really. A lot of things are like that. I suppose it could be said that I was in a slump. Things didn’t seem to have any color in them. A lot of it had to do with this constant, soft pressure in my windpipe, not dissimilar to the buildup after smoking a whole pack of cigarettes. I remember it being there all the time and the doctor saying that I was under a lot of stress. I felt waist-deep in water most of the time. It was rather discouraging.

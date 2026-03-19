@@ -2,7 +2,7 @@
 title: Last Days of John Billingsley
 slug: john-billingsley
 order: 5
-excerpt: 
+excerpt: A journalist profiles a daredevil tightrope walker preparing to cross the Grand Canyon, only to watch him die before finishing it.
 ---
 
 Now I’ve really seen everything. War in Ukraine, the Cubs winning the world series, skin tones on emojis—and, two weeks ago, or three when you’ll be reading this, a standard California Condor glide 50 miles an hour over the grand canyon and slam headfirst into a thin young man from Philadelphia holding in his hands a long, cylindrical balance pole which in that critical moment fails to perform its intended function and sends the aforementioned young man from Philadelphia—who was called John Billingsley and presently suspended on a high-wire steel-and-carbon-fiber cable about 1500 feet above ground with no other safety apparatus—hurtling straight towards the canyon floor, which he hits at what is later deemed to be 9:53AM, breaking his neck. He dies on impact. At 12:44PM the New York Times publishes Grand Canyon Tightrope Walker Suffers Fatal Fall. The incident becomes real. Most events are not incidents—they are merely something that happened. But this was an incident.

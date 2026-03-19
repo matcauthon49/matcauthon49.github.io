@@ -2,7 +2,7 @@
 title: Afternoon at Père-Lachaise
 slug: afternoon
 order: 1
-excerpt: 
+excerpt: A couple touring a Paris cemetery discovers that their small differences might not be so small after all.
 ---
 
 ‘Let’s go,’ said Sophie, tugging at the sleeve of his jumper. ‘I want to see Jim Morrison before it gets dark.’

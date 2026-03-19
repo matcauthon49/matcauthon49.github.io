@@ -2,7 +2,7 @@
 title: The Wink
 slug: the-wink
 order: 2
-excerpt: 
+excerpt: An engaged accountant becomes so obsessed with a woman he glimpsed on a TV rerun that he drives overnight to Boston to find her.
 ---
 
 I’m telling you, it really happened. I’d taken Monday off for a dentist appointment—a few weeks ago the nurse had written down all the numbers and given me the prognosis that there wasn’t anything to be done apart from extracting the tooth entirely. ‘Honestly,’ she’d said, ‘I’m surprised you’ve made it to twenty-eight with all your wisdom teeth.’ I’m telling you this because it means I’ve got the receipts down pat. I know when it happened, for instance: 9:30AM in the waiting room while Dr. Alfred was finishing off a root canal on an old man who’d tottered in with a cane, and I was thinking about why all dentist’s receptionists were dumpy, middle-aged women while the nurses were extraordinarily beautiful. It’s a good question; my hypothesis is that it’s a kind of self-fulfilling prophecy, where because every woman you’ve seen as an assistant has been kind of dumpy the applicants inevitably filter themselves out—but as I said, I’m only telling you this to show you that I know what I’m talking about. I’m not kooky. It was 9:30AM and they had Cheers on the television. One of the NBC spinoff channels. A later season—Frasier Crane was on the show. I’d seen the first couple seasons of Cheers. Tracy’d wanted to see what the fuss was all about; they were fine, but pretty dated, I reckoned—Sam couldn’t get away with all that sort of stuff these days. 

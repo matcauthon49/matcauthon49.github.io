@@ -2,7 +2,7 @@
 title: Hello, Patagonia!
 slug: patagonia
 order: 6
-excerpt: Draft—in progress.
+excerpt: A man discovers his wife doesn't believe penguins exist and can't stop himself from wondering what else she might be wrong about.
 draft : true
 ---
 

@@ -2,7 +2,7 @@
 title: Badlands
 slug: badlands
 order: 1
-excerpt: Draft—in progress.
+excerpt: A grandmother caring for her granddaughter one summer grows increasingly convinced that the charming neighborhood boy is responsible for a string of animal killings.
 draft : true
 ---
 
