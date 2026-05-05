@@ -87,15 +87,6 @@
         <ul class="publication-list">
           <li>
             <div class="paper-head">
-              <span class="paper-title">From OT to OLE with Almost-Linear Communication</span>
-            </div>
-            <span class="paper-meta">Geoffroy Couteau, Naman Kumar<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2026/295" target="_blank" rel="noopener noreferrer">eprint 2026/295</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-ot-ole">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-ot-ole">
-              Doing OLEs in the OT-hybrid model used to take \(O(n\log n)\) communication. Now we can do it with \(O(n\cdot 2^{\log^{*}n})\).
-            </div>
-          </li>
-          <li>
-            <div class="paper-head">
               <span class="paper-title">Threshold Signing for Standard Hash-Based Signatures is Expensive</span>
             </div>
             <span class="paper-meta">Yashwanth Kondi, Naman Kumar, Hernán Vanegas<br><span class="conf-name">Preprint</span> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-threshold-hash">&gt;</button></span>
@@ -112,11 +103,24 @@
               OPRFs (Oblivious PseudoRandom Functions) are how you do PSI and PAKE, but they come in two varieties: key-reusable OPRFs, where the key \(k\) is fixed at the beginning by the sender, and ephemeral-key OPRFs, where you generate a new key each time the receiver wants to obtain the OPRF output at any input point of its choice. The first kind is nicer for updatable applications, but it looks like you can only ever build it using public key crypto. We show this gap is inherent: there's no PRF in Minicrypt which supports a nice OPRF protocol.
             </div>
           </li>
+
+        </ul>
+        <h3>2026</h3>
+        <ul class="publication-list">
+           <li>
+            <div class="paper-head">
+              <span class="paper-title">From OT to OLE with Almost-Linear Communication</span>
+            </div>
+            <span class="paper-meta">Geoffroy Couteau, Naman Kumar<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2026/295" target="_blank" rel="noopener noreferrer">eprint 2026/295</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-ot-ole">&gt;</button></span>
+            <div class="paper-synopsis" id="synopsis-ot-ole">
+              Doing OLEs in the OT-hybrid model used to take \(O(n\log n)\) communication. Now we can do it with \(O(n\cdot 2^{\log^{*}n})\).
+            </div>
+          </li>
           <li>
             <div class="paper-head">
               <span class="paper-title">On the UC-(In)security of PAKE Protocols without Random Oracles</span>
             </div>
-            <span class="paper-meta">Naman Kumar, Jiayu Xu<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2025/998" target="_blank" rel="noopener noreferrer">eprint 2025/998</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-uc-pake">&gt;</button></span>
+            <span class="paper-meta">Naman Kumar, Jiayu Xu<br><span class="conf-name">CRYPTO 2026</span> | <a href="https://eprint.iacr.org/2025/998" target="_blank" rel="noopener noreferrer">eprint 2025/998</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-uc-pake">&gt;</button></span>
             <div class="paper-synopsis" id="synopsis-uc-pake">
               KOY is an age-old PAKE protocol which bases its security purely on the DDH assumption. Is KOY UC-Secure? We show that it isn't, but that if you're working in the AGM you can prove it secure under a different assumption.
             </div>
