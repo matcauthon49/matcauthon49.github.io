@@ -45,7 +45,7 @@
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">&gt; about</h2>
         <div class="section-line" aria-hidden="true"></div>
-        <img class="about-photo" src="profile.jpg" alt="portrait of naman kumar" />
+        <img id="profile-photo" class="about-photo" src="profile.jpg" alt="portrait of naman kumar" />
         <p>i am a cryptographer and computer scientist.</p>
         <p>
           i am currently working as a phd student under the supervision of
@@ -277,6 +277,22 @@
             });
           }
         });
+      })();
+    </script>
+    <script>
+      (() => {
+        const pics = [
+          'assets/pics/giverny-pic.jpg',
+          'assets/pics/paris-pic.jpeg',
+          'assets/pics/pool-pic.jpg',
+          'assets/pics/snow-pic.jpeg',
+          'assets/pics/vegas-pic.jpg'
+        ];
+        const randomPic = pics[Math.floor(Math.random() * pics.length)];
+        const profilePhoto = document.getElementById('profile-photo');
+        if (profilePhoto) {
+          profilePhoto.src = randomPic;
+        }
       })();
     </script>
     <div class="fire-strip" aria-hidden="true"></div>
