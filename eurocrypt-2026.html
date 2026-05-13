@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eurocrypt 2026</title>
+    <meta
+      name="description"
+      content="A standalone photo gallery for pictures from Eurocrypt 2026."
+    />
+    <link rel="icon" type="image/png" href="fav.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="gallery-page">
+    <header class="site-header">
+      <div class="profile-wrap">
+        <div>
+          <h1>eurocrypt 2026</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery-collection" aria-labelledby="gallery-title">
+        <div class="gallery-grid" id="eurocrypt-gallery"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 naman kumar</p>
+    </footer>
+
+    <script>
+      (() => {
+        const gallery = document.getElementById("eurocrypt-gallery");
+        const images = [
+          { file: "DSCN3204.JPG", caption: "Eliana Carozza (UVSQ), Dung Bui (Postdoc, LIP6)" },
+          { file: "DSCN3208.JPG", caption: "Hoa Nguyen (Postdoc, Télécom)" },
+          { file: "DSCN3211.JPG", caption: "Aditya Hegde (PhD, JHU)" },
+          { file: "DSCN3212.JPG", caption: "Willy Quach (Ass. Prof, CISPA)" },
+          { file: "DSCN3213.JPG", caption: "Pierre Meyer (Ass. Prof, CISPA)" },
+          { file: "DSCN3214.JPG", caption: "Gaspard Antoine (PhD, IMDEA)" },
+          { file: "DSCN3215.JPG", caption: "Lance Roy (IBM)" },
+          { file: "DSCN3216.JPG", caption: "Lance & Aditya" },
+          { file: "DSCN3217.JPG", caption: "Sasha Lapiha (Silence Labs), Lennart Braun (Postdoc, IRIF), Pierre" },
+          { file: "DSCN3218.JPG", caption: "Valentina Frasca (PhD, Catania), Emanuele Guinta (Postdoc, ETH), Francesco Migliaro (Postdoc, IRIF)" },
+          { file: "DSCN3219.JPG", caption: "Kelsey Melissaris (Postdoc, IRIF), Nikolas Melissaris (Postdoc, IRIF)" },
+          { file: "DSCN3220.JPG", caption: "Victor Dyseryn (Télécom), Duong-Hieu Phan (Professor, Télécom), Dung" },
+          { file: "DSCN3221.JPG", caption: "Sasha, Bernardo Magri (Manchester), Yash Kondi (Silence Labs)" },
+          { file: "DSCN3222.JPG", caption: "Me, Sasha, Bernardo" },
+          { file: "DSCN3227.JPG", caption: "Marek Sefranek (PhD, TU Wien)" },
+          { file: "DSCN3228.JPG", caption: "Valerio Coletti (PhD, Aarhus), Luiza Soezima (PhD, Aarhus)" },
+          { file: "DSCN3229.JPG", caption: "Dung, Valentina & Francesco" },
+          { file: "DSCN3230.JPG", caption: "Eliana, Lennart, Sebastian Hasler (PhD, Stuttgart)" },
+          { file: "DSCN3235.JPG", caption: "Nick & Akira Takahashi (JPMorgan)" },
+          { file: "DSCN3237.JPG", caption: "Kaartik Bhushan (Postdoc, IRIF)" },
+          { file: "DSCN3238.JPG", caption: "Kaartik, Dung, Francesco & Gaspard" },
+          { file: "DSCN3239.JPG", caption: "Mahshid Riahinia (Postdoc, IRIF) & Kaartik" },
+          { file: "DSCN3240.JPG", caption: "Mike Rosulek (Professor, Oregon State), Stefano Tessaro (Professor, UW)" },
+          { file: "DSCN3242.JPG", caption: "Sebastian, Marcin Mielniczuk (PhD, Warsaw), Elizabeth Crites (Parity), Michele Ciampi (Edinburgh) & Kelsey" },
+          { file: "DSCN3243.JPG", caption: "Gabrielle Beck (Postdoc, LIRMM)" },
+          { file: "DSCN3245.JPG", caption: "Miranda Christ (PhD, Columbia) & Pierre" },
+          { file: "DSCN3246.JPG", caption: "Luisa Siniscalchi (Ass. Prof, DTU), Mahak Pancholi (Postdoc, IMDEA), Antonio Faonio (MDC, EURECOM) & Mike" },
+          { file: "DSCN3247.JPG", caption: "Nick, Christoph Egger (Chalmers), Francesco" },
+          { file: "DSCN3248.JPG", caption: "Kelsey & Daniel Escudero (TACEO)" },
+          { file: "DSCN3250.JPG", caption: "Dung, Mike" },
+          { file: "DSCN3252.JPG", caption: "Jesko Dujmovic (Postdoc, Northeastern/BU), Daniel Jost (Blanqet), Doreen Riepel (Ass. Prof, CISPA)" },
+          { file: "DSCN3253.JPG", caption: "Lance & Mike" },
+          { file: "4E56DFBB-4D98-4FE1-B06C-7C0172E2886F_1_105_c.jpeg", caption: "Diana Ghinea (Postdoc, Lucerne), Chen-Da Liu-Zhang (Prof., Lucerne), Rahul Satish (PhD, ITU Copenhagen)" },
+          { file: "56BE8ADD-7944-4D83-B328-CCCF08185B18_1_105_c.jpeg", caption: "Me & Dung" },
+          { file: "C76841B0-395E-42D5-8CE5-1FE7E159CF50_1_105_c.jpeg", caption: "Champ Chairattana-Apirom (PhD, UW), Roman Langrehr (Postdoc, Waterloo)" },
+          { file: "E9E83666-8FC1-45C8-8661-ED7E13078E83_1_105_c.jpeg", caption: "Daniel, Akira & Yash" }
+        ];
+
+        gallery.innerHTML = images
+          .map(({ file, caption }, index) => {
+            const label = caption.trim() || `photo ${String(index + 1).padStart(2, "0")}`;
+            return `
+              <figure class="gallery-card">
+                <img class="gallery-photo" src="assets/eurocrypt26/${file}" alt="Eurocrypt 2026 ${label}" loading="lazy" decoding="async" />
+                <figcaption class="gallery-caption">${label}</figcaption>
+              </figure>
+            `;
+          })
+          .join("");
+      })();
+    </script>
+  </body>
+</html>

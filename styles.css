@@ -597,6 +597,74 @@ body[data-theme="dark"] #music .topster-photo {
   border: 1px solid color-mix(in srgb, var(--accent-2) 62%, var(--line));
 }
 
+body.gallery-page .site-header {
+  padding-bottom: 1.1rem;
+}
+
+body.gallery-page main {
+  padding-top: 0;
+}
+
+body.gallery-page .gallery-intro,
+body.gallery-page .gallery-collection {
+  border: 1px dashed color-mix(in srgb, var(--accent-3) 55%, var(--line));
+  background:
+    linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--accent-1) 10%, transparent),
+      color-mix(in srgb, var(--accent-2) 8%, transparent) 42%,
+      color-mix(in srgb, var(--accent-4) 10%, transparent)
+    ),
+    repeating-linear-gradient(
+      -14deg,
+      color-mix(in srgb, var(--line) 45%, transparent) 0,
+      color-mix(in srgb, var(--line) 45%, transparent) 2px,
+      transparent 2px,
+      transparent 7px
+    );
+  box-shadow:
+    4px 4px 0 color-mix(in srgb, var(--accent-2) 26%, transparent),
+    -3px -3px 0 color-mix(in srgb, var(--accent-1) 18%, transparent);
+}
+
+body.gallery-page .gallery-collection {
+  margin-top: 1rem;
+  padding: 1rem 1.15rem 1.2rem;
+  background: transparent;
+}
+
+body.gallery-page .gallery-grid {
+  margin-top: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.85rem;
+}
+
+body.gallery-page .gallery-card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+body.gallery-page .gallery-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+body.gallery-page .gallery-caption {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+
+
 a {
   color: var(--link);
   text-decoration: none;
