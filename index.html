@@ -89,19 +89,13 @@
             <div class="paper-head">
               <span class="paper-title">Threshold Signing for Standard Hash-Based Signatures is Expensive</span>
             </div>
-            <span class="paper-meta">Yashwanth Kondi, Naman Kumar, Hernán Vanegas<br><span class="conf-name">Preprint</span> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-threshold-hash">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-threshold-hash">
-              Hash-based schemes seem great: the security assumption is straightforward (SHA), SPHINCS+ has been standardized as SLH-DSA, and they don't use any super-fancy cryptography. We show that it's not so good if you want to threshold sign them; there are some inherent limitations that make threshold signing prohibitively expensive if you're doing it in a way that makes black-box use of the hash-function.
-            </div>
+            <span class="paper-meta">Yashwanth Kondi, Naman Kumar, Hernán Vanegas<br><span class="conf-name">Preprint</span></span>
           </li>
           <li>
             <div class="paper-head">
               <span class="paper-title">Minicrypt PRFs Do Not Admit Black-Box Oblivious Evaluations</span>
             </div>
-            <span class="paper-meta">Cruz Barnum, Mohammad Hajiabadi, David Heath, Jake Januzelli, Naman Kumar, Mike Rosulek<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2025/1947" target="_blank" rel="noopener noreferrer">eprint 2025/1947</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-minicrypt-oprf">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-minicrypt-oprf">
-              OPRFs (Oblivious PseudoRandom Functions) are how you do PSI and PAKE, but they come in two varieties: key-reusable OPRFs, where the key \(k\) is fixed at the beginning by the sender, and ephemeral-key OPRFs, where you generate a new key each time the receiver wants to obtain the OPRF output at any input point of its choice. The first kind is nicer for updatable applications, but it looks like you can only ever build it using public key crypto. We show this gap is inherent: there's no PRF in Minicrypt which supports a nice OPRF protocol.
-            </div>
+            <span class="paper-meta">Cruz Barnum, Mohammad Hajiabadi, David Heath, Jake Januzelli, Naman Kumar, Mike Rosulek<br><span class="conf-name">Preprint</span> | <a href="https://eprint.iacr.org/2025/1947" target="_blank" rel="noopener noreferrer">eprint 2025/1947</a></span>
           </li>
 
         </ul>
@@ -111,19 +105,13 @@
             <div class="paper-head">
               <span class="paper-title">From OT to OLE with Almost-Linear Communication</span>
             </div>
-            <span class="paper-meta">Geoffroy Couteau, Naman Kumar<br><span class="conf-name">TPMPC 2026</span> | <a href="https://eprint.iacr.org/2026/295" target="_blank" rel="noopener noreferrer">eprint 2026/295</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-ot-ole">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-ot-ole">
-              Doing OLEs in the OT-hybrid model used to take \(O(n\log n)\) communication. Now we can do it with \(O(n\cdot 2^{\log^{*}n})\).
-            </div>
+            <span class="paper-meta">Geoffroy Couteau, Naman Kumar<br><span class="conf-name">TPMPC 2026</span> | <a href="https://eprint.iacr.org/2026/295" target="_blank" rel="noopener noreferrer">eprint 2026/295</a></span>
           </li>
           <li>
             <div class="paper-head">
               <span class="paper-title">On the UC-(In)security of PAKE Protocols without Random Oracles</span>
             </div>
-            <span class="paper-meta">Naman Kumar, Jiayu Xu<br><span class="conf-name">CRYPTO 2026</span> | <a href="https://eprint.iacr.org/2025/998" target="_blank" rel="noopener noreferrer">eprint 2025/998</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-uc-pake">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-uc-pake">
-              KOY is an age-old PAKE protocol which bases its security purely on the DDH assumption. Is KOY UC-Secure? We show that it isn't, but that if you're working in the AGM you can prove it secure under a different assumption.
-            </div>
+            <span class="paper-meta">Naman Kumar, Jiayu Xu<br><span class="conf-name">CRYPTO 2026</span> | <a href="https://eprint.iacr.org/2025/998" target="_blank" rel="noopener noreferrer">eprint 2025/998</a></span>
           </li>
         </ul>
 
@@ -133,27 +121,19 @@
             <div class="paper-head">
               <span class="paper-title">Multiparty Homomorphic Secret Sharing and More from LPN and MQ</span>
             </div>
-            <span class="paper-meta">Geoffroy Couteau, Naman Kumar, Xiaxi Ye<br><span class="conf-name">TCC 2025</span> | <a href="https://eprint.iacr.org/2025/966" target="_blank" rel="noopener noreferrer">eprint 2025/966</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-hss-lpn-mq">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-hss-lpn-mq">
-              Can you securely a circuit with less communication than the circuit size? We use LPN and MQ to construct \(n\)-party DPFs, HSS and PCGs for constant-degree correlations—and show that you can do \(n\)-party MPC for layered circuits with \(O(n/\log^{*} n)\) communication.
-            </div>
+            <span class="paper-meta">Geoffroy Couteau, Naman Kumar, Xiaxi Ye<br><span class="conf-name">TCC 2025</span> | <a href="https://eprint.iacr.org/2025/966" target="_blank" rel="noopener noreferrer">eprint 2025/966</a></span>
           </li>
           <li>
             <div class="paper-head">
-              <span class="paper-title">Low-Rate Boolean Garbling Scheme from Generic Groups</span>
+              <span class="paper-title">\(\omega(1/\lambda)\)-Rate Boolean Garbling Scheme from Generic Groups</span>
             </div>
-            <span class="paper-meta">Geoffroy Couteau, Carmit Hazay, Aditya Hegde, Naman Kumar<br><span class="conf-name">CRYPTO 2025</span> | <a href="https://eprint.iacr.org/2025/268" target="_blank" rel="noopener noreferrer">eprint 2025/268</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-boolean-garbling">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-boolean-garbling">
-              Boolean garbled circuits need an \(O(\lambda)\) communication overhead—or do they? We show a garbling scheme that does slightly better under a variant of the Power-DDH Assumption.
-            </div>
+            <span class="paper-meta">Geoffroy Couteau, Carmit Hazay, Aditya Hegde, Naman Kumar<br><span class="conf-name">CRYPTO 2025</span> | <a href="https://eprint.iacr.org/2025/268" target="_blank" rel="noopener noreferrer">eprint 2025/268</a></span>
           </li>
           <li>
             <div class="paper-head">
-              <span class="paper-title">Breaking the Low-Rate Arithmetic Garbling Barrier</span>
+              <span class="paper-title">Breaking the \(1/\lambda\)-Rate Arithmetic Garbling Barrier</span>
             </div>
-            <span class="paper-meta">Geoffroy Couteau, Carmit Hazay, Aditya Hegde, Naman Kumar<br><span class="conf-name">EUROCRYPT 2025 + TPMPC 2025</span> | <a href="https://eprint.iacr.org/2025/1053" target="_blank" rel="noopener noreferrer">eprint 2025/1053</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-arithmetic-garbling">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-arithmetic-garbling">
-                Arithmetic garbled circuits need an \(O(\lambda)\) communication overhead—or do they? We show a garbling scheme that does slightly better under a variant of the Power-DDH Assumption.            </div>
+            <span class="paper-meta">Geoffroy Couteau, Carmit Hazay, Aditya Hegde, Naman Kumar<br><span class="conf-name">EUROCRYPT 2025 + TPMPC 2025</span> | <a href="https://eprint.iacr.org/2025/1053" target="_blank" rel="noopener noreferrer">eprint 2025/1053</a></span>
           </li>
         </ul>
 
@@ -163,10 +143,7 @@
             <div class="paper-head">
               <span class="paper-title">10-Party Sublinear Secure Computation from Standard Assumptions</span>
             </div>
-            <span class="paper-meta">Geoffroy Couteau, Naman Kumar<br><span class="conf-name">CRYPTO 2024</span> | <a href="https://eprint.iacr.org/2025/269" target="_blank" rel="noopener noreferrer">eprint 2025/269</a> <button class="synopsis-toggle" type="button" aria-expanded="false" aria-controls="synopsis-10-party">&gt;</button></span>
-            <div class="paper-synopsis" id="synopsis-10-party">
-              Can you securely a circuit with less communication than the circuit size? We use a standard assumption soup to construct \(10\)-party MPC for layered circuits with \(O(n/\log\log\log n)\) communication.
-            </div>
+            <span class="paper-meta">Geoffroy Couteau, Naman Kumar<br><span class="conf-name">CRYPTO 2024</span> | <a href="https://eprint.iacr.org/2025/269" target="_blank" rel="noopener noreferrer">eprint 2025/269</a></span>
           </li>
         </ul>
       </section>
@@ -286,56 +263,7 @@
           }
         };
 
-        const synopsisButtons = document.querySelectorAll(".synopsis-toggle");
-        const synopsisPanels = document.querySelectorAll(".paper-synopsis");
 
-        synopsisPanels.forEach((panel) => {
-          panel.style.maxHeight = "0px";
-          panel.classList.remove("open");
-        });
-
-        synopsisButtons.forEach((button) => {
-          button.addEventListener("click", () => {
-            const panelId = button.getAttribute("aria-controls");
-            const panel = document.getElementById(panelId);
-            if (!panel) {
-              return;
-            }
-
-            const expanded = button.getAttribute("aria-expanded") === "true";
-
-            const currentHeight = panel.getBoundingClientRect().height;
-            panel.style.maxHeight = `${currentHeight}px`;
-            void panel.offsetHeight;
-
-            if (expanded) {
-              button.setAttribute("aria-expanded", "false");
-              panel.classList.remove("open");
-              panel.style.maxHeight = "0px";
-            } else {
-              button.setAttribute("aria-expanded", "true");
-              panel.classList.add("open");
-              panel.style.maxHeight = `${panel.scrollHeight}px`;
-            }
-          });
-
-          const panelId = button.getAttribute("aria-controls");
-          const panel = panelId ? document.getElementById(panelId) : null;
-          if (panel) {
-            panel.addEventListener("transitionend", (event) => {
-              if (event.propertyName !== "max-height") {
-                return;
-              }
-
-              const isOpen = button.getAttribute("aria-expanded") === "true";
-              if (isOpen) {
-                panel.style.maxHeight = "none";
-              } else {
-                panel.style.maxHeight = "0px";
-              }
-            });
-          }
-        });
       })();
     </script>
     <!-- merged picture logic into the main script above to reduce duplication -->
