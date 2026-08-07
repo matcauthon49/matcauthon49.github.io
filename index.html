@@ -213,10 +213,12 @@
         const triggerGlitch = () => {
           document.body.classList.remove("glitching");
           void document.body.offsetWidth;
-          document.body.classList.add("glitching");
-          window.setTimeout(() => {
-            document.body.classList.remove("glitching");
-          }, 230);
+          window.requestAnimationFrame(() => {
+            document.body.classList.add("glitching");
+            window.setTimeout(() => {
+              document.body.classList.remove("glitching");
+            }, 280);
+          });
         };
 
         setTheme(saved);

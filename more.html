@@ -131,11 +131,23 @@
           toggle.setAttribute("title", mode === "dark" ? "switch to light mode" : "switch to dark mode");
         };
 
+        const triggerGlitch = () => {
+          document.body.classList.remove("glitching");
+          void document.body.offsetWidth;
+          window.requestAnimationFrame(() => {
+            document.body.classList.add("glitching");
+            window.setTimeout(() => {
+              document.body.classList.remove("glitching");
+            }, 280);
+          });
+        };
+
         setTheme(saved);
 
         toggle.addEventListener("click", () => {
           const next = document.body.getAttribute("data-theme") === "dark" ? "light" : "dark";
           setTheme(next);
+          triggerGlitch();
           localStorage.setItem("theme", next);
         });
       })();

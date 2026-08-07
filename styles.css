@@ -17,12 +17,13 @@
 
 html {
   height: 100%;
+  background: #ffffff;
 }
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background: var(--bg);
+  background: #ffffff;
   color: var(--text);
   line-height: 1.65;
   font-weight: 300;
@@ -40,19 +41,27 @@ mjx-container,
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(circle at 10% 12%, rgba(0,0,0,0.12), transparent 30%), radial-gradient(circle at 82% 80%, rgba(0,0,0,0.08), transparent 36%);
-  opacity: 0.28;
-  z-index: -1;
+  content: none;
 }
 
 body.glitching > * {
   animation:
-    glitch-shift 190ms steps(12, end),
-    glitch-hue 190ms steps(10, end);
+    glitch-shift 220ms steps(12, end),
+    glitch-hue 220ms steps(10, end);
+}
+
+body.glitching::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(110deg, transparent 0%, rgba(255,255,255,0.24) 10%, transparent 18%, transparent 100%),
+    linear-gradient(95deg, rgba(0,240,255,0.16) 0%, transparent 40%, rgba(255,58,214,0.16) 60%, transparent 100%);
+  mix-blend-mode: screen;
+  opacity: 0.9;
+  z-index: 2;
+  animation: glitch-overlay 220ms steps(10, end);
 }
 
 body[data-theme="dark"] {
@@ -802,6 +811,14 @@ footer {
   58% { filter: hue-rotate(90deg) saturate(185%) contrast(135%); }
   80% { filter: hue-rotate(-55deg) saturate(160%) contrast(120%); }
   100% { filter: hue-rotate(0deg) saturate(100%) contrast(100%); }
+}
+
+@keyframes glitch-overlay {
+  0% { transform: translate3d(0, 0, 0) skewX(0deg); opacity: 0; }
+  18% { transform: translate3d(-8px, 0, 0) skewX(3deg); opacity: 0.9; }
+  40% { transform: translate3d(10px, -2px, 0) skewX(-2deg); opacity: 0.35; }
+  70% { transform: translate3d(-5px, 1px, 0) skewX(1deg); opacity: 0.65; }
+  100% { transform: translate3d(0, 0, 0) skewX(0deg); opacity: 0; }
 }
 
 @keyframes header-glitch {
