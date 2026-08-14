@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="hide-drafts">
     <div class="site-shell fade-in">
       <header class="site-header">
         <a class="site-title" href="index.html">short stories</a>
@@ -61,6 +61,9 @@
         </section>
         <section class="story-section" aria-labelledby="drafts-heading">
           <h2 id="drafts-heading">Drafts</h2>
+          <label class="draft-toggle" for="toggle-drafts">
+            <input id="toggle-drafts" type="checkbox" /> Show drafts
+          </label>
           <ul class="story-list">
             <li class="story-item">
               <a class="story-link" href="stories/badlands.html">Badlands</a>
@@ -77,12 +80,12 @@
               <p>A directionless man uproots his life to Chicago and slowly, awkwardly, begins to find his footing.</p>
             </li>
 
-            <li class="story-item">
+            <li class="story-item draft">
               <a class="story-link" href="stories/world-stop.html">I Want the World to Stop</a>
               <p>Draft—in progress.</p>
             </li>
 
-            <li class="story-item">
+            <li class="story-item draft">
               <a class="story-link" href="stories/home-run-danny.html">Home Run Danny</a>
               <p>After a string of small failures, a young boy is taken out for ice cream by his father, who tries to explain why life isn&#39;t fair and why that&#39;s okay.</p>
             </li>
@@ -92,7 +95,7 @@
               <p>A teenage babysitter grows fascinated by the surprisingly dark and intricate world a six-year-old girl has constructed for her dolls.</p>
             </li>
 
-            <li class="story-item">
+            <li class="story-item draft">
               <a class="story-link" href="stories/patagonia.html">Hello, Patagonia!</a>
               <p>A man discovers his wife doesn&#39;t believe penguins exist and can&#39;t stop himself from wondering what else she might be wrong about.</p>
             </li>
@@ -104,5 +107,28 @@
         <p>&copy; Naman Kumar. All rights reserved.</p>
       </footer>
     </div>
+    <script>
+      (function () {
+        var storageKey = 'showDrafts';
+        var checkbox = document.getElementById('toggle-drafts');
+        var body = document.body;
+        function applyPref(show) {
+          if (show) {
+            body.classList.remove('hide-drafts');
+            checkbox.checked = true;
+          } else {
+            body.classList.add('hide-drafts');
+            checkbox.checked = false;
+          }
+        }
+        var pref = localStorage.getItem(storageKey);
+        if (pref !== null) applyPref(pref === 'true');
+        else applyPref(false);
+        checkbox.addEventListener('change', function () {
+          localStorage.setItem(storageKey, checkbox.checked);
+          applyPref(checkbox.checked);
+        });
+      })();
+    </script>
   </body>
 </html>

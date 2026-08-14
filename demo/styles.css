@@ -279,6 +279,20 @@ code {
   animation: rise-in 700ms ease both;
 }
 
+/* Draft visibility toggle */
+.hide-drafts .story-item.draft {
+  display: none;
+}
+
+.draft-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.45rem 0 0.9rem;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
 .delay-1,
 .delay-2,
 .delay-3 {
