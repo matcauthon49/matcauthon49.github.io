@@ -1,26 +1,59 @@
-User-agent: GPTBot
+# Anthropic (Claude): training, search indexing, user-triggered fetches
+# (anthropic-ai and Claude-Web are retired names, still harmless to list)
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: anthropic-ai
+User-agent: Claude-Web
 Disallow: /
 
+# OpenAI: training, search indexing, user-triggered fetches
+User-agent: GPTBot
+User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
 Disallow: /
 
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
+# Google: opt-out for Gemini/Vertex AI training (does NOT affect Google Search)
 User-agent: Google-Extended
 Disallow: /
 
+# Apple: opt-out for Apple Intelligence training
+User-agent: Applebot-Extended
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Disallow: /
+
+# Common Crawl (dataset many AI labs train on)
 User-agent: CCBot
 Disallow: /
 
-User-agent: PerplexityBot
-Disallow: /
-
+# ByteDance
 User-agent: Bytespider
 Disallow: /
 
-User-agent: Meta-ExternalAgent
+# Meta
+User-agent: meta-externalagent
+User-agent: meta-webindexer
 Disallow: /
+
+# Amazon
+User-agent: Amazonbot
+User-agent: Amzn-SearchBot
+Disallow: /
+
+# Others
+User-agent: cohere-ai
+User-agent: Diffbot
+User-agent: DuckAssistBot
+User-agent: YouBot
+User-agent: Omgilibot
+User-agent: ImagesiftBot
+User-agent: Timpibot
+Disallow: /
+
+# Everyone else (ordinary search engines) stays allowed
+User-agent: *
+Allow: /
