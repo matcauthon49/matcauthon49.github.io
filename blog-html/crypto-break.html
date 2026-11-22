@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>a primer on how to break cryptography with llms</title>
+<script>
+window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] } };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<h1>a primer on how to break cryptography with llms</h1>
+<p>Nov 21, 2026</p>
+
+<p>Yesterday, Levent Alpöge and Claude proved the Generalized Riemann
+Hypothesis. About three weeks ago, both OpenAI and Anthropic released a
+disproof of the Exponential Time Hypothesis (ETH). The mathematical
+capabilities of LLMs have now certainly advanced beyond any kind of
+reasonable disruption threshold. In effect, they are now cyberweapons.
+It is reasonable to believe that devastating attacks against the world’s
+cryptosystems have already been found and are being stored in secret
+among both AI labs and governmental agencies like the NSA, who have
+severely limited the cyber capabilities of the models they are shipping
+to regular customers. These attacks have the ability to render much of
+current-day cryptography obsolete.</p>
+<p>Note that I am not referring to hypothetical future AI capabilities.
+The mathematical capabilities of frontier models are <em>already</em>
+good enough, if not better than, what is required to break
+cryptography.</p>
+<p>Note also that I do not claim that AI is turning into skynet and
+speedrunning the apocalypse. I am not qualified to talk about the
+barriers to that scenario. But what unambiguously seems to be true is
+that there exist people in the current day who have access to
+mathematical techniques that can potentially cause widespread damage to
+global cyberinfrastructure at the press of a button.</p>
+<p>This article is a comprehensive attempt to explain what it means to
+break a cryptosystem, and how it is possible for modern-day frontier
+models to (already) go about doing it.</p>
+<figure>
+<p>
+<img src="https://matcauthon49.github.io/assets/blog/crypto-break/crypto.png" alt="" width="500">
+</p>
+</figure>
+<h1 id="how-does-cryptography-work">how does cryptography work?</h1>
+<p>Broadly speaking, at the barest of levels cryptography attempts to
+secure communication via two paradigms:</p>
+<ol type="1">
+<li><em>Encryption</em>: Nobody can read the messages Alice and Bob are
+exchanging; they are encoded, and look like a random string of letters
+(garbage) to an eavesdropper.</li>
+<li><em>Authentication</em>: Alice can ensure that the message she
+received over a channel that claims to be from Bob was in fact actually
+from Bob, and vice-versa.</li>
+</ol>
+<p>At the high level, cryptography is divided into secret-key
+cryptography (SKC) and public-key cryptography (PKC). SKC and PKC are
+suitable for both encryption and authentication. The difference between
+the two is the <em>setup</em> assumption. SKC requires the two parties
+to have agreed on a secret key known only to them before any
+communication has taken place, while PKC makes no such assumption.</p>
+<p>As an example, suppose you are communicating with your friend via the
+internet. SKC would require you to meet him physically and establish a
+secret key before any internet communication takes place. You would need
+to do this with every person you wish to communicate with. PKC makes no
+such assumption: you can establish a secure channel over the internet,
+and ensure that your messages are both encrypted and authenticated.</p>
+<h2 id="why-need-both-encryption-and-authentication">why need both
+encryption and authentication?</h2>
+<p>Encryption is a safeguard against <em>eavesdroppers</em>. It prevents
+other people from reading your private messages. If you are exchanging
+covert or sensitive information, encryption becomes fundamentally
+necessary to prevent your adversaries from reading it. Of course, you
+may think that you don’t need encryption, because all you’re doing is
+asking your girlfriend to meet you at the movie theater, and it doesn’t
+matter if anyone reads your messages. There are various problems with
+this line of thinking, but fundamentally encryption is a tool to keep
+your messages <em>private</em>. For example, assume that you are
+browsing your bank account in an unencrypted manner. Anyone can simply
+see what you’re doing on it, and obtain crucial information about your
+account, such as your credit card details!</p>
+<p>Authentication is a safeguard against <em>impersonators</em>. This is
+more problematic in terms of day-to-day communication. Without
+authentication, you can never be certain that the messages you are
+getting are indeed from your girlfriend. Someone can maliciously butt in
+and send you a message claiming to be from her that says that her credit
+card stopped working on the L-train and that she needs $20 immediately.
+You wire the money to this fishing account, and it turns out that person
+is a hacker. This is a severe security issue. Unauthenticated internet
+communication is, effectively, catastrophic, and can even be untenable.
+For example, suppose you were absolutely never able to ensure that the
+bank website you were logging into was the legitimate bank website, and
+not a forgery created by someone trying to steal your money. You would
+be in an equally bad situation.</p>
+<p>To ensure any kind of systematic internet infrastructure, you need
+both encryption as well as authentication. The internet uses both SKC
+and PKC in a hybrid manner. It is not necessary to know the technical
+details of how this technique works, but the important thing is that
+using a single one of them exclusively has severe downsides. If either
+SKC or PKC is broken, then we are in a very bad spot.</p>
+<ol type="1">
+<li><em>Encryption schemes</em> are techniques that accomplish
+encryption. If I have a message <span class="math inline">\(m\)</span>
+to send and a key <span class="math inline">\(k\)</span>, an encryption
+scheme computes a function <span class="math inline">\(c =
+\mathsf{Enc}(m,k)\)</span>. There is an associated decryption algorithm
+that computes <span
+class="math inline">\(\mathsf{Dec}(c,k&#39;)\)</span> for some key <span
+class="math inline">\(k&#39;\)</span>. If the scheme is symmetric, then
+<span class="math inline">\(k = k&#39;\)</span>, and the decryption
+algorithm will reveal <span class="math inline">\(m\)</span>. If the
+scheme is public-key, then <span class="math inline">\(k&#39;\)</span>
+is not equal to <span class="math inline">\(k\)</span> but will still be
+heavily related to <span class="math inline">\(k\)</span>. Only the
+associated key will successfully return <span
+class="math inline">\(m\)</span>, otherwise you will get garbage
+out.</li>
+<li><em>Signatures</em> are techniques that accomplish authentication. A
+signature scheme takes a message <span class="math inline">\(m\)</span>
+and a key <span class="math inline">\(k\)</span> and produces a
+signature <span class="math inline">\(s = \mathsf{Sign}(m,k)\)</span>. I
+send the signature along with my message. Anybody who then receives the
+message can run the verification algorithm, <span
+class="math inline">\(\mathsf{Verify}(m,s,k&#39;)\)</span>, which will
+output either valid or invalid. A symmetric-key signature is called a
+MAC, but I will not talk about MACs here. We will deal only with
+public-key signatures.</li>
+</ol>
+<h2 id="appendix-of-cryptosystems">appendix of cryptosystems</h2>
+<p>It is prudent at this point to provide a basic appendix of
+cryptosystems and what they are used for in practice. There are many
+more, but these are the major ones I will be referring to throughout
+this article.</p>
+<figure>
+<p>
+<img src="https://matcauthon49.github.io/assets/blog/crypto-break/sha3.png" alt="" width="500">
+</p>
+</figure>
+<h3 id="symmetric-key">symmetric key</h3>
+<ol type="1">
+<li>AES (“Advanced Encryption Standard”): AES is a block cipher, also
+known as a pseudorandom permutation. Ultimately, all your messages are
+encrypted using AES. To break AES is to be able to recover a shared key
+and decrypt the messages associated with that key. Doing so would allow
+you to decrypt and read everything the two parties sent to each other
+under that key. A key-recovery attack against AES would be catastrophic.
+It would, effectively, mean everything on the internet becomes
+unencrypted.</li>
+<li>SHA-3 (“Secure Hash Algorithm”): While not technically part of
+either SKC or PKC, morally SHA-3 is considered to be symmetric-key
+because of the design paradigm. A cryptographic hash function is
+essentially a ‘helper’ compression function that assists in the secure
+design of cryptosystems. To break SHA-3 you would need to either find a
+‘collision’ (two strings <span class="math inline">\(x\)</span> and
+<span class="math inline">\(y\)</span> such that <span
+class="math inline">\(\mathsf{SHA}(x) = \mathsf{SHA}(y)\)</span>) or a
+‘preimage’ (given <span class="math inline">\(y\)</span>, an <span
+class="math inline">\(x\)</span> such that <span
+class="math inline">\(\mathsf{SHA}(x) = y\)</span>). Breaking SHA would
+also be catastrophic<a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>.</li>
+</ol>
+<p>Both AES and SHA-3 are standards, decided by NIST. What I mean by
+this is that AES is the generic name for a block cipher that NIST has
+designated as the encryption standard that is to be used by the
+government. The underlying block cipher’s name is Rijndael. Similarly,
+SHA-3 is the official name of the hash function called Keccak.</p>
+<p>Both AES and SHA-3 were decided by means of a <em>competition</em>.
+There were other competitors: BLAKE, for example, was submitted to the
+SHA-3 competition, but lost to Keccak. I will return to these later.</p>
+<h3 id="public-key">public key</h3>
+<ol type="1">
+<li>RSA (“Rivest-Shamir-Adleman”): RSA is a general cryptosystem used
+for both encryption and signing. RSA is used in various settings,
+including TLS or DNS, for example. Breaking RSA would be extremely bad,
+but RSA is quite outdated and we were phasing it out anyway, so though
+there would be immediate damages it is not an existential threat to
+cryptography as it stands.</li>
+<li>ECDSA (“Elliptic Curve Digital Signature Algorithm”) and Schnorr:
+ECDSA and Schnorr (also sometimes called EdDSA) are signature schemes
+based on elliptic curves—a mathematical object I will talk about
+extensively later. They are extensively used throughout the internet and
+also throughout blockchain. Breaking elliptic-curve cryptography would
+also be catastrophic for the internet as it stands today, and replacing
+it would take a lot of time.</li>
+</ol>
+<p>Both the above schemes are vulnerable to quantum computers.
+Therefore, they were essentially going to ‘break anyway’ once quantum
+computers were invented—the current migration timeline aimed for 2035,
+though it was shortened to around 2030. Therefore, we do have
+replacements for these schemes; applying and migrating will take time,
+but it’s not true that we haven’t considered alternatives.</p>
+<ol start="3" type="1">
+<li>CRYSTALS-Kyber, CRYSTALS-Dilithium, NTRU, etc.: Kyber and Dilithium
+are new, post-quantum encryption and signature candidates, respectively,
+that have been approved by NIST. They are to be the successors to the
+previous schemes. Their security is based on the hardness of lattice
+problems, which I will also talk about later. Breaking Kyber and
+Dilithium would also be catastrophic. TLS already supports Kyber, and a
+lot of people have already migrated. More importantly, if the underlying
+lattice problems on which these schemes are based are broken, that would
+be a death-knell for a lot more than simply these two schemes, and
+could, again, be catastrophic for the future of cyberinfrastructure.
+Unfortunately I have bad news on this front: very reliable sources have
+informed me that an AI-assisted quasipolynomial time attack against
+structured lattice problems is soon to be released. Keep your eye on the
+news.</li>
+</ol>
+<p>Finally, the next batch of schemes are not used very much either
+because they are broken or have other constructive problems which make
+them hard to implement. Breaking them would be ‘standard’ in some sense:
+it would probably involve some amount of migration, but we could handle
+it.</p>
+<ol start="4" type="1">
+<li>Classic McEliece: A code-based encryption scheme <a
+href="https://eprint.iacr.org/2026/1630">that was broken earlier this
+year</a>. It was a NIST finalist for post-quantum encryption, but a
+recent attack found a quasipolynomial-time heuristic for
+key-recovery.</li>
+<li>XMSS/SPHINCS: Post-quantum signatures. Curiously, their security
+depends only on the security of cryptographic hash functions. Therefore
+they are secure so long as SHA-3 is secure. NIST has approved them for
+use and standardized SPHINCS+ under the name SLH-DSA. Unfortunately, if
+implemented everywhere, they would likely make our cyberinfrastructure a
+lot less efficient.</li>
+<li>UOV-style schemes: These are post-quantum signature schemes that
+base their security on various ‘multivariate’ assumptions. They have
+efficiency problems and have been subjected to a lot of cryptanalysis in
+the past. I wouldn’t trust them much. Rainbow, for example, is a
+signature scheme that had such <a
+href="https://eprint.iacr.org/2022/214">a catastrophic attack discovered
+against it in 2021 that it could be broken on a laptop</a>.</li>
+<li>Isogenies: New, experimental schemes based on algebraic geometry
+over elliptic curves. I don’t fully understand them, but it is important
+to note that one of the main techniques they relied on, SIDH, <a
+href="https://eprint.iacr.org/2022/975">was completely broken in
+2022</a>. Their math is obscure and only mathematical specialists have
+an understanding of how they work.</li>
+</ol>
+<h1 id="what-does-it-mean-to-break-a-cryptosystem">what does it mean to
+break a cryptosystem?</h1>
+<p>This is a complex and nuanced topic, that depends on a number of
+factors.</p>
+<figure>
+<p>
+<img src="https://matcauthon49.github.io/assets/blog/crypto-break/pnp.png" alt="" width="500">
+</p>
+</figure>
+<h2 id="security-definitions">security definitions</h2>
+<p>Cryptosystems come equipped with a proof of security. The proof of
+security is an argument that basically states the following:</p>
+<blockquote>
+<p>If <span class="math inline">\(x\)</span> is true, my cryptosystem is
+secure.</p>
+</blockquote>
+<p>Of course, the question here is what is the meaning of secure. This
+depends on the precise cryptosystem, and each has its own definition.
+The definitions are broadly reasonable, and you can be as precise as you
+want. All the following characterizations of encryption are valid
+security arguments. It’s generally a matter of collective judgment as to
+which exactly is the one we take as gospel. The rationale behind the
+following characterization of encryption is that since the ciphertext
+should like like garbage and should reveal no information about the
+actual underlying message, if I give you a ciphertext you won’t be able
+to tell which message went into it.</p>
+<blockquote>
+<p>If <span class="math inline">\(x\)</span> is true, then no computer
+on earth can tell apart any two 128-bit messages that I have encrypted
+using my encryption scheme with a truly random key. In particular, it
+won’t be able to tell which ciphertext belongs to which message.</p>
+</blockquote>
+<blockquote>
+<p>If <span class="math inline">\(x\)</span> is true, then no
+polynomial-time (in <span class="math inline">\(n\)</span>) Turing
+Machine can tell apart any two <span
+class="math inline">\(n\)</span>-bit message that I have encrypted using
+my encryption scheme with a truly random key.</p>
+</blockquote>
+<blockquote>
+<p>If <span class="math inline">\(x\)</span> is true, then no commercial
+off-the-shelf 128-core CPU can tell apart (within 10s after 256s of
+arbitrary preprocessing time that is allowed before the messages are
+given to the computer) any 256-bit messages that I have encrypted using
+my encryption scheme with a truly random key. In particular, it won’t be
+able to tell which ciphertext belongs to which message.</p>
+</blockquote>
+<p>All of these are valid security arguments insofar as they establish
+precisely what they mean by secure and reduce it to some assumption
+<span class="math inline">\(x\)</span>. Where they differ is with
+respect to how fine-grained they are. The kind of idea that the third
+definition pursues (or some variant of it) is what the most practical
+variant would be, and what a person analyzing cryptosystems practically
+would use. The second kind of definition is used by mathematicians who
+design these schemes. The first kind of definition is sort of a vague
+guiding light, and the one you should probably keep in mind: ultimately,
+what we are protecting against is ‘every computer on earth,’ and the
+second and third definitions are abstractions and concretizations of the
+vague guiding light. ## assumptions</p>
+<p>Note that in the previous section the proof isn’t actually
+straightforward: I don’t just prove that no computer can break my
+system, I prove that assuming some <span
+class="math inline">\(x\)</span> is true nobody can break my system.
+What does this mean?</p>
+<p>In general, we have not proven that cryptography unconditionally
+exists. Proving the unconditional existence of cryptography would
+resolve the <span class="math inline">\(\mathbf{P}\)</span> vs <span
+class="math inline">\(\mathbf{NP}\)</span> problem; it would show that
+<span class="math inline">\(\mathbf{P}\neq\mathbf{NP}\)</span>. This is
+also a complex topic to navigate, and needs to be quantified
+further.</p>
+<ul>
+<li>The <span class="math inline">\(\mathbf{P}\)</span> vs <span
+class="math inline">\(\mathbf{NP}\)</span> problem asks whether it is
+theoretically possible to quickly solve any hard problem which can be
+quickly verified. For example, Sudoku is such a problem. It is easy to
+check if a completed Sudoku puzzle is correct, but it is hard to solve
+it. ‘Hard’ here is not a simple definition. It is hard
+<em>asymptotically</em>: that is, it becomes harder as the size of the
+Sudoku board gets bigger. Just because Sudoku is hard to solve for
+computers as it grows larger doesn’t mean that small Sudoku boards are
+hard to solve or that broadly efficient algorithms for practical cases
+don’t exist. It could very well be the case that maybe computers have a
+hard time solving <span class="math inline">\(10^{100}\)</span> x <span
+class="math inline">\(10^{100}\)</span> size sudoku boards, but all
+small boards that we’re likely to create on earth can be solved very
+quickly. Indeed, your computer can solve a <span
+class="math inline">\(40\)</span> x <span
+class="math inline">\(40\)</span> board in seconds.</li>
+<li>‘Cryptography’ (as a field, not the specific cryptosystems—we are
+talking about whether cryptography is possible even theoretically, not
+whether AES is a secure cryptosystem) is only possible if something
+known as One-Way Functions (OWFs) exist. One-Way Functions are functions
+that are easy to compute but hard to ‘invert’: given an input it’s easy
+to find the output, but given an output it’s hard to find the input. If
+OWFs exist then <span
+class="math inline">\(\mathbf{P}\neq\mathbf{NP}\)</span>. Of course,
+this again could or could not mean much in practice. If every function
+is easy to invert at practical levels but becomes hard to invert only
+for inputs as large as <span class="math inline">\(10^{100}\)</span>
+then they might as well not exist, it doesn’t matter.</li>
+<li>On the flipside, if <span
+class="math inline">\(\mathbf{P}=\mathbf{NP}\)</span> then there is a
+small chance that cryptography might still exist. The evidence for this
+is getting lower and lower, however. A <a
+href="https://arxiv.org/abs/2610.06783v1">recent AI breakthrough
+presented by Josh Alman and Virginia Vassilevska Williams</a> showed
+that <span class="math inline">\(\mathsf{Zero}\)</span>-<span
+class="math inline">\(k\)</span>-<span
+class="math inline">\(\mathsf{Clique}\)</span>, a problem that was
+considered to give some kind of cryptography even if <span
+class="math inline">\(\mathbf{P}=\mathbf{NP}\)</span>, is actually
+easier than expected. I would be skeptical of cryptography existing if
+<span class="math inline">\(\mathbf{P}=\mathbf{NP}\)</span>. Perhaps we
+could make some ad-hoc cryptosystems.</li>
+</ul>
+<p>It is therefore clear that for us to have any sort of cryptography we
+would need <span
+class="math inline">\(\mathsf{P}\neq\mathsf{NP}\)</span>. Is this true?
+Fortunately, this is looking quite likely, and I believe that with LLM
+advancements we will probably have a proof soon. Even if we don’t,
+however, the situation is again nuanced.</p>
+<ul>
+<li>If <span class="math inline">\(\mathsf{P}\neq\mathsf{NP}\)</span>,
+it is still possible that we don’t have cryptography. In particular, we
+do not know if the existence of OWFs is in fact implied by <span
+class="math inline">\(\mathsf{P}\neq\mathsf{NP}\)</span>. There have
+been some theoretical pathways to show this, but nothing is yet
+proven.</li>
+<li>Even if we know for a fact that OWFs exist, it still doesn’t mean
+that we can actually come up with one. We have some candidates: we think
+AES is an OWF, and we think that the SIS (Short Integer Solution) and
+the DLog (Discrete Logarithm) problems, among others, give us some
+candidate constructions of OWFs. However, it may very well be the case
+that generic OWFs exist but ‘small’ constructions that we would like to
+use in practice all have flaws. For example, it could be true that no
+small-size circuit that takes a 128-bit input is an OWF.</li>
+<li>If we have a practical OWF that we can actually use, this still
+doesn’t necessarily mean we can use it to get symmetric-key encryption.
+Symmetric-key encryption is constructed using something known as a PRG
+(pseudorandom generator). It is known how to construct a PRG from an
+OWF. The construction, however, is so inefficient so as to be ‘galactic’
+(ie. never implementable, even on a theoretical computer).</li>
+<li>Even if we have symmetric-key encryption, it doesn’t mean that we
+have public-key encryption. This is an open problem. Very little
+progress has been made on it.</li>
+<li>Even if public-key encryption were to theoretically exist, it is not
+necessarily true that all our candidates for public-key encryption work.
+Remember <span class="math inline">\(x\)</span>? Our candidates for
+public key encryption assume that some problem <span
+class="math inline">\(x\)</span> is hard to solve. These problems depend
+on the precise cryptosystem, but a good example is that RSA depends on
+the hardness of integer factorization (it is significantly more nuanced
+than that, but as a high-level this is fine). It is certainly possible
+that <span class="math inline">\(\mathsf{P}\neq\mathsf{NP}\)</span> and
+factoring is easy (ie. can be done in polynomial-time). This belief
+stems from the mistaken assumption that cryptographic problems are <span
+class="math inline">\(\mathsf{NP}\)</span>-hard problems. An <span
+class="math inline">\(\mathsf{NP}\)</span>-hard problem is one that is
+hard if <span class="math inline">\(\mathsf{P}\neq\mathsf{NP}\)</span>.
+The Boolean Satisfiability Problem (SAT) is the stereotypical example. I
+will come back to this when I talk about ETH. However, no cryptography
+problem is <span class="math inline">\(\mathsf{NP}\)</span>-hard. They
+are all generally considered to be <span
+class="math inline">\(\mathsf{NP}\)</span>-intermediate<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.
+This means that it is possible that <span
+class="math inline">\(\mathsf{P}\neq\mathsf{NP}\)</span> and all of the
+problems we base cryptography on are very easy to solve.</li>
+<li>Even if problems like integer factorization are hard on average, it
+is not necessary that they be hard for small values like the 128-bit or
+256-bit values we often use. This has already been seen in RSA. RSA-512
+is broken. We now use something like RSA-4096. It is certainly possible
+that all our gold-standard theoretical results are perfectly true and
+these problems only become feasible at something like RSA-<span
+class="math inline">\(10^{20}\)</span>.</li>
+</ul>
+<h2 id="what-even-is-a-break">what even is a break?</h2>
+<p>With the above view in mind, let’s focus on a specific cryptosystem:
+ECDSA.</p>
+<blockquote>
+<p>If the ECDLP (“Elliptic Curve Discrete Logarithm Problem”) is hard,
+then ECDSA is secure.</p>
+</blockquote>
+<p>The ECDLP is the computational problem of computing discrete
+logarithms in elliptic curve groups. There is no need to know what it is
+in detail: just remember that as far as we know it does not admit a a
+better than exponential-time algorithm, ie. for a group where each
+element is of <span class="math inline">\(n\)</span> bits, there is no
+algorithm that works better than in time <span
+class="math inline">\(2^{O(n)}\)</span> to solve the problem.</p>
+<p>Getting more fine-grained, we have:</p>
+<blockquote>
+<p>If ECDLP is hard, ECDSA has 128 bits of security.</p>
+</blockquote>
+<p>Let’s analyze what this statement means. If a scheme has 128 bits of
+security, it roughly means that <span
+class="math display">\[\frac{\text{cost of best-known attack (in CPU
+clock cycles)}}{\text{success probability of that attack}} =
+2^{128}.\]</span></p>
+<p>As the equation suggests, it means that you would expect an attack to
+succeed after spending something like <span
+class="math inline">\(2^{128}\)</span> CPU operations. An estimate for
+the number of CPU operations that have ever occurred throughout the
+history of computing on earth is something like <span
+class="math inline">\(2\times 10^{36}\approx 2^{120}\)</span>.
+Therefore, if a scheme has 128 bits of security the guarantee you’re
+getting act the very least is that all the computers that have ever
+existed combined could not break this scheme in a reasonable amount of
+time.</p>
+<figure>
+<p>
+<img src="https://matcauthon49.github.io/assets/blog/crypto-break/riemann.png" alt="" width="500">
+</p>
+</figure>
+<p>There are essentially three ways in which you could attack ECDSA.</p>
+<ul>
+<li><strong>Break the proof</strong>. You could show that there is
+something wrong with the proof of security, that it seems to omit some
+kind of fundamental assumption, and therefore that it doesn’t hold.
+Proofs of security are often wrong. To tell the truth, the statement
+above is false: no one has ever proved that if ECDLP is hard then ECDSA
+is secure. The proofs of ECDSA are all in idealized settings like the
+‘generic group model’ or the ‘programmable random oracle model,’ and do
+not correspond to the real world. Therefore it is actually possible to
+bypass solving ECDLP altogether, and directly attack ECDSA. The proofs
+tell you what kind of attacks won’t work, but there’s no reason other
+attacks don’t exist.</li>
+<li><strong>Find a better algorithm for ECDLP</strong>. You could always
+try to improve the algorithm for ECDLP from exponential to something
+better. Therefore, attacking ECDLP is a viable strategy, because
+breaking ECDLP certainly breaks ECDSA.</li>
+<li><strong>Use a different kind of computer</strong>. Suppose I have an
+algorithm that solves ECDLP in time <span
+class="math inline">\(2^{72}\)</span>, but can actually be massively
+parallelized. On an 256-core system this algorithm needs each CPU to do
+<span class="math inline">\(2^{64}\)</span> operations. I set up 32 of
+these 256-core clusters and put them to work. It would take a single
+core 150,000 years to do <span class="math inline">\(2^{72}\)</span>
+operations, but now my new setup would only need to operate for about
+<span class="math inline">\(2\)</span> years to break an ECDLP instance.
+These kind of tradeoffs and tricks are extremely common in
+cryptanalysis. Similarly, perhaps I can come up with a <span
+class="math inline">\(2^{20}\)</span> time algorithm that uses <span
+class="math inline">\(2^{64}\)</span> cycles of preprocessing. I simply
+preprocess once and I am ready to tackle ECDLP as many times as I want.
+Therefore, you can use ugly computational tricks to break crypto.</li>
+</ul>
+<p>This is not even to mention insecure implementations and side-channel
+attacks, which are also devastating. These are simply the mathematical
+approaches through which one could break the ECDSA cryptosystem. These
+breaks can also differ strongly in <em>severity.</em></p>
+<ol type="1">
+<li><strong>A Complete, Complexity-Theoretic Break</strong>. A full
+complexity-theoretic break renders the cryptosystem essentially
+insecure. For example, a polynomial-time algorithm for ECDLP could
+classify as a complete break. This is a problem even if the algorithm is
+too slow to implement on a regular computer—it would mean that we have
+no theoretical basis for assuming that ECDSA is secure anymore.
+Furthermore, attacks can only get better. Such a break is
+devastating.</li>
+<li><strong>A Faster Algorithm</strong>. A polynomial-time algorithm for
+ECDLP would destroy the conjectured security of ECDSA. But a faster,
+non-polynomial time algorithm is still bad. Right now we assume that an
+<span class="math inline">\(n\)</span>-size instance takes <span
+class="math inline">\(2^{n/2}\)</span> computational steps to solve. To
+get 128 bits of security, then, we set <span
+class="math inline">\(n=256\)</span> bits in TLS and use the
+<code>secp256r1</code> elliptic curve. An algorithm that reduces the
+best-known algorithm to <span class="math inline">\(2^{0.0001n}\)</span>
+would not have any effect on our conjectured complexity-theoretic
+security of ECDLP. On the other hand, it would almost certainly be able
+to trivially break the ECDSA protocol used in TLS. To fix this, we would
+have to set <span class="math inline">\(n=1,280,000\)</span>, which
+would completely change everything about protocol specifications and
+take a very significant number of man-hours to fix, fundamentally
+resulting in something that makes browsing the internet far less
+efficient and compromising numerous of potential devices. Such a break
+could cause huge problems.</li>
+<li><strong>A Faster Heuristic</strong>. Suppose that I don’t find an
+algorithm to break ECDSA. But I find a plausible attack strategy that
+seems to work well in practice. What happens then? The answer is not
+great: such strategies, even if not formally breaking anything at all,
+seem to exist an inordinate amount of time. While SAT (the Boolean
+Satisfiability Problem) is conjectured to be <span
+class="math inline">\(2^n\)</span> time in the worst-case, we have very
+good heuristics that solve the problem. The BKZ algorithm, for example,
+that is used in lattice cryptanalysis, often uses various heuristics
+that give it a strong advantage over LLL, which is comparable in broad
+terms of complexity. BKZ is therefore better on average. Similar
+heuristics can devastate cryptosystems.</li>
+</ol>
+<p>The key difference here is between <em>full breaks</em> and
+<em>parameter breaks</em>. A full break would essentially leave a
+cryptosystem redundant: people would simply stop using ECDSA. A
+parameter break would mean that the scheme would need to be fixed and
+updated, often in a way that would make it less efficient. Both can
+cause damage, and both are problematic.</p>
+<h1 id="llm-cryptanalysis">llm cryptanalysis</h1>
+<p>Where, exactly, do LLMs fit in here?</p>
+<p>Current-day LLMs have shown extraordinary capabilities, and can
+essentially assist (and possibly blow through) every stage of the
+research process. I’m going to illustrate my point through a number of
+examples.</p>
+<h2 id="the-exponential-time-hypothesis">1. The Exponential Time
+Hypothesis</h2>
+<p>The Exponential Time Hypothesis (ETH) stated that the <span
+class="math inline">\(k\)</span>-SAT problem could not be solved in
+subexponential time. This hypothesis was disproved by a <a
+href="https://openai.com/index/building-scientific-understanding-with-academic-communities/">preprint
+of OpenAI about a month ago</a>.</p>
+<p>This is an exceptional achievement. The algorithm is crazy and
+difficult and galactic, but it provides the first piece of evidence that
+we have far less understanding of the theoretical complexities of our
+algorithms than we suspect. In particular, results have shown that the
+techniques apply similarly <a
+href="https://github.com/bochum-crypto/subexponential-ecdl/blob/main/subexponential-ecdl.pdf">to
+ECDLP</a> and, more recently, <a
+href="https://nigelsmart.github.io/Sub-Exp-LWE/main.pdf">to structured
+lattice assumptions</a>. This shows the first subexponential time
+algorithm for ECDLP ever known. Even if this algorithm does not apply to
+our current parameters, it shows just how little we actually know about
+ECDLP in the first place.</p>
+<p>There is little reason to suspect that this is the only algorithm
+that LLMs will find. When prompted, frontier LLMs are able to solve
+exceptional problems, and one of our major heuristics has already been
+shown to be false. The important thing is that it doesn’t matter if the
+algorithm is ‘slop’ or if we have no way of understanding it. If we have
+a way of running it, that is enough. AI has furthermore shown itself
+capable of solving <span class="math inline">\(3\)</span>-SUM and
+improving on integer multiplication beyond Harvey–van der Hoeven.</p>
+<h2 id="the-hawk-attack">2. The HAWK Attack</h2>
+<p>In July, Anthropic discovered <a
+href="https://www.anthropic.com/research/discovering-cryptographic-weaknesses">a
+weakness in the HAWK signature scheme</a>, which produced a (practical)
+subexponential-time attack for HAWK. The scheme was promptly withdrawn
+from the NIST PQ-Signature competition. As far back as July,
+significantly weaker models were able to find major cryptanalytic
+breakthroughs that had evaded researchers.</p>
+<p>Recent AI-assisted breakthroughs have included the <a
+href="https://eprint.iacr.org/2026/1630">quasipolynomial-time heuristic
+for Classic McEliese</a> (considered the ‘conservative choice’ by
+cryptographers, whose Goppa-code formulation had been unbroken since
+1978 despite years of analysis). Unlike humans, AIs are well-equipped to
+find such ‘overlooked’ issues: <a
+href="https://eprint.iacr.org/2026/2477">many, many results</a> have
+involved making such ‘overlooked’ observations. AI is already making
+cryptographic breakthroughs on the daily: the only reason it is not
+amenable to cryptanalysis is because the latest models have severely
+limited cyber capabilities, and refuse to do the task.</p>
+<h2 id="the-riemann-hypothesis">3. The Riemann Hypothesis</h2>
+<p>Levent Alpöge’s <a href="https://alpo.ge/remark.pdf">recent proof of
+the Generalized Riemann Hypothesis</a> has been formalized by lean. The
+proof, surprisingly, appears to use a new algebraic technique derived
+from the Weil-Deligne proofs of the Riemann Hypothesis over function
+fields. This uncovers incredible correspondences between various
+structures in arithmetic geometry, particularly between elliptic curves
+and automorphic forms. I personally have very little doubt that an AI
+that can pump out a proof of GRH cannot understand the techniques
+required to prove bigger theorems in Langlands or BSD. The first time I
+saw AI do math was in June. If you’re still skeptical, give it another
+month.</p>
+<p>The mathematical ideas here are staggering, and the understanding it
+brings to the underlying structures of elliptic curves is enormous.
+Observations far simpler have led to much more significant improvements
+in questions related to factorization and primality testing.</p>
+<p>For example, the AKS primality test reduces the problem of primality
+testing to polynomial identity testing over a quotient ring. This
+fundamentally algebraic idea unlocks a new, deterministic, algorithm for
+primality testing. Similarly, one of the consequences of GRH is that the
+deterministic Miller-Rabin primality test is polynomial-time. In
+particular, the original formulation of Miller relied heavily on
+number-theoretic techniques inherited from GRH. It is not as if GRH has
+no algorithmic consequences: here’s one, to something immediately
+relevant to factorization. If there are better algorithms for elliptic
+curves, there is every reason to believe that an AI that can prove GRH
+can find it, especially when the machinery used to prove GRH purportedly
+consists of the following:</p>
+<figure>
+<p>
+<img src="https://matcauthon49.github.io/assets/blog/crypto-break/grh.jpeg" alt="" width="500">
+</p>
+</figure>
+<p>Algorithms regularly arise from number-theoretic breakthroughs. The
+best factorization algorithm for large numbers, the General Number Field
+Sieve, for example, uses many clever ideas from algebraic number theory.
+The whole field of isogeny-based cryptography uses complicated algebraic
+geometry techniques, and the SIDH break uses isogenies between algebraic
+surfaces.</p>
+<h2 id="bootstrapping-practical-attacks">4. Bootstrapping Practical
+Attacks</h2>
+<p>Recently, LLMs have shown remarkable capabilities in <a
+href="https://www.minimax.io/blog/practical-cryptanalysis-with-minimaxs-latest-internal-model">making
+theoretical attacks practical</a>. The following recent work shows that
+multiple rejected candidates for SHA-3 (some of which had known attacks
+and some of which didn’t) were bootstrapped by LLMs into
+<em>practical</em> breaks. For example:</p>
+<blockquote>
+<p>Blender-256 (NIST SHA-3 candidate): Full-round collision resistance
+had remained unbroken since submission; Earlier models only exploited
+64-bit word-size bugs in the C implementation. MIM found those bugs and
+also broke the underlying construction, finding full-round collisions in
+0.36 to 2.3 seconds on a single core.</p>
+</blockquote>
+<p>We have a high degree of confidence in Keccak, but who knows what
+happens when thoroughly subjected to a superhuman observer? AI has,
+again, already shown the ability to <a
+href="https://www.anthropic.com/research/discovering-cryptographic-weaknesses">break
+7-round AES as far back as July</a>. Since then, collisions for
+increasing SHA-256 rounds are posted every day on twitter. While the
+full 64-round construction is not broken, breaks for round-reduced
+variants are basically easily findable on regular computers using
+non-frontier models like GLM-5.3, something previously unheard of.
+Furthermore, there are easier ways to break Keccak: slight <a
+href="https://eprint.iacr.org/2021/578">improvements on
+<em>exponential</em> algorithms for solving multivariate polynomials
+over <span class="math inline">\(\mathbb{F}_2\)</span></a> is enough,
+and guess what? An asymptotic improvement to MQ has already been
+delivered by ETH!</p>
+<h2 id="quantum">5. Quantum</h2>
+<p>Many of our cryptosystems, like RSA or ECC, have already been
+quantumly broken. The PQ-transition has been happening for a while, and
+AI has shown the potential to significantly accelerate the trajectory of
+development of quantum computers. While the bottleneck to building
+quantum computers requires mechanical engineering, theoretical
+advancements can hugely speed up the <em>quality</em> of engineering
+required: for example, if one can come up with a <em>small</em> circuit
+that uses very few qubits and improve quantum error-correction, it makes
+building quantum computers that much easier.</p>
+<ol type="1">
+<li>In terms of Shor, recent AI developments have hugely <a
+href="https://ecdsa.fail">reduced the number of qubits required</a> to
+do addition over <code>secp256r1</code>, which is the bottleneck in
+Shor’s algorithm. Every time this happens, it becomes that much easier
+for a quantum computer to work.</li>
+<li>In terms of quantum computing, AI has made huge advances in quantum
+complexity, including the recent <a
+href="https://psi.inc/research/aaronson-ambainis/">Aaronson-Ambianis
+Conjecture</a> and <a
+href="https://www.henryyuen.net/posts/on-openai-and-quantum-parallel-repetition/">Quantum
+Parallel Repetition problem</a>.</li>
+<li>More broadly, according to <a
+href="https://www.cs.cmu.edu/~odonnell/some_eth_false_exposition.pdf">Ryan
+O’Donnell’s exposé of the ETH break</a>, the ETH algorithm is
+essentially a <em>quantum</em> algorithm interpreted classically. I have
+heard many remarks from researchers that the field that AI is disrupting
+most strongly is quantum: even commercially available models have the
+ability to completely devastate the field and prove several of its most
+important conjectures.</li>
+</ol>
+<p>This is a slightly lower-stakes problem, since we are still at least
+a couple years away from a working quantum computer able to factor large
+integers using Shor’s algorithm (or who knows, but this is my guess
+based on the fact that you still have to physically assemble one, and
+this is not easy whatsoever).</p>
+<h1 id="so-whats-the-score">so what’s the score?</h1>
+<p>We are now at a situation where:</p>
+<ol type="1">
+<li>LLMs have been shown to make generational breakthroughs to both
+theoretical and practical cryptanalysis.</li>
+<li>LLM capabilities are only increasing.</li>
+<li>LLMs have been shown to be extremely good at several of the exact
+things required to break cryptography.</li>
+</ol>
+<p>In particular, it is reasonable to assume that the cryptanalytic
+bottleneck is no longer whether other human researchers have made
+improbable advances in secret, but rather the actual, physical limits of
+how good cryptanalysis can get.</p>
+<ol type="1">
+<li>It is reasonable to believe that the parameters of basically all
+schemes are outdated, except perhaps symmetric schemes like AES or SHA.
+What are the chances we got these correct? Probably not super high—we
+got everything else wrong. Anything with structure in it can reasonably
+be inferred to be far less secure than we suspect.</li>
+<li>Some schemes are certainly broken. My personal guess is that LWE is
+going to be the first to go, followed by Keccak. There simply hasn’t
+been enough work on them. There’s too much structure there that has been
+unexploited. The study of lattices is nowhere near the level of
+sophistication as that of ECC—when the AI demon comes, it will find
+things we’ve never even thought of.</li>
+</ol>
+<p>We are no longer at an impasse. We have taken a route, and now we are
+stuck to it—this is the route where everything is up for grabs and any
+guesses as to the security of a scheme are flips of a coin. Between the
+Riemann Hypothesis and AI botnet swarms finding RCEs in everything from
+PHP to OpenSSL my outlook for the world’s cyberinfrastructure is bleak.
+The good old days of Ransomware and ZK-SNARKs are gone. See you in a
+month.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Exactly which one of the properties you would have to
+break for SHA depends on what you’re using SHA for.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Sometimes people say that lattice problems like <span
+class="math inline">\(\mathsf{CVP}\)</span> are <span
+class="math inline">\(\mathsf{NP}\)</span>-hard. They can be, but the
+actual values for which they are hard are not the cryptographic
+settings. Trust me when I say that this is not true for the
+cryptographic versions of these problems.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
